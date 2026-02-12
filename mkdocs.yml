@@ -1,0 +1,74 @@
+﻿site_name: HR analytics
+site_description: HR analytics wiki
+site_url: https://<your-github-username>.github.io/<your-repo-name>/
+
+repo_name: <your-github-username>/<your-repo-name>
+repo_url: https://github.com/<your-github-username>/<your-repo-name>
+
+theme:
+  name: material
+  language: en
+  features:
+    - navigation.sections
+    - navigation.expand
+    - navigation.path
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+
+plugins:
+  - search
+  - mermaid2
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+
+nav:
+  - Home: index.md
+  - Important information:
+    - Test your self exam (formative): important-information/test-your-self-exam.md
+    - FAQ: important-information/faq.md
+  - Additional materials:
+    - Timeline: additional-materials/timeline.md
+    - Formula sheet: additional-materials/formula-sheet.md
+    - R/SPSS help: additional-materials/r-spss-help.md
+  - Week 1:
+    - HRa1: week-01/hra1.md
+    - HRa2: week-01/hra2.md
+    - Answer keys: week-01/answer-keys.md
+  - Week 2:
+    - HRa1: week-02/hra1.md
+    - HRa2: week-02/hra2.md
+    - Workshop: week-02/workshop.md
+    - Answer keys: week-02/answer-keys.md
+  - Week 3:
+    - HRa1: week-03/hra1.md
+    - HRa2: week-03/hra2.md
+    - Workshop: week-03/workshop.md
+    - Submit your exam question: week-03/submit-your-exam-question.md
+  - Week 4:
+    - HRa1: week-04/hra1.md
+    - HRa2: week-04/hra2.md
+    - Workshop: week-04/workshop.md
+    - Answer keys: week-04/answer-keys.md
+  - Week 5:
+    - HRa1: week-05/hra1.md
+    - HRa2: week-05/hra2.md
+    - Workshop: week-05/workshop.md
+  - Week 6:
+    - HRa1: week-06/hra1.md
+    - HRa2: week-06/hra2.md
+    - Workshop: week-06/workshop.md
+  - Week 7:
+    - HRa1: week-07/hra1.md
+    - HRa2: week-07/hra2.md
+    - Workshop: week-07/workshop.md
+  - Week 8:
+    - HRa1: week-08/hra1.md
+    - HRa2: week-08/hra2.md
+    - Workshop: week-08/workshop.md
+    - About the exams: week-08/about-the-exams.md
+    - Doing a resit?: week-08/doing-a-resit.md
+    - Answer keys: week-08/answer-keys.md
