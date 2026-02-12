@@ -1,9 +1,9 @@
 ﻿site_name: HR analytics
-site_description: HR analytics wiki
-site_url: https://<your-github-username>.github.io/<your-repo-name>/
+site_description: HR analytics
+site_url: https://zuydstats.github.io/HRa/
 
-repo_name: <your-github-username>/<your-repo-name>
-repo_url: https://github.com/<your-github-username>/<your-repo-name>
+repo_name: ZuydStats/HRa
+repo_url: https://github.com/ZuydStats/HRa
 
 theme:
   name: material
@@ -72,3 +72,4 @@ nav:
     - About the exams: week-08/about-the-exams.md
     - Doing a resit?: week-08/doing-a-resit.md
     - Answer keys: week-08/answer-keys.md
+
