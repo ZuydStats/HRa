@@ -1,15 +1,21 @@
-﻿# Week 1 - HRa1
+﻿# Week 1 - HRa1  - Welcome to HR analytics
 
-## Learning goals
+## What you will learn
 
-- Add goal 1
-- Add goal 2
+- The name of your lecturer(s).
+- What research skills are about and why they are important.
+- A few examples of the use of statistics in Hospitality Management.
+- The overall structure and planning of this HRA course.
+- Where to find the relevant information on Moodle.
 
-## Content
+## What you need to prepare
 
-Add lecture content for HRa1.
+- Read the "Important information" on this course.
+- Watch both videos below (intro + relevance).
 
-## Practice
+## Your in class materials
 
-1. Add question 1
-2. Add question 2
+<iframe title="YouTube" src="https://www.youtube.com/embed/FXSNqLX0-ZE?rel=0&amp;wmode=transparent" width="400" height="300" allow="fullscreen" loading="lazy"></iframe>
+
+<iframe title="YouTube" src="https://www.youtube.com/embed/pWjS_BPY15A?rel=0&amp;wmode=transparent" width="400" height="300" allow="fullscreen" loading="lazy"></iframe>
+
