@@ -36,7 +36,10 @@ nav:
     - R/SPSS help: additional-materials/r-spss-help.md
   - Week 1:
     - HRa1: week-01/hra1.md
-    - HRa2: week-01/hra2.md
+    - HRa2:
+      - Overview: week-01/hra2.md
+      - Cases (English): week-01/hra2-cases-english.md
+      - Casussen (Dutch): week-01/hra2-cases-dutch.md
     - Answer keys: week-01/answer-keys.md
   - Week 2:
     - HRa1: week-02/hra1.md
@@ -72,4 +75,5 @@ nav:
     - About the exams: week-08/about-the-exams.md
     - Doing a resit?: week-08/doing-a-resit.md
     - Answer keys: week-08/answer-keys.md
+
 
