@@ -1,11 +1,9 @@
-# Study Materials
-
-## HRa Handbook
+# HRa Handbook
 [Nederlands](HANDBOEK%20MOD5%20NL%20FEB2026.pdf)
 
 [English](HANDBOOK%20MOD5%20ENG%20FEB2026.pdf)
 
-## Various Study materials
+# Various Study materials
 [Study Book (blank)](./Study%20Book%20BLANK.docx)
 [Study Book (answers)](./Study%20Book%20ANSWERS.docx)
 
@@ -18,7 +16,7 @@
 
 [HRa Review](./HRA%20Review.pptx)
 
-## Quick Review Test
+# Quick Review Test
 
 Use these short modules to refresh key concepts before class, assignments, or exam preparation.
 
