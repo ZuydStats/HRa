@@ -1,11 +1,5 @@
 # Week 1 - HRa2 Cases (English)
 
-**Language:** English
-
-Below is the assignment content converted from the original PDF into Markdown text.
-
----
-
 Research questions and hypothesis formulation - assignment 
 Assignment description: steps to follow 
 1. Choose 3 case examples from the 7 below 

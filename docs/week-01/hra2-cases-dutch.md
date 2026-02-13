@@ -1,10 +1,4 @@
-# Week 1 - HRa2 Casussen (Dutch)
-
-**Language:** Dutch
-
-Below is the assignment content converted from the original PDF into Markdown text.
-
----
+# Week 1 - HRa2 Casussen (Nederlands)
 
 Onderzoeksvragen en hypotheseformulering - opdracht 
 Te volgen stappen: 

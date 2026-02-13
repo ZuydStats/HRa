@@ -1,15 +1,3 @@
-﻿# Week 8 - HRa1
+﻿# Week 8 - HRa1 - Myriad
 
-## Learning goals
-
-- Add goal 1
-- Add goal 2
-
-## Content
-
-Add lecture content for HRa1.
-
-## Practice
-
-1. Add question 1
-2. Add question 2
+In this final meeting before the exam you will finish the assignment on explaining turnover by Myriad employees, which you started last week. We will ask different groups to present their findings to the proposed management problem. 
