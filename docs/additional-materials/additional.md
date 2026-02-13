@@ -1,9 +1,9 @@
 # Study Materials
 
 ## HRa Handbook
-[Nederlands](./Handboek%20HRA%20M5%20JULI%202025%20Nederlands.pdf)
+[Nederlands](HANDBOEK%20MOD5%20NL%20FEB2026.pdf)
 
-[English](Handbook%20HRA%20M5%20JULY%202025%20ENGLISH.pdf)
+[English](HANDBOOK%20MOD5%20ENG%20FEB2026.pdf)
 
 ## Various Study materials
 [Study Book (blank)](./Study%20Book%20BLANK.docx)
