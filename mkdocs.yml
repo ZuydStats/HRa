@@ -6,15 +6,7 @@ repo_name: ZuydStats/HRa
 repo_url: https://github.com/ZuydStats/HRa
 
 theme:
-  name: material
-  language: en
-  features:
-    - navigation.sections
-    - navigation.expand
-    - navigation.path
-    - search.suggest
-    - search.highlight
-    - content.code.copy
+  name: windmill
 
 plugins:
   - search
@@ -60,5 +52,4 @@ nav:
     - HRa1 - Myriad: week-08/hra1.md
     - HRa2 - Q/A: week-08/hra2.md
   - Additional materials: additional-materials/additional.md
-
 
