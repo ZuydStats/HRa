@@ -20,6 +20,6 @@
     2. **Compute** the salary that employees would receive if they would work for only 25%.
     3. **Filter** only the employees in the data who are qualified as low (value 1).
 
-<iframe title="YouTube" src="https://www.youtube.com/embed/TYzob8m04-8?rel=0&amp;wmode=transparent" width="400" height="300" allow="fullscreen" loading="lazy"></iframe>
+<iframe title="HMSM M5 HRa Install Jamovi" width="450" height="300" frameborder="0" scrolling="auto" marginheight="0" marginwidth="0" src="https://zuyd.mediasite.com/Mediasite/Play/321955d20613459da13aca1f1437c9041d" allowfullscreen msallowfullscreen allow="fullscreen"></iframe>
 
-<iframe title="YouTube" src="https://www.youtube.com/embed/gP5PmJJiuZQ?rel=0&amp;wmode=transparent" width="400" height="300" allow="fullscreen" loading="lazy"></iframe>
+<iframe title="HMSM M% HRa Jamovi Basic Operations" width="450" height="300" frameborder="0" scrolling="auto" marginheight="0" marginwidth="0" src="https://zuyd.mediasite.com/Mediasite/Play/0541731b015d4028965929b8df5b6a241d" allowfullscreen msallowfullscreen allow="fullscreen"></iframe>
