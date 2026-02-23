@@ -16,6 +16,13 @@
 
 [HRa Review](./HRA%20Review.pptx)
 
+## Lecture slides
+Type I and II [en](./t1t2_en.pdf) | [nl](./t1t2_nl.pdf)  
+Sampling and Validity [en](./sampval_en.pdf) | [nl](./sampval_nl.pdf)  
+Chi Squared [en](./chi_en.pdf) | [nl](./chi_nl.pdf)  
+Correlation [en](./corr_en.pdf) | [nl](./corr_nl.pdf)  
+ANOVA [en](./anova_en.pdf) | [nl](./anova_nl.pdf)
+
 # Quick Review Test
 
 Use these short modules to refresh key concepts before class, assignments, or exam preparation.
