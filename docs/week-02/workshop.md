@@ -8,7 +8,14 @@
 
 ## What you will need to prepare
 
-- Download and install Jamovi. This program can be [downloaded here](https://www.jamovi.org/download.html). Install the "solid" version. In case you encounter a Microsoft blocking issue, check the video below.
+- Download and install Jamovi. This program can be [downloaded here](https://www.jamovi.org/download.html)
+  - [Windows](https://docs.jamovi.org/_pages/um_1_installation.html#windows)
+    - Install the solid version
+    - see the video below for more instructions
+    - <iframe title="HMSM M5 HRa Install Jamovi" width="450" height="300" frameborder="0" scrolling="auto" marginheight="0" marginwidth="0" src="https://zuyd.mediasite.com/Mediasite/Play/321955d20613459da13aca1f1437c9041d" allowfullscreen msallowfullscreen allow="fullscreen"></iframe>
+  - [MacOS](https://docs.jamovi.org/_pages/um_1_installation.html#macos)
+    - Choose the solid version for either apple silicon or intel
+    - <iframe width="560" height="315" src="https://www.youtube.com/embed/YEszG7HwzGM?si=WEE2CQRQQXKFZHDb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> 
 - Read Chapter 3 of *Learning Statistics with Jamovi* ([download here](https://www.learnstatswithjamovi.com/)).
 - Read the Myriad case: [Hotel Myriad - A case study](./Hotel%20Myriad%20-%20A%20case%20study%20(adapted%20for%20class)%2021-22%20s2.pdf)
 - Use the [Personnel data](./Myriad%20Hotel%20Personnel%20Dataset%20(incl.%20department).sav) on the Myriad hotel (you need Jamovi to open this).
@@ -20,6 +27,6 @@
     2. **Compute** the salary that employees would receive if they would work for only 25%.
     3. **Filter** only the employees in the data who are qualified as low (value 1).
 
-<iframe title="HMSM M5 HRa Install Jamovi" width="450" height="300" frameborder="0" scrolling="auto" marginheight="0" marginwidth="0" src="https://zuyd.mediasite.com/Mediasite/Play/321955d20613459da13aca1f1437c9041d" allowfullscreen msallowfullscreen allow="fullscreen"></iframe>
+
 
 <iframe title="HMSM M% HRa Jamovi Basic Operations" width="450" height="300" frameborder="0" scrolling="auto" marginheight="0" marginwidth="0" src="https://zuyd.mediasite.com/Mediasite/Play/0541731b015d4028965929b8df5b6a241d" allowfullscreen msallowfullscreen allow="fullscreen"></iframe>
