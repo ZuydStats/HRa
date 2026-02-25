@@ -16,16 +16,17 @@
   - [MacOS](https://docs.jamovi.org/_pages/um_1_installation.html#macos)
     - Choose the solid version for either apple silicon or intel
     - <iframe width="560" height="315" src="https://www.youtube.com/embed/YEszG7HwzGM?si=WEE2CQRQQXKFZHDb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> 
-- Read Chapter 3 of *Learning Statistics with Jamovi* ([download here](https://www.learnstatswithjamovi.com/)).
+- [Read Chapter 3 of *Learning Statistics with Jamovi*](https://davidfoxcroft.github.io/lsj-book/03-Getting-started-with-jamovi.html).
 - Read the Myriad case: [Hotel Myriad - A case study](./Hotel%20Myriad%20-%20A%20case%20study%20(adapted%20for%20class)%2021-22%20s2.pdf)
 - Use the [Personnel data](./Myriad%20Hotel%20Personnel%20Dataset%20(incl.%20department).sav) on the Myriad hotel (you need Jamovi to open this).
-- Short exercise:
-  - Do you know what the variables mean?
+## Your in-class materials
+- Exercises (
+  - Do you know [what the variables mean](https://davidfoxcroft.github.io/lsj-book/03-Getting-started-with-jamovi.html#variables)?
   - Do you know how the variables are measured?
   - Perform the following basic operations in the Personnel data file of the Myriad Hotel:
-    1. **Transform** the age variable into a new variable that indicates the age of the employee according to three age groups: less than 30, 30 to 45, and older than 45 years.
-    2. **Compute** the salary that employees would receive if they would work for only 25%.
-    3. **Filter** only the employees in the data who are qualified as low (value 1).
+    1. [**Transform**](https://lsj.readthedocs.io/en/latest/Ch06/Ch06_DataHandling_3/#creating-a-computed-variable) the age variable into a new variable that indicates the age of the employee according to three age groups: less than 30, 30 to 45, and older than 45 years.
+    2. [**Compute**](https://davidfoxcroft.github.io/lsj-book/03-Getting-started-with-jamovi.html#computed-variables) the salary that employees would receive if they would work for only 25%.
+    3. [**Filter**](https://blog.jamovi.org/2018/04/25/jamovi-filters.html) only the employees in the data who are qualified as low (value 1).
 
 
 
