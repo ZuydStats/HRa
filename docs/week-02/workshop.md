@@ -16,6 +16,7 @@
   - [MacOS](https://docs.jamovi.org/_pages/um_1_installation.html#macos)
     - Choose the solid version for either apple silicon or intel
     - <iframe width="560" height="315" src="https://www.youtube.com/embed/YEszG7HwzGM?si=WEE2CQRQQXKFZHDb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> 
+- *installing difficulties?* use [Jamovi Cloud](https://www.jamovi.org/cloud.html)
 - [Read Chapter 3 of *Learning Statistics with Jamovi*](https://davidfoxcroft.github.io/lsj-book/03-Getting-started-with-jamovi.html).
 - Read the Myriad case: [Hotel Myriad - A case study](./Hotel%20Myriad%20-%20A%20case%20study%20(adapted%20for%20class)%2021-22%20s2.pdf)
 - Use the [Personnel data](./Myriad%20Hotel%20Personnel%20Dataset%20(incl.%20department).sav) on the Myriad hotel (you need Jamovi to open this).
