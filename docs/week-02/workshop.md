@@ -20,7 +20,7 @@
 - Read the Myriad case: [Hotel Myriad - A case study](./Hotel%20Myriad%20-%20A%20case%20study%20(adapted%20for%20class)%2021-22%20s2.pdf)
 - Use the [Personnel data](./Myriad%20Hotel%20Personnel%20Dataset%20(incl.%20department).sav) on the Myriad hotel (you need Jamovi to open this).
 ## Your in-class materials
-- Exercises (
+- Exercises
   - Do you know [what the variables mean](https://davidfoxcroft.github.io/lsj-book/03-Getting-started-with-jamovi.html#variables)?
   - Do you know how the variables are measured?
   - Perform the following basic operations in the Personnel data file of the Myriad Hotel:
