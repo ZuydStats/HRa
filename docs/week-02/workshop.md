@@ -8,7 +8,7 @@
 
 ## What you will need to prepare
 
-- Download and install Jamovi. This program can be [downloaded here](https://www.jamovi.org/download.html)
+- [Download and install Jamovi](../important-information/faq.md#Software). This program can be [downloaded here](https://www.jamovi.org/download.html)
   - [Windows](https://docs.jamovi.org/_pages/um_1_installation.html#windows)
     - Install the solid version
     - see the video below for more instructions
