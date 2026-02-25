@@ -15,6 +15,6 @@
 
 ## Your in class materials
 
-<iframe title="VID-20260225-WA0001.mp4" width="900" height="600" frameborder="0" scrolling="auto" marginheight="0" marginwidth="0" src="https://zuyd.mediasite.com/Mediasite/Play/b1c49e7acb02489696a0e18c45177bf91d" allowfullscreen msallowfullscreen allow="fullscreen"></iframe>
+<iframe title="VID-20260225-WA0001.mp4" width="450" height="300" frameborder="0" scrolling="auto" marginheight="0" marginwidth="0" src="https://zuyd.mediasite.com/Mediasite/Play/b1c49e7acb02489696a0e18c45177bf91d" allowfullscreen msallowfullscreen allow="fullscreen"></iframe>
 
 <iframe title="HMSM M5 HRa Why study statistics" width="450" height="300" frameborder="0" scrolling="auto" marginheight="0" marginwidth="0" src="https://zuyd.mediasite.com/Mediasite/Play/63973a93d27349eeb97a75d2d185ff1f1d" allowfullscreen msallowfullscreen allow="fullscreen"></iframe>
