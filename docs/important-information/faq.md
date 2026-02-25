@@ -71,14 +71,16 @@ Every student needs Jamovi in order to do the assignments and prepare for exams.
 Make sure to install Jamovi before the first meeting.
 
 This program can be [downloaded here](https://www.jamovi.org/download.html)
-  - [Windows](https://docs.jamovi.org/_pages/um_1_installation.html#windows)
-    - Install the solid version
-    - see the video below for more instructions
-    - <iframe title="HMSM M5 HRa Install Jamovi" width="450" height="300" frameborder="0" scrolling="auto" marginheight="0" marginwidth="0" src="https://zuyd.mediasite.com/Mediasite/Play/321955d20613459da13aca1f1437c9041d" allowfullscreen msallowfullscreen allow="fullscreen"></iframe>
-  - [MacOS](https://docs.jamovi.org/_pages/um_1_installation.html#macos)
-    - Choose the solid version for either apple silicon or intel
-    - <iframe width="560" height="315" src="https://www.youtube.com/embed/YEszG7HwzGM?si=WEE2CQRQQXKFZHDb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> 
-  - *installing difficulties?* use [Jamovi Cloud](https://www.jamovi.org/cloud.html)
+  
+- [Windows](https://docs.jamovi.org/_pages/um_1_installation.html#windows)
+  - Install the solid version
+  - see the video below for more instructions
+  - <iframe title="HMSM M5 HRa Install Jamovi" width="450" height="300" frameborder="0" scrolling="auto" marginheight="0" marginwidth="0" src="https://zuyd.mediasite.com/Mediasite/Play/321955d20613459da13aca1f1437c9041d" allowfullscreen msallowfullscreen allow="fullscreen"></iframe>
+- [MacOS](https://docs.jamovi.org/_pages/um_1_installation.html#macos)
+  - Choose the solid version for either apple silicon or intel
+  - <iframe width="560" height="315" src="https://www.youtube.com/embed/YEszG7HwzGM?si=WEE2CQRQQXKFZHDb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> 
+
+- *installing difficulties?* use [Jamovi Cloud](https://www.jamovi.org/cloud.html)
 
 
 ### Datasets
