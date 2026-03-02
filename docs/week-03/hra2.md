@@ -11,7 +11,7 @@
     - §8.1 - Samples, populations and sampling
     - §8.4 - Estimating population parameters
     - §8.5 - Estimating a confidence interval
-- Create a possible exam question. It should be a multiple-choice question with 4 answers, of which one is correct. Submit the question two working days before class at the bottom of this page.
+- Create a possible exam question. It should be a multiple-choice question with 4 answers, of which one is correct. 
 - Bring to class (from the video):
     - How does the significance (alpha) tie into Type I and Type II errors?
     - Your beautiful drawing of a confidence interval.
