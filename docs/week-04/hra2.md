@@ -1,5 +1,10 @@
 # Week 4 - HRa2 - Crosstabs & Chi-Square & Workshop: People Power Planning
 
+<div style="float:right; max-width:180px; margin:0 0 1rem 1.5rem; text-align:center;">
+  <img src="./chi_qr.png" alt="Studying? Try a small recap." style="max-width:100%;">
+  <br><small><em>Studying? Try a small lesson recap.</em></small>
+</div>
+
 ## What you will learn
 
 - You will know how to visualize data of two variables in Jamovi.
@@ -8,9 +13,7 @@
 - You know how to set up data analysis for an HR plan for the expansion of a hotel.
 - You are familiar with going beyond the data in your data set and using it to adapt to future changes.
 
-## Studying? Try a small lesson recap
-
-![Studying? Try a small recap.](./chi_qr.png)
+<div style="clear:both;"></div>
 
 ## What you will need to prepare
 

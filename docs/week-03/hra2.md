@@ -1,5 +1,10 @@
 # Week 3 - HRa2 - Estimation & Hypothesis Testing & Workshop: OCAI
 
+<div style="float:right; max-width:180px; margin:0 0 1rem 1.5rem; text-align:center;">
+  <img src="./Confidence_Intervals%20(1).png" alt="test yourself" style="max-width:100%;">
+  <br><small><em>Are you studying? Try a recap and some questions.</em></small>
+</div>
+
 ## What you will learn
 
 - You know how estimation is done and what you can do with it.
@@ -7,6 +12,8 @@
 - You are familiar with a way how culture can be measured in a company.
 - You know what the OCAI instrument is and what it is used for.
 - Apply your data visualization skills to the OCAI data set.
+
+<div style="clear:both;"></div>
 
 ## What you will need to prepare
 
@@ -25,10 +32,6 @@
     - Generally, a p-value lower than 5% is considered statistically significant. (www.investopedia.com, dd.11.02.2022. See also Verhoeven N., *Doing Research*, p. 25)
 - Go over the material of the HR lecture on organizational culture you had last week (Ms. Yvonne de Lange).
 - Take a good look at the OCAI website, and in particular [the description](https://www.regent.edu/journal/journal-of-practical-consulting/using-the-organizational-cultural-assessment-instsrument-ocai-for-new-team-development/) of the instrument.
-
-## Are you studying? Try a recap and some questions
-
-![test yourself](./Confidence_Intervals%20(1).png))
 
 ## Your in-class materials
 

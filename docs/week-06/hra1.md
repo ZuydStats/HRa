@@ -1,11 +1,17 @@
 ﻿# Week 6 - HRa1 -  ANOVA and Effect Sizes
 
+<div style="float:right; max-width:180px; margin:0 0 1rem 1.5rem; text-align:center;">
+  <img src="./anova_qr.png" alt="study anova" style="max-width:100%;">
+  <br><small><em>Studying? Try a lesson review and some practice questions.</em></small>
+</div>
 
 ## What you will learn
 
 - You know how to perform an ANOVA in Jamovi.
 - You know how to interpret the ANOVA output in Jamovi.
 - You know what assumptions need to be met.
+
+<div style="clear:both;"></div>
 
 ## What you will need to prepare
 
@@ -21,10 +27,6 @@
   - Execute an ANOVA analysis for two relevant variables and be prepared to show and explain this during the meeting. Report on your findings.
 - [ANOVA Step-by-step Flowchart](./Check%20your%20data%20assumptions%20(Levenes%20Test%20for%20Homogeneity%20of%20Variance)%20(1).pdf)
 - [Effect Sizes Summary](./Summary%20of%20effect%20sizes.pptx)
-
-## Studying? Try a lesson review and some practice questions
-
-![study anova](./anova_qr.png)
 
 - <iframe title="HMSM M5 HRa ANOVA" width="450" height="300" frameborder="0" scrolling="auto" marginheight="0" marginwidth="0" src="https://zuyd.mediasite.com/Mediasite/Play/672eef0c45eb4fbb908dc986dd524bab1d" allowfullscreen msallowfullscreen allow="fullscreen"></iframe>
 - <iframe title="HMSM M5 HRa Jamovi ANOVA" width="450" height="300" frameborder="0" scrolling="auto" marginheight="0" marginwidth="0" src="https://zuyd.mediasite.com/Mediasite/Play/526f048efe7140f2aa28f63cabd3253b1d" allowfullscreen msallowfullscreen allow="fullscreen"></iframe>

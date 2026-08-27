@@ -1,5 +1,10 @@
 # Week 2 - HRa2 - Reliability, Validity, Sampling & Workshop: Introduction to JAMOVI
 
+<div style="float:right; max-width:180px; margin:0 0 1rem 1.5rem; text-align:center;">
+  <img src="./Sampling__Reliability__and_Validity.png" alt="Sampling, reliability, and validity recap" style="max-width:100%;">
+  <br><small><em>Are you studying? Try a quick recap.</em></small>
+</div>
+
 ## What you will learn
 
 - Know strategies on how to sample participants in an experiment.
@@ -11,6 +16,8 @@
 - How does Jamovi make your life easier?
 - Get familiar with Jamovi its windows, tabs, dialogs and its basic operations.
 - You are familiar with the HR dataset on Hotel Myriad staff.
+
+<div style="clear:both;"></div>
 
 ## What you will need to prepare
 
@@ -40,9 +47,9 @@
 
 - [Sample exam questions](./Validity%20and%20reliability%20-%20Example%20questions.pdf)
 
-**Are you studying? Try a quick recap:**
+<iframe title="HMSM M5 HRa Sampling" width="450" height="300" frameborder="0" scrolling="auto" marginheight="0" marginwidth="0" src="https://zuyd.mediasite.com/Mediasite/Play/dae989c14dcb48008d44be35d5e2aacb1d" allowfullscreen msallowfullscreen allow="fullscreen"></iframe>
 
-![Sampling, reliability, and validity recap](./Sampling__Reliability__and_Validity.png)
+<iframe title="HMSM M5 HRa Reliability Sampling" width="450" height="300" frameborder="0" scrolling="auto" marginheight="0" marginwidth="0" src="https://zuyd.mediasite.com/Mediasite/Play/5b904d6f9d5c4f95864356f1136c58901d" allowfullscreen msallowfullscreen allow="fullscreen"></iframe>
 
 ### Part 2 — Workshop
 
@@ -61,7 +68,3 @@
 - [Sampling Flash cards](./Types%20of%20sampling.pptx)
 - [Slides: You have already done research before](./Week%202%20-%20Everyone%20can%20do%20research%20-%20test%20120223.pptx)
 - [Validity](./validity.pptx)
-
-<iframe title="HMSM M5 HRa Sampling" width="450" height="300" frameborder="0" scrolling="auto" marginheight="0" marginwidth="0" src="https://zuyd.mediasite.com/Mediasite/Play/dae989c14dcb48008d44be35d5e2aacb1d" allowfullscreen msallowfullscreen allow="fullscreen"></iframe>
-
-<iframe title="HMSM M5 HRa Reliability Sampling" width="450" height="300" frameborder="0" scrolling="auto" marginheight="0" marginwidth="0" src="https://zuyd.mediasite.com/Mediasite/Play/5b904d6f9d5c4f95864356f1136c58901d" allowfullscreen msallowfullscreen allow="fullscreen"></iframe>

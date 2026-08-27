@@ -1,10 +1,16 @@
 ﻿# Week 1 - HRa2 - Research questions and hypotheses
 
+<div style="float:right; max-width:180px; margin:0 0 1rem 1.5rem; text-align:center;">
+  <img src="./Research_Hypothesis__Null_and_Alternate.png" alt="Research hypothesis recap" style="max-width:100%;">
+  <br><small><em>Studying? Try a recap.</em></small>
+</div>
 
 ## What you will learn
 
 - To formulate a solid research question based on a management problem.
 - To formulate good null- and alternative hypotheses (H<sub>0</sub> and H<sub>a</sub>/H<sub>1</sub>).
+
+<div style="clear:both;"></div>
 
 ## What you need to prepare
 
@@ -23,9 +29,5 @@
 - [Answer key](./answer-keys.md)
 
 Note for the video below, slide 12: a H<sub>0</sub> and H<sub>a</sub> can contain any symbol (`=`, `<`, `>`, `≤`, `≥`, `≠`).
-
-**Studying? Try a recap.**
-
-![Research hypothesis recap](.\Research_Hypothesis__Null_and_Alternate.png)
 
 <iframe title="HMSM M5 HRa Research questions" width="450" height="300" frameborder="0" scrolling="auto" marginheight="0" marginwidth="0" src="https://zuyd.mediasite.com/Mediasite/Play/5a230258a522442fb4ca68bcb61fe69f1d" allowfullscreen msallowfullscreen allow="fullscreen"></iframe>

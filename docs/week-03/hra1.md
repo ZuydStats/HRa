@@ -1,11 +1,18 @@
 ﻿# Week 3 - HRa1 - Descriptives & graphs
 
+<div style="float:right; max-width:180px; margin:0 0 1rem 1.5rem; text-align:center;">
+  <img src="./Types_of_Graphs_and_Their_Uses%20(1).png" alt="Are you studying? Try a recap!" style="max-width:100%;">
+  <br><small><em>Are you studying? Try a quick recap.</em></small>
+</div>
+
 ## What you will learn
 
 - Practice your Jamovi skills and get more familiar with Jamovi.
 - You know how to visualize data in Jamovi.
 - You know the different measurement levels, center measures, and what variance is.
 - You know how to create various graphs for different variables.
+
+<div style="clear:both;"></div>
 
 ## What you will need to prepare
 
@@ -24,11 +31,7 @@
     - Create a minimum of 4 graphs of 4 single variables that you are interested in. Be prepared to share.
     - Create a minimum of 4 graphs combining 2 variables that you are interested in. Be prepared to share.
 
-## Are you studying? Try a quick recap
-
-![Are you studying? Try a recap!](./Types_of_Graphs_and_Their_Uses%20(1).png)
-
-<iframe title="HMSM M5 HRA Measurement Levels" width="450" height="300" frameborder="0" scrolling="auto" marginheight="0" marginwidth="0" src="https://zuyd.mediasite.com/Mediasite/Play/fab6bea4743d4447a354d1f56edee5c01d" allowfullscreen msallowfullscreen allow="fullscreen"></iframe>y
+<iframe title="HMSM M5 HRA Measurement Levels" width="450" height="300" frameborder="0" scrolling="auto" marginheight="0" marginwidth="0" src="https://zuyd.mediasite.com/Mediasite/Play/fab6bea4743d4447a354d1f56edee5c01d" allowfullscreen msallowfullscreen allow="fullscreen"></iframe>
 
 ### Your in-class material
 
