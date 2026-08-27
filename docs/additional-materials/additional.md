@@ -1,7 +1,7 @@
 # HRa Handbook
-[Nederlands](HANDBOEK%20MOD5%20NL%20FEB2026.pdf)
+[Nederlands](Handboek%20HRA%20M5%20SEPT%202026%20NL.pdf)
 
-[English](HANDBOOK%20MOD5%20ENG%20FEB2026.pdf)
+[English](Handbook%20HRA%20M5%20SEPT%202026%20ENGLISH.pdf)
 
 # Various Study materials
 [Study Book (blank)](./Study%20Book%20BLANK.docx)
@@ -16,7 +16,7 @@
 
 [HRa Review](./HRA%20Review.pptx)
 
-## Lecture slides
+## Content slides
 Type I and II [en](./t1t2_en.pdf) | [nl](./t1t2_nl.pdf)  
 Sampling and Validity [en](./sampval_en.pdf) | [nl](./sampval_nl.pdf)  
 Chi Squared [en](./chi_en.pdf) | [nl](./chi_nl.pdf)  

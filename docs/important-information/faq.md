@@ -9,9 +9,9 @@
 
 ## What does this course look like?
 
-Twice a week, you will participate in our flipped-classroom classes. These sessions are 60 minutes and are labelled as `5HRA1` and `5HRA2`.
+Once a week, you will participate in our flipped-classroom class. This session is 60 minutes and is labelled as `5HRA1`.
 
-Once a week, you will participate in a workshop where you can practice your new skills. These sessions are also 60 minutes and are labelled as `5HRA3`. Bring your laptop to this meeting and make sure [Jamovi](./faq.md#software) is installed. 
+Once a week, you will participate in a combined session covering new content and a hands-on workshop where you'll practice your new skills. This session is 2 hours and is labelled as `5HRA2`. Bring your laptop to this meeting and make sure [Jamovi](./faq.md#software) is installed. 
 
 You will have an online Q&A in Week 8 (as exam prep). These sessions are labelled as `5HRA.Q&A` in your roster in MyX.
 
@@ -85,8 +85,8 @@ This program can be [downloaded here](https://www.jamovi.org/download.html)
 
 ### Datasets
 
- - In general we will work with the [Personnel data](../week-02/Myriad%20Hotel%20Personnel%20Dataset%20(incl.%20department).sav) on staff in the Myriad Hotel. See the [introduction on Jamovi](../week-02/workshop.md) for more information.
- - In [week 3](../week-03/workshop.md) we will work with the [OCAI dataset](../week-03/OCAI%20dataset.sav)
+ - In general we will work with the [Personnel data](../week-02/Myriad%20Hotel%20Personnel%20Dataset%20(incl.%20department).sav) on staff in the Myriad Hotel. See the [introduction on Jamovi](../week-02/hra2.md) for more information.
+ - In [week 3](../week-03/hra2.md) we will work with the [OCAI dataset](../week-03/OCAI%20dataset.sav)
  - In [week 7](../week-07/hra1.md) we will work with the [Turnover dataset](../week-07/Turnover.sav)
 
 
