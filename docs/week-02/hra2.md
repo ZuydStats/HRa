@@ -41,15 +41,15 @@
 - Read the Myriad case: [Hotel Myriad - A case study](./Hotel%20Myriad%20-%20A%20case%20study%20(adapted%20for%20class)%2021-22%20s2.pdf)
 - Use the [Personnel data](./Myriad%20Hotel%20Personnel%20Dataset%20(incl.%20department).sav) on the Myriad hotel (you need Jamovi to open this).
 
+<iframe title="HMSM M5 HRa Sampling" width="450" height="300" frameborder="0" scrolling="auto" marginheight="0" marginwidth="0" src="https://zuyd.mediasite.com/Mediasite/Play/dae989c14dcb48008d44be35d5e2aacb1d" allowfullscreen msallowfullscreen allow="fullscreen"></iframe>
+
+<iframe title="HMSM M5 HRa Reliability Sampling" width="450" height="300" frameborder="0" scrolling="auto" marginheight="0" marginwidth="0" src="https://zuyd.mediasite.com/Mediasite/Play/5b904d6f9d5c4f95864356f1136c58901d" allowfullscreen msallowfullscreen allow="fullscreen"></iframe>
+
 ## Your in-class materials
 
 ### Part 1 — Content
 
 - [Sample exam questions](./Validity%20and%20reliability%20-%20Example%20questions.pdf)
-
-<iframe title="HMSM M5 HRa Sampling" width="450" height="300" frameborder="0" scrolling="auto" marginheight="0" marginwidth="0" src="https://zuyd.mediasite.com/Mediasite/Play/dae989c14dcb48008d44be35d5e2aacb1d" allowfullscreen msallowfullscreen allow="fullscreen"></iframe>
-
-<iframe title="HMSM M5 HRa Reliability Sampling" width="450" height="300" frameborder="0" scrolling="auto" marginheight="0" marginwidth="0" src="https://zuyd.mediasite.com/Mediasite/Play/5b904d6f9d5c4f95864356f1136c58901d" allowfullscreen msallowfullscreen allow="fullscreen"></iframe>
 
 ### Part 2 — Workshop
 

@@ -32,21 +32,17 @@
     - Generally, a p-value lower than 5% is considered statistically significant. (www.investopedia.com, dd.11.02.2022. See also Verhoeven N., *Doing Research*, p. 25)
 - Go over the material of the HR lecture on organizational culture you had last week (Ms. Yvonne de Lange).
 - Take a good look at the OCAI website, and in particular [the description](https://www.regent.edu/journal/journal-of-practical-consulting/using-the-organizational-cultural-assessment-instsrument-ocai-for-new-team-development/) of the instrument.
+- [PowerPoint on confidence intervals](./Confidence%20intervals.pptx)
+
+<iframe title="HMSM M5 HRa p value" width="450" height="300" frameborder="0" scrolling="auto" marginheight="0" marginwidth="0" src="https://zuyd.mediasite.com/Mediasite/Play/54bf639db8644e9bb5a5faf4b323112c1d" allowfullscreen msallowfullscreen allow="fullscreen"></iframe>
+
+<iframe title="HMSM M5 HRa Confidence Interval" width="450" height="300" frameborder="0" scrolling="auto" marginheight="0" marginwidth="0" src="https://zuyd.mediasite.com/Mediasite/Play/10dba64393b74566a38bad07c0d054fd1d" allowfullscreen msallowfullscreen allow="fullscreen"></iframe>
 
 ## Your in-class materials
 
 ### Part 1 — Content
 
 - Your own exam question
-
-## PowerPoint on confidence intervals
-
-- [Click here](./Confidence%20intervals.pptx)
-
-
-<iframe title="HMSM M5 HRa p value" width="450" height="300" frameborder="0" scrolling="auto" marginheight="0" marginwidth="0" src="https://zuyd.mediasite.com/Mediasite/Play/54bf639db8644e9bb5a5faf4b323112c1d" allowfullscreen msallowfullscreen allow="fullscreen"></iframe>
-
-<iframe title="HMSM M5 HRa Confidence Interval" width="450" height="300" frameborder="0" scrolling="auto" marginheight="0" marginwidth="0" src="https://zuyd.mediasite.com/Mediasite/Play/10dba64393b74566a38bad07c0d054fd1d" allowfullscreen msallowfullscreen allow="fullscreen"></iframe>
 
 ### Part 2 — Workshop
 

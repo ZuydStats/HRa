@@ -23,12 +23,10 @@
   - Using this, you should be able to construct a H<sub>0</sub> and H<sub>A</sub>.
   - Include your definition of what Type I and Type II errors are.
 
+<iframe title="HMSM M5 HRa T1 T2" width="450" height="300" frameborder="0" scrolling="auto" marginheight="0" marginwidth="0" src="https://zuyd.mediasite.com/Mediasite/Play/6f55669033d74a30908c6764062e6fab1d" allowfullscreen msallowfullscreen allow="fullscreen"></iframe>
+
 ## Your in-class materials
 
 - [Exam questions for during the meeting](./Quantitative%20analyses%20-%20Type%20I%20and%20II%20errors_exercises.pdf)
 - Your cheat sheet
 - [Slides: Where do Type I and Type II errors come from?](./230906%20Week%202%20-%20why%20Type%20I%20and%20Type%202%20errors%20exists.pdf)
-
-<iframe title="HMSM M5 HRa T1 T2" width="450" height="300" frameborder="0" scrolling="auto" marginheight="0" marginwidth="0" src="https://zuyd.mediasite.com/Mediasite/Play/6f55669033d74a30908c6764062e6fab1d" allowfullscreen msallowfullscreen allow="fullscreen"></iframe>
-
-
