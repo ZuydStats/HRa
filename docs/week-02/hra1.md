@@ -1,7 +1,8 @@
 ﻿# Week 2 - HRa1 - Quantitative analyses and Type I & II errors
 
 <div style="float:right; max-width:180px; margin:0 0 1rem 1.5rem; text-align:center;">
-  <img src="../Type_1_and_Type_2_errors.png" alt="Type I and Type II errors recap" title="Are you studying? Try a quick recap." style="max-width:100%;">
+  <img src="../Type_1_and_Type_2_errors.png" alt="Quick recap" title="Quick recap" style="max-width:100%;">
+  <br><small><em>Quick recap</em></small>
 </div>
 
 ## What you will learn

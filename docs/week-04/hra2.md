@@ -1,7 +1,8 @@
 # Week 4 - HRa2 - Crosstabs & Chi-Square & Workshop: People Power Planning
 
 <div style="float:right; max-width:180px; margin:0 0 1rem 1.5rem; text-align:center;">
-  <img src="../chi_qr.png" alt="Studying? Try a small recap." title="Studying? Try a small lesson recap." style="max-width:100%;">
+  <img src="../chi_qr.png" alt="Quick recap" title="Quick recap" style="max-width:100%;">
+  <br><small><em>Quick recap</em></small>
 </div>
 
 ## What you will learn

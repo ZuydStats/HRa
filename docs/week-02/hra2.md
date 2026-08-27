@@ -1,7 +1,8 @@
 # Week 2 - HRa2 - Reliability, Validity, Sampling & Workshop: Introduction to JAMOVI
 
 <div style="float:right; max-width:180px; margin:0 0 1rem 1.5rem; text-align:center;">
-  <img src="../Sampling__Reliability__and_Validity.png" alt="Sampling, reliability, and validity recap" title="Are you studying? Try a quick recap." style="max-width:100%;">
+  <img src="../Sampling__Reliability__and_Validity.png" alt="Quick recap" title="Quick recap" style="max-width:100%;">
+  <br><small><em>Quick recap</em></small>
 </div>
 
 ## What you will learn

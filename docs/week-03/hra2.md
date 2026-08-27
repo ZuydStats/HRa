@@ -1,7 +1,8 @@
 # Week 3 - HRa2 - Estimation & Hypothesis Testing & Workshop: OCAI
 
 <div style="float:right; max-width:180px; margin:0 0 1rem 1.5rem; text-align:center;">
-  <img src="../Confidence_Intervals%20(1).png" alt="test yourself" title="Are you studying? Try a recap and some questions." style="max-width:100%;">
+  <img src="../Confidence_Intervals%20(1).png" alt="Quick recap" title="Quick recap" style="max-width:100%;">
+  <br><small><em>Quick recap</em></small>
 </div>
 
 ## What you will learn

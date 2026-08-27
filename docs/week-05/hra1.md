@@ -1,7 +1,8 @@
 ﻿# Week 5 - HRa1 - Correlation
 
 <div style="float:right; max-width:180px; margin:0 0 1rem 1.5rem; text-align:center;">
-  <img src="../Pearson_s_Correlation.png" alt="studying?" title="Studying? Try a recap." style="max-width:100%;">
+  <img src="../Pearson_s_Correlation.png" alt="Quick recap" title="Quick recap" style="max-width:100%;">
+  <br><small><em>Quick recap</em></small>
 </div>
 
 ## What you will learn
