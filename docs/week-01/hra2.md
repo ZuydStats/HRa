@@ -2,7 +2,6 @@
 
 <div style="float:right; max-width:180px; margin:0 0 1rem 1.5rem; text-align:center;">
   <img src="../Research_Hypothesis__Null_and_Alternate.png" alt="Research hypothesis recap" title="Studying? Try a recap." style="max-width:100%;">
-  <br><small><em>Studying? Try a recap.</em></small>
 </div>
 
 ## What you will learn
