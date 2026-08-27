@@ -1,7 +1,7 @@
 ﻿# Week 6 - HRa1 -  ANOVA and Effect Sizes
 
 <div style="float:right; max-width:180px; margin:0 0 1rem 1.5rem; text-align:center;">
-  <img src="./anova_qr.png" alt="study anova" style="max-width:100%;">
+  <img src="../anova_qr.png" alt="study anova" title="Studying? Try a lesson review and some practice questions." style="max-width:100%;">
   <br><small><em>Studying? Try a lesson review and some practice questions.</em></small>
 </div>
 

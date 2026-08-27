@@ -1,7 +1,7 @@
 ﻿# Week 3 - HRa1 - Descriptives & graphs
 
 <div style="float:right; max-width:180px; margin:0 0 1rem 1.5rem; text-align:center;">
-  <img src="./Types_of_Graphs_and_Their_Uses%20(1).png" alt="Are you studying? Try a recap!" style="max-width:100%;">
+  <img src="../Types_of_Graphs_and_Their_Uses%20(1).png" alt="Are you studying? Try a recap!" title="Are you studying? Try a quick recap." style="max-width:100%;">
   <br><small><em>Are you studying? Try a quick recap.</em></small>
 </div>
 

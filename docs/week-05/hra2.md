@@ -1,7 +1,7 @@
 # Week 5 - HRa2 - T-test & Workshop: Satisfaction
 
 <div style="float:right; max-width:180px; margin:0 0 1rem 1.5rem; text-align:center;">
-  <img src="./Pearson_s_Correlation.png" alt="Studying?" style="max-width:100%;">
+  <img src="../Pearson_s_Correlation.png" alt="Studying?" title="Studying? Try a recap." style="max-width:100%;">
   <br><small><em>Studying? Try a recap.</em></small>
 </div>
 
