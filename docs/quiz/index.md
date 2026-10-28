@@ -8,10 +8,10 @@ hide:
 
 *Practice exam — bilingual Dutch/English | Formative, no grade*
 
-<link rel="stylesheet" href="../assets/quiz.css?v=5">
+<link rel="stylesheet" href="../assets/quiz.css?v=6">
 
 <div id="quiz-root"></div>
 
 <script src="https://cdn.jsdelivr.net/npm/js-yaml@4.1.0/dist/js-yaml.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
-<script src="../assets/quiz.js?v=5"></script>
+<script src="../assets/quiz.js?v=6"></script>

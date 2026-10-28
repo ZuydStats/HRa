@@ -42,7 +42,7 @@
           <div class="quiz-layout">
             <div id="quiz-main"></div>
             <aside class="quiz-sidebar">
-              <details class="quiz-chart-section" id="quiz-chart-details" ${WIDE.matches ? 'open' : ''}>
+              <details class="quiz-chart-section" id="quiz-chart-details" open>
                 <summary class="quiz-chart-title">
                   <span><em>Your performance by topic</em><br>Jouw prestaties per onderwerp</span>
                 </summary>
