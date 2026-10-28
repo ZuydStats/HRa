@@ -4,7 +4,7 @@
 (function () {
   'use strict';
 
-  const STORAGE_KEY = 'hra_quiz_v2';
+  const STORAGE_KEY = 'hra_quiz_v3';  // bump when question ids change
   const YAML_PATH   = './questions.yaml';
 
   // ── State ────────────────────────────────────────────────────────────────

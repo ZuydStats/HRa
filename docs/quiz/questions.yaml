@@ -3,6 +3,7 @@
 # Format: question_en (English, shown in italics), question_nl (Dutch, regular)
 # Each answer: text_en, text_nl, correct (true/false), feedback_en, feedback_nl
 # topic_link: absolute path on the site for the study material page
+# Questions are shown in id order and grouped by topic (course order).
 
 questions:
 
@@ -50,29 +51,6 @@ questions:
         feedback_nl: "Correct! De nulhypothese (H₀) is de standaardaanname dat er geen effect is. We verwerpen hem alleen als de p-waarde onder het significantieniveau (α) valt."
 
   - id: 3
-    topic_en: "Research Methods"
-    topic_nl: "Onderzoeksmethoden"
-    topic_link: "/HRa/week-01/hra2/"
-    question_en: "What is a secondary analysis?"
-    question_nl: "Wat is een secundaire analyse?"
-    answers:
-      - text_en: "Secondary research"
-        text_nl: "Secundair onderzoek"
-        correct: false
-        feedback_en: "Incorrect. Secondary research is a broader term. A secondary analysis specifically refers to re-analysing existing data for a new research question."
-        feedback_nl: "Onjuist. Secundair onderzoek is een bredere term. Een secundaire analyse verwijst specifiek naar het opnieuw analyseren van bestaande data voor een nieuwe onderzoeksvraag."
-      - text_en: "An analysis with only primary data"
-        text_nl: "Een analyse met alleen primaire data"
-        correct: false
-        feedback_en: "Incorrect. Primary data is data you collect yourself. Secondary analysis uses data collected by someone else."
-        feedback_nl: "Onjuist. Primaire data zijn gegevens die je zelf verzamelt. Secundaire analyse gebruikt data die door iemand anders zijn verzameld."
-      - text_en: "A re-analysis using existing data"
-        text_nl: "Een heranalyse met bestaande data"
-        correct: true
-        feedback_en: "Correct! A secondary analysis re-uses data already collected for a different purpose, often to answer a new research question."
-        feedback_nl: "Correct! Een secundaire analyse hergebruikt data die al voor een ander doel zijn verzameld, vaak om een nieuwe onderzoeksvraag te beantwoorden."
-
-  - id: 4
     topic_en: "Hypotheses"
     topic_nl: "Hypothesen"
     topic_link: "/HRa/week-01/hra2/"
@@ -90,7 +68,7 @@ questions:
         feedback_en: "Incorrect. This is the alternative hypothesis (H₁), not the null hypothesis. H₀ always states the absence of an effect."
         feedback_nl: "Onjuist. Dit is de alternatieve hypothese (H₁), niet de nulhypothese. H₀ stelt altijd de afwezigheid van een effect."
 
-  - id: 5
+  - id: 4
     topic_en: "Hypotheses"
     topic_nl: "Hypothesen"
     topic_link: "/HRa/week-01/hra2/"
@@ -113,9 +91,124 @@ questions:
         feedback_en: "Incorrect. Analysis is a method, not the goal of formulation. The key requirement is that hypotheses must be testable and rejectable."
         feedback_nl: "Onjuist. Analyse is een methode, niet het doel van de formulering. De kerneis is dat hypothesen toetsbaar en verwerpbaar moeten zijn."
 
-  # ── TYPE I & II FOUTEN ────────────────────────────────────────────────────
+  - id: 5
+    topic_en: "Hypotheses"
+    topic_nl: "Hypothesen"
+    topic_link: "/HRa/week-01/hra2/"
+    question_en: "You expect that male HMSM students spend more hours on their side job compared to female HMSM students. How do you formulate the null hypothesis and the alternative hypothesis?"
+    question_nl: "Je verwacht dat mannelijke HMSM-studenten meer uren aan hun bijbaan besteden dan vrouwelijke HMSM-studenten. Hoe formuleer je de nulhypothese en de alternatieve hypothese?"
+    answers:
+      - text_en: "H₀: πmale ≤ πfemale and H₁: πmale > πfemale"
+        text_nl: "H₀: πmale ≤ πfemale en H₁: πmale > πfemale"
+        correct: false
+        feedback_en: "Incorrect. π (pi) is the symbol for a proportion. Hours worked is a continuous variable, so use μ (mean), not π."
+        feedback_nl: "Onjuist. π (pi) is het symbool voor een proportie. Gewerkte uren is een continue variabele, dus gebruik μ (gemiddelde), niet π."
+      - text_en: "H₀: μmale ≤ μfemale and H₁: μmale > μfemale"
+        text_nl: "H₀: μmale ≤ μfemale en H₁: μmale > μfemale"
+        correct: true
+        feedback_en: "Correct! Hours worked is continuous → use μ. The expectation is that males work more (H₁: μmale > μfemale), so H₀ is the opposite: μmale ≤ μfemale."
+        feedback_nl: "Correct! Gewerkte uren is continu → gebruik μ. De verwachting is dat mannen meer werken (H₁: μmale > μfemale), dus H₀ is het tegendeel: μmale ≤ μfemale."
+      - text_en: "H₀: μmale > μfemale and H₁: μmale ≤ μfemale"
+        text_nl: "H₀: μmale > μfemale en H₁: μmale ≤ μfemale"
+        correct: false
+        feedback_en: "Incorrect. H₀ and H₁ are swapped. H₀ always represents 'no effect' or the opposite of your expectation."
+        feedback_nl: "Onjuist. H₀ en H₁ zijn omgedraaid. H₀ vertegenwoordigt altijd 'geen effect' of het tegendeel van je verwachting."
+      - text_en: "H₀: πmale > πfemale and H₁: πmale ≤ πfemale"
+        text_nl: "H₀: πmale > πfemale en H₁: πmale ≤ πfemale"
+        correct: false
+        feedback_en: "Incorrect. π is for proportions (e.g. yes/no questions). Use μ for continuous variables like hours worked. Also H₀ and H₁ are reversed."
+        feedback_nl: "Onjuist. π is voor proporties (bijv. ja/nee-vragen). Gebruik μ voor continue variabelen zoals gewerkte uren. Ook zijn H₀ en H₁ omgedraaid."
 
   - id: 6
+    topic_en: "Hypotheses"
+    topic_nl: "Hypothesen"
+    topic_link: "/HRa/week-01/hra2/"
+    question_en: "You assume that of all HMSM students more males than females smoke. How do you formulate the null hypothesis and alternative hypothesis?"
+    question_nl: "Je neemt aan dat van alle HMSM-studenten meer mannen dan vrouwen roken. Hoe formuleer je de nulhypothese en de alternatieve hypothese?"
+    answers:
+      - text_en: "H₀: πmale > πfemale and H₁: πmale ≤ πfemale"
+        text_nl: "H₀: πmale > πfemale en H₁: πmale ≤ πfemale"
+        correct: false
+        feedback_en: "Incorrect. H₀ and H₁ are swapped. H₀ is the null (no effect / opposite of expectation). Your expectation (more males smoke) becomes H₁."
+        feedback_nl: "Onjuist. H₀ en H₁ zijn omgedraaid. H₀ is de nul (geen effect / tegendeel van verwachting). Je verwachting (meer mannen roken) wordt H₁."
+      - text_en: "H₀: μmale > μfemale and H₁: μmale ≤ μfemale"
+        text_nl: "H₀: μmale > μfemale en H₁: μmale ≤ μfemale"
+        correct: false
+        feedback_en: "Incorrect. Smoking (yes/no) is a proportion, so use π (not μ). Also H₀ and H₁ are reversed."
+        feedback_nl: "Onjuist. Roken (ja/nee) is een proportie, dus gebruik π (niet μ). Ook zijn H₀ en H₁ omgedraaid."
+      - text_en: "H₀: πmale ≤ πfemale and H₁: πmale > πfemale"
+        text_nl: "H₀: πmale ≤ πfemale en H₁: πmale > πfemale"
+        correct: true
+        feedback_en: "Correct! Smoking is categorical (yes/no) → use π (proportion). The expectation (more males smoke) = H₁: πmale > πfemale. H₀ is the opposite."
+        feedback_nl: "Correct! Roken is categorisch (ja/nee) → gebruik π (proportie). De verwachting (meer mannen roken) = H₁: πmale > πfemale. H₀ is het tegendeel."
+      - text_en: "H₀: μmale ≤ μfemale and H₁: μmale > μfemale"
+        text_nl: "H₀: μmale ≤ μfemale en H₁: μmale > μfemale"
+        correct: false
+        feedback_en: "Incorrect. Use π for proportions (binary variables like yes/no smoking), not μ which is for continuous variables."
+        feedback_nl: "Onjuist. Gebruik π voor proporties (binaire variabelen zoals ja/nee roken), niet μ dat voor continue variabelen is."
+
+  # bron: Research Skills oefenvragen, slide 24
+  - id: 7
+    topic_en: "Hypotheses"
+    topic_nl: "Hypothesen"
+    topic_link: "/HRa/week-01/hra2/"
+    question_en: "A hotel chain expects guests who receive a welcome drink (μ1) to give a higher satisfaction score than guests who do not (μ2). Which hypotheses fit this expectation?"
+    question_nl: "Een hotelketen verwacht dat gasten die een welkomstdrankje krijgen (μ1) een hogere tevredenheidsscore geven dan gasten die dat niet krijgen (μ2). Welke hypothesen passen bij deze verwachting?"
+    answers:
+      - text_en: "H0: μ1 = μ2 · H1: μ1 ≠ μ2"
+        text_nl: "H0: μ1 = μ2 · H1: μ1 ≠ μ2"
+        correct: false
+        feedback_en: "Incorrect. This is a two-sided pair of hypotheses. The expectation has a direction ('higher'), so H1 should be one-sided."
+        feedback_nl: "Onjuist. Dit is een tweezijdig paar hypothesen. De verwachting heeft een richting ('hoger'), dus H1 moet eenzijdig zijn."
+      - text_en: "H0: μ1 ≤ μ2 · H1: μ1 > μ2"
+        text_nl: "H0: μ1 ≤ μ2 · H1: μ1 > μ2"
+        correct: true
+        feedback_en: "Correct! The expectation (μ1 is larger) goes into H1; H0 contains the equals sign and the other direction. The question is about mean scores, so μ is used."
+        feedback_nl: "Correct! De verwachting (μ1 is groter) staat in H1; H0 bevat het gelijkteken en de andere richting. Het gaat om gemiddelde scores, dus gebruik je μ."
+      - text_en: "H0: μ1 > μ2 · H1: μ1 ≤ μ2"
+        text_nl: "H0: μ1 > μ2 · H1: μ1 ≤ μ2"
+        correct: false
+        feedback_en: "Incorrect. H0 and H1 are swapped: the expectation belongs in H1, and the equals sign always belongs in H0."
+        feedback_nl: "Onjuist. H0 en H1 zijn omgedraaid: de verwachting hoort in H1, en het gelijkteken hoort altijd in H0."
+      - text_en: "H0: π1 ≤ π2 · H1: π1 > π2"
+        text_nl: "H0: π1 ≤ π2 · H1: π1 > π2"
+        correct: false
+        feedback_en: "Incorrect. The direction is right, but π is used for proportions. Satisfaction scores are compared as means, so μ is the correct symbol."
+        feedback_nl: "Onjuist. De richting klopt, maar π gebruik je voor proporties. Tevredenheidsscores vergelijk je als gemiddelden, dus μ is het juiste symbool."
+
+  # ── ONDERZOEKSMETHODEN ────────────────────────────────────────────────────
+
+  - id: 8
+    topic_en: "Research Methods"
+    topic_nl: "Onderzoeksmethoden"
+    topic_link: "/HRa/week-01/hra2/"
+    question_en: "What does operationalization mean?"
+    question_nl: "Wat betekent operationalisering?"
+    answers:
+      - text_en: "Using multiple methods to increase reliability"
+        text_nl: "Meerdere methoden gebruiken om de betrouwbaarheid te verhogen"
+        correct: false
+        feedback_en: "Incorrect. Using multiple methods is called triangulation. Operationalization is about making abstract concepts measurable."
+        feedback_nl: "Onjuist. Het gebruik van meerdere methoden heet triangulatie. Operationalisering gaat over het meetbaar maken van abstracte concepten."
+      - text_en: "Generalizing findings from the sample to the population"
+        text_nl: "Bevindingen vanuit de steekproef generaliseren naar de populatie"
+        correct: false
+        feedback_en: "Incorrect. Generalizing findings is called external validity or generalizability. Operationalization is defining how you will measure a concept."
+        feedback_nl: "Onjuist. Het generaliseren van bevindingen heet externe validiteit of generaliseerbaarheid. Operationalisering is het definiëren van hoe je een concept gaat meten."
+      - text_en: "Developing standard instruments"
+        text_nl: "Standaardinstrumenten ontwikkelen"
+        correct: false
+        feedback_en: "Incorrect. While developing instruments is part of the process, operationalization specifically means translating abstract concepts into measurable variables."
+        feedback_nl: "Onjuist. Hoewel het ontwikkelen van instrumenten deel uitmaakt van het proces, betekent operationalisering specifiek het vertalen van abstracte concepten naar meetbare variabelen."
+      - text_en: "Developing concepts into measurable instruments"
+        text_nl: "Concepten omzetten in meetbare instrumenten"
+        correct: true
+        feedback_en: "Correct! Operationalization is the process of defining how an abstract concept (e.g. 'job satisfaction') will be measured in practice."
+        feedback_nl: "Correct! Operationalisering is het proces waarbij een abstract concept (bijv. 'werktevredenheid') wordt omgezet in een meetbare variabele."
+
+  # ── TYPE I & II FOUTEN ────────────────────────────────────────────────────
+
+  - id: 9
     topic_en: "Type I & II Errors"
     topic_nl: "Type I & II Fouten"
     topic_link: "/HRa/week-02/hra1/"
@@ -138,7 +231,7 @@ questions:
         feedback_en: "Correct! Statistical significance means the observed result is unlikely to have occurred by chance (p < α). Note: significant does not always mean practically important."
         feedback_nl: "Correct! Statistische significantie betekent dat het gevonden resultaat waarschijnlijk niet op toeval berust (p < α). Let op: significant betekent niet altijd praktisch belangrijk."
 
-  - id: 7
+  - id: 10
     topic_en: "Type I & II Errors"
     topic_nl: "Type I & II Fouten"
     topic_link: "/HRa/week-02/hra1/"
@@ -161,12 +254,13 @@ questions:
         feedback_en: "Correct! A Type I error (α) occurs when we reject H₀ even though it is true — a false positive. The probability equals the significance level α."
         feedback_nl: "Correct! Een type I-fout (α) treedt op als we H₀ verwerpen terwijl hij waar is — een vals positief. De kans hierop is gelijk aan het significantieniveau α."
 
-  - id: 8
+  - id: 11
     topic_en: "Type I & II Errors"
     topic_nl: "Type I & II Fouten"
     topic_link: "/HRa/week-02/hra1/"
-    question_en: "Which mistake is made in A – B?"
-    question_nl: "Welke fout wordt gemaakt in A – B?"
+    image: "images/q_type_errors_ab.png"
+    question_en: "See the figure above. Which error is made in situation A and in situation B?"
+    question_nl: "Zie de figuur hierboven. Welke fout wordt gemaakt in situatie A en in situatie B?"
     answers:
       - text_en: "A: type II error – B: type I error"
         text_nl: "A: type II-fout – B: type I-fout"
@@ -189,7 +283,7 @@ questions:
         feedback_en: "Incorrect. A is Type II, but B is Type I. They are different errors with different probabilities (β and α respectively)."
         feedback_nl: "Onjuist. A is type II, maar B is type I. Het zijn verschillende fouten met verschillende kansen (respectievelijk β en α)."
 
-  - id: 9
+  - id: 12
     topic_en: "Type I & II Errors"
     topic_nl: "Type I & II Fouten"
     topic_link: "/HRa/week-02/hra1/"
@@ -212,9 +306,67 @@ questions:
         feedback_en: "This statement is TRUE — when H₀ is not rejected, H₁ (the alternative) is implicitly rejected. This is therefore not the false statement."
         feedback_nl: "Deze uitspraak is WAAR — als H₀ niet verworpen wordt, wordt H₁ (de alternatieve) impliciet verworpen. Dit is dus niet de onjuiste uitspraak."
 
-  # ── BETROUWBAARHEID & VALIDITEIT ─────────────────────────────────────────
+  # bron: Research Skills oefenvragen, slide 26
+  - id: 13
+    topic_en: "Type I & II Errors"
+    topic_nl: "Type I & II Fouten"
+    topic_link: "/HRa/week-02/hra1/"
+    question_en: "A hotel tests whether a new booking website increases the number of bookings (H0: no increase). It concludes that bookings increase, but in reality they do not. Which error is made?"
+    question_nl: "Een hotel toetst of een nieuwe boekingswebsite het aantal boekingen verhoogt (H0: geen stijging). Het hotel concludeert dat de boekingen stijgen, maar in werkelijkheid is dat niet zo. Welke fout wordt gemaakt?"
+    answers:
+      - text_en: "A type II error"
+        text_nl: "Een type II-fout"
+        correct: false
+        feedback_en: "Incorrect. A type II error means not rejecting a false H0 (missing a real effect). Here H0 is true and is wrongly rejected."
+        feedback_nl: "Onjuist. Een type II-fout is een onware H0 niet verwerpen (een echt effect missen). Hier is H0 waar en wordt hij onterecht verworpen."
+      - text_en: "No error"
+        text_nl: "Geen fout"
+        correct: false
+        feedback_en: "Incorrect. The hotel concludes there is an increase while there is none: that is a wrong conclusion, so an error is made."
+        feedback_nl: "Onjuist. Het hotel concludeert dat er een stijging is terwijl die er niet is: dat is een verkeerde conclusie, dus er wordt wel een fout gemaakt."
+      - text_en: "A type I error"
+        text_nl: "Een type I-fout"
+        correct: true
+        feedback_en: "Correct! H0 (no increase) is actually true, but the hotel rejects it. A type I error is wrongly rejecting a true H0: a 'false alarm'. Its probability is α."
+        feedback_nl: "Correct! H0 (geen stijging) is in werkelijkheid waar, maar het hotel verwerpt H0. Een type I-fout is het onterecht verwerpen van een ware H0: een 'vals alarm'. De kans hierop is α."
+      - text_en: "A measurement error"
+        text_nl: "Een meetfout"
+        correct: false
+        feedback_en: "Incorrect. The bookings may have been counted correctly; the error is in the statistical conclusion, not in the measurement."
+        feedback_nl: "Onjuist. De boekingen kunnen best correct geteld zijn; de fout zit in de statistische conclusie, niet in de meting."
 
-  - id: 10
+  # bron: Research Skills oefenvragen, slide 27
+  - id: 14
+    topic_en: "Type I & II Errors"
+    topic_nl: "Type I & II Fouten"
+    topic_link: "/HRa/week-02/hra1/"
+    question_en: "In court, H0 is 'the defendant is innocent'. A judge acquits a defendant who is actually guilty. Which error is this?"
+    question_nl: "In de rechtszaal is H0 'de verdachte is onschuldig'. Een rechter spreekt een verdachte vrij die in werkelijkheid schuldig is. Welke fout is dit?"
+    answers:
+      - text_en: "A type I error"
+        text_nl: "Een type I-fout"
+        correct: false
+        feedback_en: "Incorrect. A type I error would be convicting an innocent defendant (rejecting a true H0). Here H0 is false and is not rejected."
+        feedback_nl: "Onjuist. Een type I-fout zou zijn: een onschuldige veroordelen (een ware H0 verwerpen). Hier is H0 onwaar en wordt hij niet verworpen."
+      - text_en: "A type II error"
+        text_nl: "Een type II-fout"
+        correct: true
+        feedback_en: "Correct! H0 (innocent) is actually false, but the judge does not reject it. A type II error is failing to reject a false H0: you miss an effect that really exists."
+        feedback_nl: "Correct! H0 (onschuldig) is in werkelijkheid onwaar, maar de rechter verwerpt H0 niet. Een type II-fout is het niet verwerpen van een onware H0: je mist een effect dat er wel is."
+      - text_en: "No error, the judge followed the rules"
+        text_nl: "Geen fout, de rechter volgde de regels"
+        correct: false
+        feedback_en: "Incorrect. Following the rules does not prevent a wrong conclusion: a guilty person walks free, so an error is made."
+        feedback_nl: "Onjuist. De regels volgen voorkomt geen verkeerde conclusie: een schuldige gaat vrijuit, dus er wordt wel een fout gemaakt."
+      - text_en: "Both a type I and a type II error"
+        text_nl: "Zowel een type I- als een type II-fout"
+        correct: false
+        feedback_en: "Incorrect. One decision can only lead to one type of error: either H0 is wrongly rejected (type I) or wrongly not rejected (type II)."
+        feedback_nl: "Onjuist. Eén beslissing kan maar tot één soort fout leiden: H0 wordt óf onterecht verworpen (type I) óf onterecht niet verworpen (type II)."
+
+  # ── BETROUWBAARHEID & VALIDITEIT ──────────────────────────────────────────
+
+  - id: 15
     topic_en: "Reliability & Validity"
     topic_nl: "Betrouwbaarheid & Validiteit"
     topic_link: "/HRa/week-02/hra2/"
@@ -243,7 +395,7 @@ questions:
         feedback_en: "Incorrect. Low reliability would show scattered dots. These are tightly clustered, so reliability is high."
         feedback_nl: "Onjuist. Lage betrouwbaarheid zou verspreid liggende stippen geven. Deze zijn dicht geclusterd, dus de betrouwbaarheid is hoog."
 
-  - id: 11
+  - id: 16
     topic_en: "Reliability & Validity"
     topic_nl: "Betrouwbaarheid & Validiteit"
     topic_link: "/HRa/week-02/hra2/"
@@ -266,35 +418,7 @@ questions:
         feedback_en: "Incorrect. Significance is a statistical concept about whether results are due to chance. It is not a property of a questionnaire's consistency."
         feedback_nl: "Onjuist. Significantie is een statistisch concept over of resultaten op toeval berusten. Het is geen eigenschap van de consistentie van een vragenlijst."
 
-  - id: 12
-    topic_en: "Sampling"
-    topic_nl: "Steekproef"
-    topic_link: "/HRa/week-02/hra2/"
-    question_en: "What is the most reliable type of sample?"
-    question_nl: "Wat is het meest betrouwbare type steekproef?"
-    answers:
-      - text_en: "Stratified sample"
-        text_nl: "Gestratificeerde steekproef"
-        correct: false
-        feedback_en: "Incorrect. Stratified sampling ensures representation of subgroups, but a simple random sample is considered the gold standard for reliability."
-        feedback_nl: "Onjuist. Gestratificeerde steekproef zorgt voor representatie van subgroepen, maar een aselecte steekproef geldt als de gouden standaard voor betrouwbaarheid."
-      - text_en: "Cluster sample"
-        text_nl: "Clustersteekproef"
-        correct: false
-        feedback_en: "Incorrect. Cluster sampling is practical but less reliable because entire groups (clusters) are selected, introducing group-level bias."
-        feedback_nl: "Onjuist. Clustersteekproef is praktisch maar minder betrouwbaar, omdat hele groepen (clusters) worden geselecteerd, wat groepsniveaubias introduceert."
-      - text_en: "Random sample"
-        text_nl: "Aselecte steekproef"
-        correct: true
-        feedback_en: "Correct! A random (probability) sample gives every member of the population an equal chance of selection, minimising systematic bias."
-        feedback_nl: "Correct! Een aselecte (kansgebaseerde) steekproef geeft elk lid van de populatie een gelijke kans om geselecteerd te worden, waardoor systematische bias wordt geminimaliseerd."
-      - text_en: "Convenience sample"
-        text_nl: "Gelegenheidssteekproef"
-        correct: false
-        feedback_en: "Incorrect. A convenience sample uses whoever is easily available, making it highly susceptible to selection bias and the least reliable type."
-        feedback_nl: "Onjuist. Een gelegenheidssteekproef gebruikt wie er gemakkelijk beschikbaar is, waardoor het erg gevoelig is voor selectiebias en het minst betrouwbare type is."
-
-  - id: 13
+  - id: 17
     topic_en: "Reliability & Validity"
     topic_nl: "Betrouwbaarheid & Validiteit"
     topic_link: "/HRa/week-02/hra2/"
@@ -322,7 +446,7 @@ questions:
         feedback_en: "Incorrect. Concurrent validity compares your instrument's scores against another established instrument at the same point in time."
         feedback_nl: "Onjuist. Gelijktijdige validiteit vergelijkt de scores van jouw instrument met een ander gevestigd instrument op hetzelfde moment."
 
-  - id: 14
+  - id: 18
     topic_en: "Reliability & Validity"
     topic_nl: "Betrouwbaarheid & Validiteit"
     topic_link: "/HRa/week-02/hra2/"
@@ -345,12 +469,216 @@ questions:
         feedback_en: "Incorrect. Sample size affects statistical power and precision, but reliability refers to consistency of results regardless of sample size."
         feedback_nl: "Onjuist. Steekproefgrootte beïnvloedt statistische kracht en precisie, maar betrouwbaarheid verwijst naar consistentie van resultaten ongeacht steekproefgrootte."
 
+  # bron: Research Skills oefenvragen, slide 21
+  - id: 19
+    topic_en: "Reliability & Validity"
+    topic_nl: "Betrouwbaarheid & Validiteit"
+    topic_link: "/HRa/week-02/hra2/"
+    question_en: "The same employees complete a questionnaire on work stress twice, two weeks apart, and get almost the same scores. What does this indicate?"
+    question_nl: "Dezelfde medewerkers vullen een vragenlijst over werkstress twee keer in, met twee weken ertussen, en scoren bijna hetzelfde. Waar wijst dit op?"
+    answers:
+      - text_en: "High validity"
+        text_nl: "Een hoge validiteit"
+        correct: false
+        feedback_en: "Incorrect. Stable scores do not tell you whether the questionnaire really measures work stress. That is validity, and it is not tested here."
+        feedback_nl: "Onjuist. Stabiele scores zeggen niet of de vragenlijst echt werkstress meet. Dat is validiteit, en die wordt hier niet getoetst."
+      - text_en: "High reliability"
+        text_nl: "Een hoge betrouwbaarheid"
+        correct: true
+        feedback_en: "Correct! This is test-retest reliability: a reliable instrument gives the same outcome when repeated under the same conditions. Whether it really measures work stress (validity) is still unknown."
+        feedback_nl: "Correct! Dit is test-hertestbetrouwbaarheid: een betrouwbaar instrument geeft bij herhaling onder dezelfde omstandigheden dezelfde uitkomst. Of de vragenlijst echt werkstress meet (validiteit), weet je hiermee nog niet."
+      - text_en: "High generalisability"
+        text_nl: "Een hoge generaliseerbaarheid"
+        correct: false
+        feedback_en: "Incorrect. Generalisability is about whether results apply to other people or situations, not about repeating a measurement with the same people."
+        feedback_nl: "Onjuist. Generaliseerbaarheid gaat over de vraag of resultaten gelden voor andere mensen of situaties, niet over het herhalen van een meting bij dezelfde mensen."
+      - text_en: "High representativeness"
+        text_nl: "Een hoge representativiteit"
+        correct: false
+        feedback_en: "Incorrect. Representativeness is about whether the sample resembles the population, not about consistent scores over time."
+        feedback_nl: "Onjuist. Representativiteit gaat over de vraag of de steekproef lijkt op de populatie, niet over consistente scores in de tijd."
+
+  # bron: Research Skills oefenvragen, slide 22
+  - id: 20
+    topic_en: "Reliability & Validity"
+    topic_nl: "Betrouwbaarheid & Validiteit"
+    topic_link: "/HRa/week-02/hra2/"
+    question_en: "A kitchen scale always shows exactly 200 grams too much. Measurements with this scale are…"
+    question_nl: "Een keukenweegschaal geeft altijd precies 200 gram te veel aan. Metingen met deze weegschaal zijn…"
+    answers:
+      - text_en: "valid but not reliable"
+        text_nl: "valide maar niet betrouwbaar"
+        correct: false
+        feedback_en: "Incorrect. It is the other way around: the scale is consistent (reliable) but always wrong (not valid)."
+        feedback_nl: "Onjuist. Het is precies andersom: de weegschaal is consistent (betrouwbaar) maar zit er altijd naast (niet valide)."
+      - text_en: "neither reliable nor valid"
+        text_nl: "niet betrouwbaar en niet valide"
+        correct: false
+        feedback_en: "Incorrect. The error is always exactly the same (200 g), so the measurements are consistent and therefore reliable."
+        feedback_nl: "Onjuist. De fout is steeds precies even groot (200 g), dus de metingen zijn consistent en daarmee betrouwbaar."
+      - text_en: "reliable but not valid"
+        text_nl: "betrouwbaar maar niet valide"
+        correct: true
+        feedback_en: "Correct! The scale gives the same (wrong) outcome every time: consistent, so reliable. But it does not measure the true weight: a systematic error, so not valid."
+        feedback_nl: "Correct! De weegschaal geeft bij herhaling steeds dezelfde (verkeerde) uitkomst: consistent, dus betrouwbaar. Maar ze meet niet het echte gewicht: een systematische fout, dus niet valide."
+      - text_en: "reliable and valid"
+        text_nl: "betrouwbaar en valide"
+        correct: false
+        feedback_en: "Incorrect. The scale is reliable, but because it is always 200 g off it does not measure the true weight, so it is not valid."
+        feedback_nl: "Onjuist. De weegschaal is wel betrouwbaar, maar omdat ze altijd 200 g te veel aangeeft meet ze niet het echte gewicht, dus ze is niet valide."
+
+  # bron: Research Skills oefenvragen, slide 23
+  - id: 21
+    topic_en: "Reliability & Validity"
+    topic_nl: "Betrouwbaarheid & Validiteit"
+    topic_link: "/HRa/week-02/hra2/"
+    question_en: "A research skills exam only contains questions about descriptive statistics, while the course also covers sampling and hypothesis testing. Which type of validity is low?"
+    question_nl: "Een tentamen onderzoeksvaardigheden bevat alleen vragen over beschrijvende statistiek, terwijl de cursus ook steekproeven en hypothesetoetsing behandelt. Welke vorm van validiteit is laag?"
+    answers:
+      - text_en: "Content validity"
+        text_nl: "Inhoudsvaliditeit"
+        correct: true
+        feedback_en: "Correct! Content validity is about whether an instrument covers the whole domain it should measure. An exam with only descriptive statistics covers just part of the course content."
+        feedback_nl: "Correct! Inhoudsvaliditeit gaat over de vraag of een meetinstrument het hele domein dekt dat het moet meten. Een tentamen met alleen beschrijvende statistiek dekt maar een deel van de leerstof."
+      - text_en: "Criterion validity"
+        text_nl: "Criteriumvaliditeit"
+        correct: false
+        feedback_en: "Incorrect. Criterion validity compares scores with an external criterion (e.g. later performance). The problem here is missing content."
+        feedback_nl: "Onjuist. Criteriumvaliditeit vergelijkt scores met een extern criterium (bijv. latere prestaties). Het probleem hier is ontbrekende inhoud."
+      - text_en: "External validity"
+        text_nl: "Externe validiteit"
+        correct: false
+        feedback_en: "Incorrect. External validity is about generalising results to other people or settings, not about which topics an exam covers."
+        feedback_nl: "Onjuist. Externe validiteit gaat over het generaliseren van resultaten naar andere mensen of situaties, niet over welke onderwerpen een tentamen dekt."
+      - text_en: "Internal validity"
+        text_nl: "Interne validiteit"
+        correct: false
+        feedback_en: "Incorrect. Internal validity is about whether a study can draw causal conclusions (no confounding). That is not the issue here."
+        feedback_nl: "Onjuist. Interne validiteit gaat over de vraag of een onderzoek causale conclusies kan trekken (geen verstorende variabelen). Daar gaat het hier niet om."
+
+  # ── STEEKPROEF ────────────────────────────────────────────────────────────
+
+  - id: 22
+    topic_en: "Sampling"
+    topic_nl: "Steekproef"
+    topic_link: "/HRa/week-02/hra2/"
+    question_en: "What is the most reliable type of sample?"
+    question_nl: "Wat is het meest betrouwbare type steekproef?"
+    answers:
+      - text_en: "Stratified sample"
+        text_nl: "Gestratificeerde steekproef"
+        correct: false
+        feedback_en: "Incorrect. Stratified sampling ensures representation of subgroups, but a simple random sample is considered the gold standard for reliability."
+        feedback_nl: "Onjuist. Gestratificeerde steekproef zorgt voor representatie van subgroepen, maar een aselecte steekproef geldt als de gouden standaard voor betrouwbaarheid."
+      - text_en: "Cluster sample"
+        text_nl: "Clustersteekproef"
+        correct: false
+        feedback_en: "Incorrect. Cluster sampling is practical but less reliable because entire groups (clusters) are selected, introducing group-level bias."
+        feedback_nl: "Onjuist. Clustersteekproef is praktisch maar minder betrouwbaar, omdat hele groepen (clusters) worden geselecteerd, wat groepsniveaubias introduceert."
+      - text_en: "Random sample"
+        text_nl: "Aselecte steekproef"
+        correct: true
+        feedback_en: "Correct! A random (probability) sample gives every member of the population an equal chance of selection, minimising systematic bias."
+        feedback_nl: "Correct! Een aselecte (kansgebaseerde) steekproef geeft elk lid van de populatie een gelijke kans om geselecteerd te worden, waardoor systematische bias wordt geminimaliseerd."
+      - text_en: "Convenience sample"
+        text_nl: "Gelegenheidssteekproef"
+        correct: false
+        feedback_en: "Incorrect. A convenience sample uses whoever is easily available, making it highly susceptible to selection bias and the least reliable type."
+        feedback_nl: "Onjuist. Een gelegenheidssteekproef gebruikt wie er gemakkelijk beschikbaar is, waardoor het erg gevoelig is voor selectiebias en het minst betrouwbare type is."
+
+  # bron: Research Skills oefenvragen, slide 18
+  - id: 23
+    topic_en: "Sampling"
+    topic_nl: "Steekproef"
+    topic_link: "/HRa/week-02/hra2/"
+    question_en: "To measure guest satisfaction, a researcher asks every guest who is in the hotel bar on Friday evening to fill in a questionnaire. What kind of sample is this?"
+    question_nl: "Om de gasttevredenheid te meten, vraagt een onderzoeker alle gasten die vrijdagavond in de hotelbar zitten een vragenlijst in te vullen. Wat voor steekproef is dit?"
+    answers:
+      - text_en: "A simple random sample"
+        text_nl: "Een enkelvoudige aselecte steekproef"
+        correct: false
+        feedback_en: "Incorrect. In a simple random sample every guest has the same chance of being selected. Guests who never visit the bar have no chance at all here."
+        feedback_nl: "Onjuist. Bij een enkelvoudige aselecte steekproef heeft elke gast dezelfde kans om gekozen te worden. Gasten die nooit in de bar komen, maken hier geen enkele kans."
+      - text_en: "A stratified sample"
+        text_nl: "Een gestratificeerde steekproef"
+        correct: false
+        feedback_en: "Incorrect. A stratified sample divides the population into groups and draws at random within each group. Nothing like that happens here."
+        feedback_nl: "Onjuist. Bij een gestratificeerde steekproef verdeel je de populatie in groepen en trek je binnen elke groep aselect. Dat gebeurt hier niet."
+      - text_en: "A convenience sample"
+        text_nl: "Een gemakssteekproef"
+        correct: true
+        feedback_en: "Correct! The researcher takes whoever happens to be easy to reach. Not every guest has an equal chance: guests who never visit the bar fall outside the study, so the sample is not representative."
+        feedback_nl: "Correct! De onderzoeker neemt wie toevallig makkelijk bereikbaar is. Niet elke gast heeft een gelijke kans: gasten die nooit in de bar komen, vallen buiten het onderzoek, dus de steekproef is niet representatief."
+      - text_en: "A systematic sample"
+        text_nl: "Een systematische steekproef"
+        correct: false
+        feedback_en: "Incorrect. A systematic sample selects every k-th person from a list (e.g. every 10th guest). Here everyone present is asked."
+        feedback_nl: "Onjuist. Bij een systematische steekproef kies je elke k-de persoon van een lijst (bijv. elke 10e gast). Hier wordt iedereen gevraagd die er toevallig zit."
+
+  # bron: Research Skills oefenvragen, slide 19
+  - id: 24
+    topic_en: "Sampling"
+    topic_nl: "Steekproef"
+    topic_link: "/HRa/week-02/hra2/"
+    question_en: "Every member of a fitness chain (2,000 members) gets a number, and a computer randomly draws 200 numbers. What kind of sample is this?"
+    question_nl: "Alle leden van een fitnessketen (2.000 leden) krijgen een nummer en een computer trekt willekeurig 200 nummers. Wat voor steekproef is dit?"
+    answers:
+      - text_en: "A simple random sample"
+        text_nl: "Een enkelvoudige aselecte steekproef"
+        correct: true
+        feedback_en: "Correct! There is a complete list of the population (all 2,000 members) and every member has the same chance of being drawn."
+        feedback_nl: "Correct! Er is een volledige lijst van de populatie (alle 2.000 leden) en elk lid heeft dezelfde kans om getrokken te worden."
+      - text_en: "A quota sample"
+        text_nl: "Een quotasteekproef"
+        correct: false
+        feedback_en: "Incorrect. A quota sample fixes numbers per group and then selects non-randomly. Here nothing is fixed per group and the draw is random."
+        feedback_nl: "Onjuist. Bij een quotasteekproef leg je aantallen per groep vast en kies je daarbinnen niet-willekeurig. Hier ligt niets per groep vast en wordt aselect getrokken."
+      - text_en: "A snowball sample"
+        text_nl: "Een sneeuwbalsteekproef"
+        correct: false
+        feedback_en: "Incorrect. In a snowball sample respondents recruit other respondents. Here the computer draws everyone."
+        feedback_nl: "Onjuist. Bij een sneeuwbalsteekproef werven respondenten andere respondenten. Hier trekt de computer iedereen."
+      - text_en: "A convenience sample"
+        text_nl: "Een gemakssteekproef"
+        correct: false
+        feedback_en: "Incorrect. A convenience sample takes whoever is easy to reach. Here the selection is random from a complete list."
+        feedback_nl: "Onjuist. Een gemakssteekproef neemt wie makkelijk bereikbaar is. Hier wordt aselect getrokken uit een volledige lijst."
+
+  # bron: Research Skills oefenvragen, slide 20
+  - id: 25
+    topic_en: "Sampling"
+    topic_nl: "Steekproef"
+    topic_link: "/HRa/week-02/hra2/"
+    question_en: "A university wants the share of students per faculty in the sample to match the population. Within each faculty, students are drawn at random. What kind of sample is this?"
+    question_nl: "Een hogeschool wil dat het aandeel studenten per faculteit in de steekproef gelijk is aan dat in de populatie. Binnen elke faculteit worden studenten willekeurig getrokken. Wat voor steekproef is dit?"
+    answers:
+      - text_en: "A cluster sample"
+        text_nl: "Een clustersteekproef"
+        correct: false
+        feedback_en: "Incorrect. In a cluster sample you draw entire groups (e.g. a few complete faculties). Here students are drawn from every faculty."
+        feedback_nl: "Onjuist. Bij een clustersteekproef trek je hele groepen (bijv. een paar complete faculteiten). Hier worden uit elke faculteit studenten getrokken."
+      - text_en: "A quota sample"
+        text_nl: "Een quotasteekproef"
+        correct: false
+        feedback_en: "Incorrect. A quota sample also fixes the numbers per group, but selects non-randomly within each group. Here the draw within each faculty is random."
+        feedback_nl: "Onjuist. Bij een quotasteekproef liggen de aantallen per groep ook vast, maar wordt binnen de groep níét willekeurig gekozen. Hier wordt binnen elke faculteit aselect getrokken."
+      - text_en: "A snowball sample"
+        text_nl: "Een sneeuwbalsteekproef"
+        correct: false
+        feedback_en: "Incorrect. In a snowball sample respondents recruit other respondents. That does not happen here."
+        feedback_nl: "Onjuist. Bij een sneeuwbalsteekproef werven respondenten andere respondenten. Dat gebeurt hier niet."
+      - text_en: "A stratified sample"
+        text_nl: "Een gestratificeerde steekproef"
+        correct: true
+        feedback_en: "Correct! The population is divided into groups (strata: faculties) and within each stratum students are drawn at random, in proportion to the population."
+        feedback_nl: "Correct! De populatie wordt verdeeld in groepen (strata: faculteiten) en binnen elk stratum wordt aselect getrokken, in verhouding tot de populatie."
+
   # ── MEETNIVEAUS ───────────────────────────────────────────────────────────
 
-  - id: 15
+  - id: 26
     topic_en: "Measurement Levels"
     topic_nl: "Meetniveaus"
-    topic_link: "/HRa/week-03/hra2/"
+    topic_link: "/HRa/week-03/hra1/"
     question_en: "Which statement about the measurement level and graphs of variables A and B is false?"
     question_nl: "Welke uitspraak over het meetniveau en grafieken van variabelen A en B is onjuist?"
     answers:
@@ -370,10 +698,10 @@ questions:
         feedback_en: "This statement is TRUE — a bar chart is appropriate when comparing interval means across ordinal categories. This is not the false statement."
         feedback_nl: "Deze uitspraak is WAAR — een staafdiagram is geschikt voor het vergelijken van intervalmiddelen over ordinale categorieën. Dit is niet de onjuiste uitspraak."
 
-  - id: 16
+  - id: 27
     topic_en: "Measurement Levels"
     topic_nl: "Meetniveaus"
-    topic_link: "/HRa/week-03/hra2/"
+    topic_link: "/HRa/week-03/hra1/"
     question_en: "In a survey among students of Zuyd the following variables were used: (1) age, (2) faculty, (3) Pride (answer to the statement \"I am proud to be a student of Zuyd University\" with possible answers: \"1 totally disagree\" through \"5 totally agree\")."
     question_nl: "In een enquête onder studenten van Zuyd werden de volgende variabelen gebruikt: (1) leeftijd, (2) faculteit, (3) Trots (antwoord op de stelling 'Ik ben trots student te zijn aan Zuyd Hogeschool', met antwoorden: '1 totaal oneens' t/m '5 totaal eens')."
     answers:
@@ -398,10 +726,10 @@ questions:
         feedback_en: "Correct! Age = interval-ratio (numeric, ordered, equal intervals). Faculty = nominal (categories, no order). Pride 1–5 = ordinal (ordered but unequal intervals)."
         feedback_nl: "Correct! Leeftijd = interval-ratio (numeriek, geordend, gelijke intervallen). Faculteit = nominaal (categorieën zonder volgorde). Trots 1–5 = ordinaal (geordend maar ongelijke intervallen)."
 
-  - id: 17
+  - id: 28
     topic_en: "Measurement Levels"
     topic_nl: "Meetniveaus"
-    topic_link: "/HRa/week-03/hra2/"
+    topic_link: "/HRa/week-03/hra1/"
     question_en: "You have asked people to indicate how interested they are in wine-food combinations in your survey on gastronomy on a scale of 1 to 5. People can indicate a score of 1, 2, 3, 4 or 5, where 1 is not interested and 5 is very interested. What is the level of measurement of this variable?"
     question_nl: "Je hebt mensen gevraagd aan te geven hoe geïnteresseerd ze zijn in wijn-spijscombinaties op een schaal van 1 tot 5, waarbij 1 = niet geïnteresseerd en 5 = zeer geïnteresseerd. Wat is het meetniveau van deze variabele?"
     answers:
@@ -421,10 +749,10 @@ questions:
         feedback_en: "Correct! A 1–5 Likert scale is ordinal — values are ordered, but the distance between 1 and 2 is not necessarily the same as between 4 and 5."
         feedback_nl: "Correct! Een 1–5 Likertschaal is ordinaal — de waarden zijn geordend, maar de afstand tussen 1 en 2 is niet noodzakelijk gelijk aan die tussen 4 en 5."
 
-  - id: 18
+  - id: 29
     topic_en: "Measurement Levels"
     topic_nl: "Meetniveaus"
-    topic_link: "/HRa/week-03/hra2/"
+    topic_link: "/HRa/week-03/hra1/"
     question_en: "What is the measurement level of each of the following types of data:"
     question_nl: "Wat is het meetniveau van elk van de volgende soorten data:"
     answers:
@@ -444,433 +772,182 @@ questions:
         feedback_en: "Incorrect. The classification does not match. Apply the decision tree: no order = nominal, order without equal intervals = ordinal, equal intervals = interval-ratio."
         feedback_nl: "Onjuist. De classificatie klopt niet. Pas de beslisboom toe: geen volgorde = nominaal, volgorde zonder gelijke intervallen = ordinaal, gelijke intervallen = interval-ratio."
 
-  # ── CHI-KWADRAATTOETS ─────────────────────────────────────────────────────
-
-  - id: 19
-    topic_en: "Chi-square Test"
-    topic_nl: "Chi-kwadraattoets"
-    topic_link: "/HRa/week-04/hra2/"
-    image: "images/q026_region_happiness.png"
-    question_en: "The figure above shows a cross-tabulation of the observed numbers between 'General happiness' and 'region of the United States'."
-    question_nl: "De figuur hierboven toont een kruistabel van de waargenomen aantallen tussen 'Algemeen geluk' en 'regio van de Verenigde Staten'."
-    answers:
-      - text_en: "467,0"
-        text_nl: "467,0"
-        correct: false
-        feedback_en: "Incorrect. Check the formula for expected frequency: (row total × column total) / grand total."
-        feedback_nl: "Onjuist. Controleer de formule voor verwachte frequentie: (rijtotaal × kolomtotaal) / totaal aantal."
-      - text_en: "133"
-        text_nl: "133"
-        correct: false
-        feedback_en: "Incorrect. 133 is likely an observed frequency, not the expected value you need to calculate."
-        feedback_nl: "Onjuist. 133 is waarschijnlijk een waargenomen frequentie, niet de verwachte waarde die je moet berekenen."
-      - text_en: "420,0"
-        text_nl: "420,0"
-        correct: false
-        feedback_en: "Incorrect. Apply (row total × column total) / grand total to the correct cell."
-        feedback_nl: "Onjuist. Pas (rijtotaal × kolomtotaal) / totaal aantal toe op de juiste cel."
-      - text_en: "130,4"
-        text_nl: "130,4"
-        correct: true
-        feedback_en: "Correct! Expected frequency = (row total × column total) / grand total. This gives 130.4 for the specified cell."
-        feedback_nl: "Correct! Verwachte frequentie = (rijtotaal × kolomtotaal) / totaal aantal. Dit geeft 130,4 voor de opgegeven cel."
-
-  - id: 20
-    topic_en: "Chi-square Test"
-    topic_nl: "Chi-kwadraattoets"
-    topic_link: "/HRa/week-04/hra2/"
-    image: "images/q027_qualification_gender.png"
-    question_en: "Take a look at the cross-tabulation including the chi-square test above. This output comes from the Myriad Hotel data set."
-    question_nl: "Bekijk de kruistabel inclusief de chi-kwadraattoets hierboven. Deze uitvoer komt uit de Myriad Hotel dataset."
-    answers:
-      - text_en: "This test is valid because all cells have an expected cell count of five or less"
-        text_nl: "Deze toets is geldig omdat alle cellen een verwacht celgetal van vijf of minder hebben"
-        correct: false
-        feedback_en: "Incorrect. The assumption is that cells should have an expected count of FIVE OR MORE. Counts below 5 violate the chi-square assumption."
-        feedback_nl: "Onjuist. De aanname is dat cellen een verwacht aantal van VIJF OF MEER moeten hebben. Aantallen onder 5 schenden de chi-kwadraataanname."
-      - text_en: "This test is reliable because multiple cells have an expected cell count more than five"
-        text_nl: "Deze toets is betrouwbaar omdat meerdere cellen een verwacht celgetal van meer dan vijf hebben"
-        correct: false
-        feedback_en: "Incorrect. The chi-square test requires ALL cells to have expected counts ≥ 5. If some cells violate this, the test is not valid."
-        feedback_nl: "Onjuist. De chi-kwadraattoets vereist dat ALLE cellen verwachte aantallen ≥ 5 hebben. Als sommige cellen dit schenden, is de toets niet geldig."
-      - text_en: "This test is not reliable because multiple cells have an expected cell count less than five"
-        text_nl: "Deze toets is niet betrouwbaar omdat meerdere cellen een verwacht celgetal van minder dan vijf hebben"
-        correct: true
-        feedback_en: "Correct! The chi-square assumption requires expected cell counts ≥ 5 in all cells. Violations make the test unreliable."
-        feedback_nl: "Correct! De chi-kwadraataanname vereist verwachte celfrequenties ≥ 5 in alle cellen. Schendingen maken de toets onbetrouwbaar."
-
-  - id: 21
-    topic_en: "Chi-square Test"
-    topic_nl: "Chi-kwadraattoets"
-    topic_link: "/HRa/week-04/hra2/"
-    image: "images/q028_gender_transport.png"
-    question_en: "Maud and Billy want to know if there is a difference between which types of transport are used by males and females. They asked 110 random females and 110 random males. See the result table above."
-    question_nl: "Maud en Billy willen weten of er een verschil is in het gebruikte vervoermiddel door mannen en vrouwen. Ze vroegen 110 willekeurige vrouwen en 110 willekeurige mannen. Zie de resultaattabel hierboven."
-    answers:
-      - text_en: "The expected count of women who bike is 15"
-        text_nl: "Het verwachte aantal vrouwen dat fietst is 15"
-        correct: false
-        feedback_en: "Incorrect. Expected count = (row total × column total) / grand total. Recalculate using the correct row and column totals from the table."
-        feedback_nl: "Onjuist. Verwacht aantal = (rijtotaal × kolomtotaal) / totaal. Herbereken met de juiste rij- en kolomtotalen uit de tabel."
-      - text_en: "The expected count of men who bike is 14"
-        text_nl: "Het verwachte aantal mannen dat fietst is 14"
-        correct: true
-        feedback_en: "Correct! Expected = (men total × bike total) / grand total = (110 × 28) / 220 = 14."
-        feedback_nl: "Correct! Verwacht = (totaal mannen × totaal fiets) / totaal = (110 × 28) / 220 = 14."
-      - text_en: "The expected count of men who bike is 10"
-        text_nl: "Het verwachte aantal mannen dat fietst is 10"
-        correct: false
-        feedback_en: "Incorrect. Apply the expected frequency formula: (row total × column total) / grand total. You get 14, not 10."
-        feedback_nl: "Onjuist. Pas de formule voor verwachte frequentie toe: (rijtotaal × kolomtotaal) / totaal. Je krijgt 14, niet 10."
-      - text_en: "The expected count of women who bike is 16"
-        text_nl: "Het verwachte aantal vrouwen dat fietst is 16"
-        correct: false
-        feedback_en: "Incorrect. Since both groups are equal (110 each), the expected counts for men and women who bike should be equal — both are 14."
-        feedback_nl: "Onjuist. Omdat beide groepen even groot zijn (110 elk), moeten de verwachte aantallen voor mannen en vrouwen die fietsen gelijk zijn — beide zijn 14."
-
-  - id: 22
-    topic_en: "Chi-square Test"
-    topic_nl: "Chi-kwadraattoets"
-    topic_link: "/HRa/week-04/hra2/"
-    image: "images/q029_region_happiness_expected.png"
-    question_en: "See the figure above. What is the expected frequency for 'not too happy' people in 'the North East of the US'?"
-    question_nl: "Zie de figuur hierboven. Wat is de verwachte frequentie voor 'niet erg gelukkige' mensen in 'het Noordoosten van de VS'?"
-    answers:
-      - text_en: "76"
-        text_nl: "76"
-        correct: false
-        feedback_en: "Incorrect. This may be an observed frequency. Calculate: (row total × column total) / grand total."
-        feedback_nl: "Onjuist. Dit is mogelijk een waargenomen frequentie. Bereken: (rijtotaal × kolomtotaal) / totaal."
-      - text_en: "73,8"
-        text_nl: "73,8"
-        correct: true
-        feedback_en: "Correct! Expected frequency = (row total 'not too happy' × column total 'North East') / grand total = 73.8."
-        feedback_nl: "Correct! Verwachte frequentie = (rijtotaal 'niet erg gelukkig' × kolomtotaal 'Noordoosten') / totaal = 73,8."
-      - text_en: "673"
-        text_nl: "673"
-        correct: false
-        feedback_en: "Incorrect. 673 is a row or column total, not an expected cell frequency."
-        feedback_nl: "Onjuist. 673 is een rij- of kolomtotaal, niet een verwachte celfrequentie."
-      - text_en: "165,0"
-        text_nl: "165,0"
-        correct: false
-        feedback_en: "Incorrect. 165 is a column total. The expected frequency for a single cell is always smaller than the column or row total."
-        feedback_nl: "Onjuist. 165 is een kolomtotaal. De verwachte frequentie voor één cel is altijd kleiner dan het kolom- of rijtotaal."
-
-  # ── CORRELATIEANALYSE ─────────────────────────────────────────────────────
-
-  - id: 23
-    topic_en: "Correlation Analysis"
-    topic_nl: "Correlatieanalyse"
-    topic_link: "/HRa/week-05/hra1/"
-    image: "images/q030_scatterplot_education.png"
-    question_en: "The scatterplot above shows the relation between how many years the father and mother of several respondents have spent in school."
-    question_nl: "Het spreidingsdiagram hierboven toont de relatie tussen het aantal jaren dat de vader en moeder van meerdere respondenten op school hebben doorgebracht."
-    answers:
-      - text_en: "Children with a higher-educated father have a lower educated mother"
-        text_nl: "Kinderen met een hoger opgeleide vader hebben een lager opgeleide moeder"
-        correct: false
-        feedback_en: "Incorrect. A negative correlation would show this pattern. The scatterplot shows a positive trend — higher father education goes with higher mother education."
-        feedback_nl: "Onjuist. Een negatieve correlatie zou dit patroon tonen. Het spreidingsdiagram toont een positieve trend — hogere opleiding vader gaat samen met hogere opleiding moeder."
-      - text_en: "Children with a lower-educated father have a lower educated mother"
-        text_nl: "Kinderen met een lager opgeleide vader hebben een lager opgeleide moeder"
-        correct: true
-        feedback_en: "Correct! The scatterplot shows a positive correlation: as father's education goes up, mother's education also tends to go up — and vice versa."
-        feedback_nl: "Correct! Het spreidingsdiagram toont een positieve correlatie: naarmate de opleiding van de vader stijgt, stijgt ook die van de moeder — en omgekeerd."
-      - text_en: "Children with a lower-educated father have a higher educated mother"
-        text_nl: "Kinderen met een lager opgeleide vader hebben een hoger opgeleide moeder"
-        correct: false
-        feedback_en: "Incorrect. This describes a negative correlation. The scatterplot shows a positive trend, not an inverse one."
-        feedback_nl: "Onjuist. Dit beschrijft een negatieve correlatie. Het spreidingsdiagram toont een positieve trend, geen omgekeerde."
-
-  - id: 24
-    topic_en: "Descriptive Statistics"
-    topic_nl: "Beschrijvende Statistiek"
-    topic_link: "/HRa/week-03/hra1/"
-    question_en: "Which of the options below results in a smaller confidence interval?"
-    question_nl: "Welke van de onderstaande opties resulteert in een kleiner betrouwbaarheidsinterval?"
-    answers:
-      - text_en: "Decreasing the reliability"
-        text_nl: "Het betrouwbaarheidsniveau verlagen"
-        correct: false
-        feedback_en: "Incorrect. Decreasing the confidence level (e.g. from 95% to 90%) does narrow the interval, but this option says 'decreasing the reliability' which is not the same as reducing the confidence level."
-        feedback_nl: "Onjuist. Het betrouwbaarheidsniveau verlagen (bijv. van 95% naar 90%) versmalt wel het interval, maar dit is niet het beste antwoord hier."
-      - text_en: "Decreasing the reliability and the sample size"
-        text_nl: "Het betrouwbaarheidsniveau en de steekproefgrootte verlagen"
-        correct: false
-        feedback_en: "Incorrect. Decreasing sample size WIDENS the interval. These two effects work against each other."
-        feedback_nl: "Onjuist. Het verkleinen van de steekproef VERBREEDT het interval. Deze twee effecten werken tegen elkaar in."
-      - text_en: "Increasing the sample size"
-        text_nl: "De steekproefgrootte vergroten"
-        correct: true
-        feedback_en: "Correct! A larger sample reduces the standard error, which narrows the confidence interval. More data = more precision."
-        feedback_nl: "Correct! Een grotere steekproef vermindert de standaardfout, waardoor het betrouwbaarheidsinterval smaller wordt. Meer data = meer precisie."
-      - text_en: "Decreasing the sample size"
-        text_nl: "De steekproefgrootte verkleinen"
-        correct: false
-        feedback_en: "Incorrect. Smaller samples increase uncertainty, which WIDENS the confidence interval."
-        feedback_nl: "Onjuist. Kleinere steekproeven vergroten de onzekerheid, waardoor het betrouwbaarheidsinterval BREDER wordt."
-
-  - id: 25
-    topic_en: "Confidence Intervals"
-    topic_nl: "Betrouwbaarheidsinterval"
-    topic_link: "/HRa/week-03/hra2/"
-    question_en: "Which are the symbols for: population mean, population standard deviation, significance level?"
-    question_nl: "Wat zijn de symbolen voor: populatiegemiddelde, populatiestandaarddeviatie, significantieniveau?"
-    answers:
-      - text_en: "σ, x and $"
-        text_nl: "σ, x en $"
-        correct: false
-        feedback_en: "Incorrect. σ is standard deviation, but x̄ is the sample mean (not population mean μ), and $ is not a statistics symbol."
-        feedback_nl: "Onjuist. σ is standaarddeviatie, maar x̄ is het steekproefgemiddelde (niet populatiegemiddelde μ), en $ is geen statistieksymbool."
-      - text_en: "μ, σ and α"
-        text_nl: "μ, σ en α"
-        correct: true
-        feedback_en: "Correct! μ (mu) = population mean, σ (sigma) = population standard deviation, α (alpha) = significance level."
-        feedback_nl: "Correct! μ (mu) = populatiegemiddelde, σ (sigma) = populatiestandaarddeviatie, α (alpha) = significantieniveau."
-      - text_en: "μ, n and σ"
-        text_nl: "μ, n en σ"
-        correct: false
-        feedback_en: "Incorrect. n is the sample size, not the significance level. The significance level is α (alpha)."
-        feedback_nl: "Onjuist. n is de steekproefgrootte, niet het significantieniveau. Het significantieniveau is α (alpha)."
-      - text_en: "x̄, α and n"
-        text_nl: "x̄, α en n"
-        correct: false
-        feedback_en: "Incorrect. x̄ is the sample mean (not population mean μ), and n is sample size (not standard deviation σ)."
-        feedback_nl: "Onjuist. x̄ is het steekproefgemiddelde (niet populatiegemiddelde μ), en n is de steekproefgrootte (niet standaarddeviatie σ)."
-
-  - id: 26
-    topic_en: "Confidence Intervals"
-    topic_nl: "Betrouwbaarheidsinterval"
-    topic_link: "/HRa/week-03/hra2/"
-    question_en: "A point estimate with a 95% confidence interval is given as 15 ± 12. What is the upper value for the interval?"
-    question_nl: "Een puntschatting met een 95% betrouwbaarheidsinterval is gegeven als 15 ± 12. Wat is de bovengrens van het interval?"
-    answers:
-      - text_en: "27"
-        text_nl: "27"
-        correct: true
-        feedback_en: "Correct! Upper bound = point estimate + margin of error = 15 + 12 = 27."
-        feedback_nl: "Correct! Bovengrens = puntschatting + foutmarge = 15 + 12 = 27."
-      - text_en: "3"
-        text_nl: "3"
-        correct: false
-        feedback_en: "Incorrect. 3 is the lower bound (15 − 12 = 3). The question asks for the upper bound."
-        feedback_nl: "Onjuist. 3 is de ondergrens (15 − 12 = 3). De vraag vraagt naar de bovengrens."
-      - text_en: "21"
-        text_nl: "21"
-        correct: false
-        feedback_en: "Incorrect. 21 does not follow from 15 ± 12. Upper = 15 + 12 = 27."
-        feedback_nl: "Onjuist. 21 volgt niet uit 15 ± 12. Bovengrens = 15 + 12 = 27."
-      - text_en: "12"
-        text_nl: "12"
-        correct: false
-        feedback_en: "Incorrect. 12 is the margin of error, not the upper bound of the interval."
-        feedback_nl: "Onjuist. 12 is de foutmarge, niet de bovengrens van het interval."
-
-  - id: 27
-    topic_en: "Confidence Intervals"
-    topic_nl: "Betrouwbaarheidsinterval"
-    topic_link: "/HRa/week-03/hra2/"
-    question_en: "A point estimate with a 95% confidence interval is given as 72 ± 7. What is the lower value for the interval?"
-    question_nl: "Een puntschatting met een 95% betrouwbaarheidsinterval is gegeven als 72 ± 7. Wat is de ondergrens van het interval?"
-    answers:
-      - text_en: "72"
-        text_nl: "72"
-        correct: false
-        feedback_en: "Incorrect. 72 is the point estimate itself, not the lower bound. Lower = 72 − 7 = 65."
-        feedback_nl: "Onjuist. 72 is de puntschatting zelf, niet de ondergrens. Ondergrens = 72 − 7 = 65."
-      - text_en: "79"
-        text_nl: "79"
-        correct: false
-        feedback_en: "Incorrect. 79 is the upper bound (72 + 7). The question asks for the lower bound."
-        feedback_nl: "Onjuist. 79 is de bovengrens (72 + 7). De vraag vraagt naar de ondergrens."
-      - text_en: "7"
-        text_nl: "7"
-        correct: false
-        feedback_en: "Incorrect. 7 is the margin of error. Lower bound = point estimate − margin = 72 − 7 = 65."
-        feedback_nl: "Onjuist. 7 is de foutmarge. Ondergrens = puntschatting − marge = 72 − 7 = 65."
-      - text_en: "65"
-        text_nl: "65"
-        correct: true
-        feedback_en: "Correct! Lower bound = 72 − 7 = 65."
-        feedback_nl: "Correct! Ondergrens = 72 − 7 = 65."
-
-  - id: 28
-    topic_en: "Confidence Intervals"
-    topic_nl: "Betrouwbaarheidsinterval"
-    topic_link: "/HRa/week-03/hra2/"
-    question_en: "We asked 120 people whether they drink cola. 90 people indicated they drink cola. What percentage drinks cola?"
-    question_nl: "We vroegen 120 mensen of ze cola drinken. 90 mensen gaven aan cola te drinken. Welk percentage drinkt cola?"
-    answers:
-      - text_en: "25%"
-        text_nl: "25%"
-        correct: false
-        feedback_en: "Incorrect. 25% would be 30 out of 120. We have 90 out of 120."
-        feedback_nl: "Onjuist. 25% zou 30 van de 120 zijn. We hebben 90 van de 120."
-      - text_en: "75%"
-        text_nl: "75%"
-        correct: true
-        feedback_en: "Correct! 90 / 120 × 100% = 75%."
-        feedback_nl: "Correct! 90 / 120 × 100% = 75%."
-      - text_en: "100%"
-        text_nl: "100%"
-        correct: false
-        feedback_en: "Incorrect. 100% would mean all 120 people drink cola. Only 90 do."
-        feedback_nl: "Onjuist. 100% zou betekenen dat alle 120 mensen cola drinken. Slechts 90 doen dat."
-      - text_en: "90%"
-        text_nl: "90%"
-        correct: false
-        feedback_en: "Incorrect. 90 is the count, not the percentage. Percentage = (90 / 120) × 100 = 75%."
-        feedback_nl: "Onjuist. 90 is het aantal, niet het percentage. Percentage = (90 / 120) × 100 = 75%."
-
-  # ── CORRELATIE ────────────────────────────────────────────────────────────
-
-  - id: 29
-    topic_en: "Correlation Analysis"
-    topic_nl: "Correlatieanalyse"
-    topic_link: "/HRa/week-05/hra1/"
-    question_en: "Being more physically active is associated with weight loss. I correlate the variables 'amount of physical activity' and 'body weight'. What type of correlation is described here?"
-    question_nl: "Meer lichamelijk actief zijn wordt geassocieerd met gewichtsverlies. Ik correleer de variabelen 'hoeveelheid lichaamsbeweging' en 'lichaamsgewicht'. Welk type correlatie wordt hier beschreven?"
-    answers:
-      - text_en: "Positive correlation"
-        text_nl: "Positieve correlatie"
-        correct: false
-        feedback_en: "Incorrect. A positive correlation means both variables increase together. Here, more activity → less weight, which is an inverse relationship."
-        feedback_nl: "Onjuist. Een positieve correlatie betekent dat beide variabelen samen toenemen. Hier geldt: meer beweging → minder gewicht, dus een omgekeerde relatie."
-      - text_en: "Negative correlation"
-        text_nl: "Negatieve correlatie"
-        correct: true
-        feedback_en: "Correct! As physical activity increases, body weight decreases. When one variable goes up and the other goes down, the correlation is negative."
-        feedback_nl: "Correct! Naarmate lichaamsbeweging toeneemt, neemt lichaamsgewicht af. Als de ene variabele stijgt en de andere daalt, is de correlatie negatief."
-      - text_en: "Neutral correlation"
-        text_nl: "Neutrale correlatie"
-        correct: false
-        feedback_en: "Incorrect. A neutral (zero) correlation means no relationship. Here there is clearly a relationship between activity and weight."
-        feedback_nl: "Onjuist. Een neutrale (nul) correlatie betekent geen verband. Hier is er duidelijk een verband tussen beweging en gewicht."
-      - text_en: "Alternative correlation"
-        text_nl: "Alternatieve correlatie"
-        correct: false
-        feedback_en: "Incorrect. 'Alternative correlation' is not a statistical term. The three types are positive, negative, and zero correlation."
-        feedback_nl: "Onjuist. 'Alternatieve correlatie' is geen statistisch begrip. De drie typen zijn positieve, negatieve en nulcorrelatie."
-
   - id: 30
-    topic_en: "Correlation Analysis"
-    topic_nl: "Correlatieanalyse"
-    topic_link: "/HRa/week-05/hra1/"
-    question_en: "A negative value for a correlation indicates:"
-    question_nl: "Een negatieve waarde voor een correlatie geeft aan:"
+    topic_en: "Measurement Levels"
+    topic_nl: "Meetniveaus"
+    topic_link: "/HRa/week-03/hra1/"
+    question_en: "In a survey investigating the political tendency of the Dutch people the following questions are being asked: (1) Are you a member of a political party? (2) How many hours per week do you spend on political activities? (3) How interested are you in politics on a scale of 1-5?"
+    question_nl: "In een enquête over de politieke gezindheid van Nederlanders worden de volgende vragen gesteld: (1) Bent u lid van een politieke partij? (2) Hoeveel uur per week besteedt u aan politieke activiteiten? (3) Hoe geïnteresseerd bent u in politiek op een schaal van 1-5?"
     answers:
-      - text_en: "That decreases in X tend to be accompanied by increases in Y"
-        text_nl: "Dat afnames in X samengaan met toenames in Y"
+      - text_en: "(1) ordinal, (2) interval-ratio, (3) ordinal"
+        text_nl: "(1) ordinaal, (2) interval-ratio, (3) ordinaal"
+        correct: false
+        feedback_en: "Incorrect. Party membership (yes/no) is nominal, not ordinal."
+        feedback_nl: "Onjuist. Partijlidmaatschap (ja/nee) is nominaal, niet ordinaal."
+      - text_en: "(1) nominal, (2) interval-ratio, (3) nominal"
+        text_nl: "(1) nominaal, (2) interval-ratio, (3) nominaal"
+        correct: false
+        feedback_en: "Incorrect. Interest on a 1–5 scale is ordinal (ordered categories), not nominal."
+        feedback_nl: "Onjuist. Interesse op een 1–5 schaal is ordinaal (geordende categorieën), niet nominaal."
+      - text_en: "(1) nominal, (2) ordinal, (3) ordinal"
+        text_nl: "(1) nominaal, (2) ordinaal, (3) ordinaal"
+        correct: false
+        feedback_en: "Incorrect. Hours per week is a continuous numeric variable with a true zero — that is interval-ratio, not ordinal."
+        feedback_nl: "Onjuist. Uren per week is een continue numerieke variabele met een absoluut nulpunt — dat is interval-ratio, niet ordinaal."
+      - text_en: "(1) nominal, (2) interval-ratio, (3) ordinal"
+        text_nl: "(1) nominaal, (2) interval-ratio, (3) ordinaal"
         correct: true
-        feedback_en: "Correct! Negative correlation: as X decreases, Y increases (and as X increases, Y decreases). The variables move in opposite directions."
-        feedback_nl: "Correct! Negatieve correlatie: als X afneemt, neemt Y toe (en als X toeneemt, neemt Y af). De variabelen bewegen in tegengestelde richting."
-      - text_en: "That decreases in X tend to be accompanied by decreases in Y"
-        text_nl: "Dat afnames in X samengaan met afnames in Y"
-        correct: false
-        feedback_en: "Incorrect. This describes a positive correlation — both variables move in the same direction."
-        feedback_nl: "Onjuist. Dit beschrijft een positieve correlatie — beide variabelen bewegen in dezelfde richting."
-      - text_en: "A much stronger relationship than if the correlation were positive"
-        text_nl: "Een veel sterkere relatie dan als de correlatie positief zou zijn"
-        correct: false
-        feedback_en: "Incorrect. The sign (+ or −) indicates direction only, not strength. Strength is shown by the absolute value. r = −0.8 is equally strong as r = +0.8."
-        feedback_nl: "Onjuist. Het teken (+ of −) geeft alleen richting aan, niet sterkte. Sterkte wordt aangegeven door de absolute waarde. r = −0,8 is even sterk als r = +0,8."
-      - text_en: "A much weaker relationship than if the correlation were positive"
-        text_nl: "Een veel zwakkere relatie dan als de correlatie positief zou zijn"
-        correct: false
-        feedback_en: "Incorrect. The sign does not indicate strength. A negative correlation can be just as strong as a positive one."
-        feedback_nl: "Onjuist. Het teken geeft geen sterkte aan. Een negatieve correlatie kan even sterk zijn als een positieve."
+        feedback_en: "Correct! Party membership (yes/no) = nominal. Hours per week = interval-ratio (continuous, equal intervals, true zero). Interest 1–5 = ordinal."
+        feedback_nl: "Correct! Partijlidmaatschap (ja/nee) = nominaal. Uren per week = interval-ratio (continu, gelijke intervallen, absoluut nulpunt). Interesse 1–5 = ordinaal."
 
+  # bron: Research Skills oefenvragen, slide 3
   - id: 31
-    topic_en: "Correlation Analysis"
-    topic_nl: "Correlatieanalyse"
-    topic_link: "/HRa/week-05/hra1/"
-    image: "images/q043_four_scatterplots.png"
-    question_en: "See the four scatterplots above. Which scatterplot shows a strong positive linear correlation?"
-    question_nl: "Zie de vier spreidingsdiagrammen hierboven. Welk spreidingsdiagram toont een sterke positieve lineaire correlatie?"
+    topic_en: "Measurement Levels"
+    topic_nl: "Meetniveaus"
+    topic_link: "/HRa/week-03/hra1/"
+    question_en: "A hotel records the nationality of its guests (Dutch, German, Belgian, other). What is the measurement level of this variable?"
+    question_nl: "Een hotel registreert de nationaliteit van zijn gasten (Nederlands, Duits, Belgisch, overig). Wat is het meetniveau van deze variabele?"
     answers:
-      - text_en: "B and C"
-        text_nl: "B en C"
+      - text_en: "Ordinal"
+        text_nl: "Ordinaal"
         correct: false
-        feedback_en: "Incorrect. Only one scatterplot shows a clear strong positive linear correlation."
-        feedback_nl: "Onjuist. Slechts één spreidingsdiagram toont een duidelijke sterke positieve lineaire correlatie."
-      - text_en: "D"
-        text_nl: "D"
-        correct: false
-        feedback_en: "Incorrect. Check the direction and tightness of the pattern. A strong positive correlation shows a clear upward-sloping, tight cluster of points."
-        feedback_nl: "Onjuist. Controleer de richting en strakheid van het patroon. Een sterke positieve correlatie toont een duidelijk opwaartse, strakke cluster van punten."
-      - text_en: "A"
-        text_nl: "A"
+        feedback_en: "Incorrect. Nationalities have no natural order: Dutch is not 'more' or 'higher' than German. Ordinal requires a ranking."
+        feedback_nl: "Onjuist. Nationaliteiten hebben geen natuurlijke volgorde: Nederlands is niet 'meer' of 'hoger' dan Duits. Ordinaal vereist een rangorde."
+      - text_en: "Nominal"
+        text_nl: "Nominaal"
         correct: true
-        feedback_en: "Correct! Scatterplot A shows a tight, upward-sloping pattern — a strong positive linear correlation."
-        feedback_nl: "Correct! Spreidingsdiagram A toont een strak, opwaarts patroon — een sterke positieve lineaire correlatie."
-      - text_en: "A and D"
-        text_nl: "A en D"
+        feedback_en: "Correct! Nationality consists of categories without a natural order. You can only name and count them, not rank them."
+        feedback_nl: "Correct! Nationaliteit bestaat uit categorieën zonder natuurlijke volgorde. Je kunt ze alleen benoemen en tellen, niet rangschikken."
+      - text_en: "Interval"
+        text_nl: "Interval"
         correct: false
-        feedback_en: "Incorrect. Only A shows a strong positive linear correlation. D shows a different pattern."
-        feedback_nl: "Onjuist. Alleen A toont een sterke positieve lineaire correlatie. D toont een ander patroon."
+        feedback_en: "Incorrect. Interval requires numerical values with equal distances. There is no 'distance' between two nationalities."
+        feedback_nl: "Onjuist. Interval vereist getallen met gelijke afstanden. Er is geen 'afstand' tussen twee nationaliteiten."
+      - text_en: "Ratio"
+        text_nl: "Ratio"
+        correct: false
+        feedback_en: "Incorrect. Ratio requires numbers with equal distances and a true zero point. Nationality is not a number at all."
+        feedback_nl: "Onjuist. Ratio vereist getallen met gelijke afstanden en een echt nulpunt. Nationaliteit is helemaal geen getal."
 
+  # bron: Research Skills oefenvragen, slide 4
   - id: 32
-    topic_en: "Correlation Analysis"
-    topic_nl: "Correlatieanalyse"
-    topic_link: "/HRa/week-05/hra1/"
-    image: "images/q044_spurious_correlation.png"
-    question_en: "The graph above indicates the association between sunny days in Alaska and the number of films in which Nicolas Cage appeared (1999–2009)."
-    question_nl: "De grafiek hierboven toont de samenhang tussen zonnige dagen in Alaska en het aantal films waarin Nicolas Cage verscheen (1999–2009)."
+    topic_en: "Measurement Levels"
+    topic_nl: "Meetniveaus"
+    topic_link: "/HRa/week-03/hra1/"
+    question_en: "Guests rate their satisfaction as very dissatisfied – dissatisfied – neutral – satisfied – very satisfied. What is the measurement level?"
+    question_nl: "Gasten beoordelen hun tevredenheid als zeer ontevreden – ontevreden – neutraal – tevreden – zeer tevreden. Wat is het meetniveau?"
     answers:
-      - text_en: "There is no correlation"
-        text_nl: "Er is geen correlatie"
+      - text_en: "Nominal"
+        text_nl: "Nominaal"
         correct: false
-        feedback_en: "Incorrect. There does appear to be a statistical correlation, but it is spurious — caused by coincidence, not a real causal link."
-        feedback_nl: "Onjuist. Er is statistisch gezien wel een correlatie, maar het is een schijncorrelatie — veroorzaakt door toeval, niet door een echte causale relatie."
-      - text_en: "There is a positive correlation"
-        text_nl: "Er is een positieve correlatie"
+        feedback_en: "Incorrect. The categories do have a clear order (from very dissatisfied to very satisfied), so the level is higher than nominal."
+        feedback_nl: "Onjuist. De categorieën hebben wel een duidelijke volgorde (van zeer ontevreden tot zeer tevreden), dus het niveau is hoger dan nominaal."
+      - text_en: "Ratio"
+        text_nl: "Ratio"
         correct: false
-        feedback_en: "Incorrect. While visually there may be a positive trend, the key issue is that the correlation assumption of linearity is violated, and the correlation is spurious."
-        feedback_nl: "Onjuist. Hoewel er visueel een positieve trend kan zijn, is het kernprobleem dat de aanname van lineariteit is geschonden en de correlatie een schijncorrelatie is."
-      - text_en: "There is a negative correlation"
-        text_nl: "Er is een negatieve correlatie"
-        correct: false
-        feedback_en: "Incorrect. The direction is not the issue. The problem is that the assumptions for correlation analysis are violated (spurious correlation)."
-        feedback_nl: "Onjuist. De richting is niet het probleem. Het probleem is dat de aannames voor correlatieanalyse zijn geschonden (schijncorrelatie)."
-      - text_en: "Correlation analysis cannot be used here as the assumptions for this test are violated"
-        text_nl: "Correlatieanalyse kan hier niet worden gebruikt omdat de aannames voor deze toets zijn geschonden"
+        feedback_en: "Incorrect. There are no numerical values with equal distances and no true zero point; these are ranked answer categories."
+        feedback_nl: "Onjuist. Er zijn geen getallen met gelijke afstanden en geen echt nulpunt; het zijn gerangschikte antwoordcategorieën."
+      - text_en: "Ordinal"
+        text_nl: "Ordinaal"
         correct: true
-        feedback_en: "Correct! This is a classic spurious correlation. Two unrelated variables can appear correlated by chance. The assumption that both variables measure something meaningfully related is violated."
-        feedback_nl: "Correct! Dit is een klassieke schijncorrelatie. Twee niet-gerelateerde variabelen kunnen door toeval gecorreleerd lijken. De aanname dat beide variabelen iets zinvol gerelateerds meten, is geschonden."
+        feedback_en: "Correct! The answer categories have a clear ranking, but the distances between them are not equal or known. That makes it ordinal, not interval."
+        feedback_nl: "Correct! De antwoordcategorieën hebben een duidelijke rangorde, maar de afstanden ertussen zijn niet gelijk of bekend. Daarom is het ordinaal en geen interval."
+      - text_en: "Interval"
+        text_nl: "Interval"
+        correct: false
+        feedback_en: "Incorrect. Interval requires equal distances. We do not know whether the step from 'neutral' to 'satisfied' equals the step from 'satisfied' to 'very satisfied'."
+        feedback_nl: "Onjuist. Interval vereist gelijke afstanden. We weten niet of de stap van 'neutraal' naar 'tevreden' even groot is als die van 'tevreden' naar 'zeer tevreden'."
 
+  # bron: Research Skills oefenvragen, slide 5
   - id: 33
-    topic_en: "Correlation Analysis"
-    topic_nl: "Correlatieanalyse"
-    topic_link: "/HRa/week-05/hra1/"
-    image: "images/q045_variable_scatterplot.png"
-    question_en: "See the scatterplot above showing the relation between variable 1 and variable 2. Can I calculate a correlation value between variable 1 and variable 2?"
-    question_nl: "Zie het spreidingsdiagram hierboven dat de relatie tussen variabele 1 en variabele 2 toont. Kan ik een correlatiewaarde berekenen tussen variabele 1 en variabele 2?"
+    topic_en: "Measurement Levels"
+    topic_nl: "Meetniveaus"
+    topic_link: "/HRa/week-03/hra1/"
+    question_en: "The temperature in hotel rooms is measured in degrees Celsius. Which measurement level applies, and why?"
+    question_nl: "De temperatuur in hotelkamers wordt gemeten in graden Celsius. Welk meetniveau is dit, en waarom?"
     answers:
-      - text_en: "No, because the data doesn't show a linear relationship"
-        text_nl: "Nee, omdat de data geen lineaire relatie toont"
+      - text_en: "Interval, because the zero point is arbitrary"
+        text_nl: "Interval, omdat het nulpunt willekeurig is"
         correct: true
-        feedback_en: "Correct! Pearson correlation measures linear relationships only. If the scatterplot shows a curve (non-linear pattern), correlation is not appropriate."
-        feedback_nl: "Correct! Pearson-correlatie meet alleen lineaire verbanden. Als het spreidingsdiagram een curve toont (niet-lineair patroon), is correlatie niet geschikt."
-      - text_en: "No, because the data is negatively correlated"
-        text_nl: "Nee, omdat de data negatief gecorreleerd is"
+        feedback_en: "Correct! The distances are equal (20 to 21 °C is the same step as 30 to 31 °C), but 0 °C is an agreed point and does not mean 'no temperature'. So 20 °C is not 'twice as warm' as 10 °C."
+        feedback_nl: "Correct! De afstanden zijn gelijk (van 20 naar 21 °C is evenveel als van 30 naar 31 °C), maar 0 °C is een afgesproken punt en betekent niet 'geen temperatuur'. Daarom is 20 °C ook niet 'twee keer zo warm' als 10 °C."
+      - text_en: "Ratio, because 0 °C means there is no temperature"
+        text_nl: "Ratio, omdat 0 °C betekent dat er geen temperatuur is"
         correct: false
-        feedback_en: "Incorrect. A negative correlation is perfectly fine for correlation analysis. The problem here is non-linearity, not the direction."
-        feedback_nl: "Onjuist. Een negatieve correlatie is prima voor correlatieanalyse. Het probleem hier is niet-lineariteit, niet de richting."
-      - text_en: "Yes, because the data is correlated"
-        text_nl: "Ja, omdat de data gecorreleerd is"
+        feedback_en: "Incorrect. 0 °C is simply the freezing point of water, not the absence of temperature; negative temperatures exist. Without a true zero point it is not ratio."
+        feedback_nl: "Onjuist. 0 °C is gewoon het vriespunt van water, niet de afwezigheid van temperatuur; negatieve temperaturen bestaan. Zonder echt nulpunt is het geen ratio."
+      - text_en: "Ordinal, because the values can be ranked"
+        text_nl: "Ordinaal, omdat de waarden te rangschikken zijn"
         correct: false
-        feedback_en: "Incorrect. Just because two variables appear related does not mean Pearson correlation is valid. The relationship must be linear."
-        feedback_nl: "Onjuist. Het feit dat twee variabelen gerelateerd lijken, betekent niet dat Pearson-correlatie geldig is. De relatie moet lineair zijn."
-      - text_en: "Yes, because the data shows a linear relationship"
-        text_nl: "Ja, omdat de data een lineaire relatie toont"
+        feedback_en: "Incorrect. The values can indeed be ranked, but the distances are also equal. That makes the level higher than ordinal."
+        feedback_nl: "Onjuist. De waarden zijn inderdaad te rangschikken, maar de afstanden zijn bovendien gelijk. Daardoor is het niveau hoger dan ordinaal."
+      - text_en: "Nominal, because every temperature is a category"
+        text_nl: "Nominaal, omdat elke temperatuur een categorie is"
         correct: false
-        feedback_en: "Incorrect. The scatterplot shows a non-linear (curved) pattern, so Pearson correlation is not appropriate."
-        feedback_nl: "Onjuist. Het spreidingsdiagram toont een niet-lineair (gebogen) patroon, dus Pearson-correlatie is niet geschikt."
+        feedback_en: "Incorrect. Temperatures are numbers with an order and equal distances, not unordered categories."
+        feedback_nl: "Onjuist. Temperaturen zijn getallen met een volgorde en gelijke afstanden, geen ongeordende categorieën."
+
+  # bron: Research Skills oefenvragen, slide 6
+  - id: 34
+    topic_en: "Measurement Levels"
+    topic_nl: "Meetniveaus"
+    topic_link: "/HRa/week-03/hra1/"
+    question_en: "A survey contains three variables: (1) number of nights stayed, (2) payment method (cash, card, app), (3) hotel rating in stars (1–5). What are their measurement levels?"
+    question_nl: "Een enquête bevat drie variabelen: (1) aantal overnachtingen, (2) betaalmethode (contant, pin, app), (3) hotelclassificatie in sterren (1–5). Wat zijn de meetniveaus?"
+    answers:
+      - text_en: "(1) ordinal, (2) nominal, (3) ratio"
+        text_nl: "(1) ordinaal, (2) nominaal, (3) ratio"
+        correct: false
+        feedback_en: "Incorrect. Number of nights has equal distances and a true zero (0 nights), so it is ratio, not ordinal. Stars are ranked but without equal distances, so ordinal, not ratio."
+        feedback_nl: "Onjuist. Aantal overnachtingen heeft gelijke afstanden en een echt nulpunt (0 nachten), dus ratio, niet ordinaal. Sterren zijn gerangschikt maar zonder gelijke afstanden, dus ordinaal, niet ratio."
+      - text_en: "(1) ratio, (2) ordinal, (3) nominal"
+        text_nl: "(1) ratio, (2) ordinaal, (3) nominaal"
+        correct: false
+        feedback_en: "Incorrect. Payment methods have no order (nominal), while stars do have an order (ordinal). The levels of (2) and (3) are swapped."
+        feedback_nl: "Onjuist. Betaalmethoden hebben geen volgorde (nominaal), sterren wel (ordinaal). De niveaus van (2) en (3) zijn omgedraaid."
+      - text_en: "(1) nominal, (2) nominal, (3) ordinal"
+        text_nl: "(1) nominaal, (2) nominaal, (3) ordinaal"
+        correct: false
+        feedback_en: "Incorrect. Number of nights is a count with a true zero point and equal distances: ratio, not nominal."
+        feedback_nl: "Onjuist. Aantal overnachtingen is een aantal met een echt nulpunt en gelijke afstanden: ratio, niet nominaal."
+      - text_en: "(1) ratio, (2) nominal, (3) ordinal"
+        text_nl: "(1) ratio, (2) nominaal, (3) ordinaal"
+        correct: true
+        feedback_en: "Correct! (1) Nights have a true zero (0 nights) and equal distances: ratio. (2) Payment methods are categories without order: nominal. (3) Stars are ranked, but the step from 1 to 2 stars is not necessarily equal to the step from 4 to 5: ordinal."
+        feedback_nl: "Correct! (1) Overnachtingen hebben een echt nulpunt (0 nachten) en gelijke afstanden: ratio. (2) Betaalmethoden zijn categorieën zonder volgorde: nominaal. (3) Sterren hebben een rangorde, maar het verschil tussen 1 en 2 sterren is niet per se gelijk aan dat tussen 4 en 5: ordinaal."
+
+  # bron: Research Skills oefenvragen, slide 7
+  - id: 35
+    topic_en: "Measurement Levels"
+    topic_nl: "Meetniveaus"
+    topic_link: "/HRa/week-03/hra1/"
+    question_en: "Which statistic can you meaningfully report for a nominal variable such as favourite holiday destination?"
+    question_nl: "Welke maat kun je zinvol rapporteren voor een nominale variabele zoals favoriete vakantiebestemming?"
+    answers:
+      - text_en: "The mean"
+        text_nl: "Het gemiddelde"
+        correct: false
+        feedback_en: "Incorrect. A mean requires numbers with equal distances. You cannot add up 'Spain' and 'Italy' and divide by two."
+        feedback_nl: "Onjuist. Een gemiddelde vereist getallen met gelijke afstanden. Je kunt 'Spanje' en 'Italië' niet optellen en door twee delen."
+      - text_en: "The median"
+        text_nl: "De mediaan"
+        correct: false
+        feedback_en: "Incorrect. A median requires the values to be sorted. Destinations have no natural order, so there is no 'middle' value."
+        feedback_nl: "Onjuist. Een mediaan vereist dat je de waarden kunt sorteren. Bestemmingen hebben geen natuurlijke volgorde, dus er is geen 'middelste' waarde."
+      - text_en: "The standard deviation"
+        text_nl: "De standaarddeviatie"
+        correct: false
+        feedback_en: "Incorrect. A standard deviation measures distances from the mean, which does not exist for a nominal variable."
+        feedback_nl: "Onjuist. Een standaarddeviatie meet afstanden tot het gemiddelde, en dat bestaat niet voor een nominale variabele."
+      - text_en: "The mode"
+        text_nl: "De modus"
+        correct: true
+        feedback_en: "Correct! For a nominal variable you can only count how often each category occurs. The mode (the most frequently chosen destination) is therefore the meaningful measure."
+        feedback_nl: "Correct! Bij een nominale variabele kun je alleen tellen hoe vaak elke categorie voorkomt. De modus (de vaakst gekozen bestemming) is dan de zinvolle maat."
 
   # ── BESCHRIJVENDE STATISTIEK ──────────────────────────────────────────────
 
-  - id: 34
+  - id: 36
     topic_en: "Descriptive Statistics"
     topic_nl: "Beschrijvende Statistiek"
     topic_link: "/HRa/week-03/hra1/"
@@ -899,7 +976,7 @@ questions:
         feedback_en: "Incorrect. The curves peak at the same position — the means are equal, not different."
         feedback_nl: "Onjuist. De curven hebben hun piek op dezelfde positie — de gemiddelden zijn gelijk, niet verschillend."
 
-  - id: 35
+  - id: 37
     topic_en: "Descriptive Statistics"
     topic_nl: "Beschrijvende Statistiek"
     topic_link: "/HRa/week-03/hra1/"
@@ -927,9 +1004,1141 @@ questions:
         feedback_en: "Correct! The normal distribution is bell-shaped. The majority of scores cluster around the mean (centre), with fewer scores in the tails."
         feedback_nl: "Correct! De normale verdeling is klokvormig. De meeste scores clusteren rond het gemiddelde (midden), met minder scores in de staarten."
 
+  - id: 38
+    topic_en: "Descriptive Statistics"
+    topic_nl: "Beschrijvende Statistiek"
+    topic_link: "/HRa/week-03/hra1/"
+    question_en: "In a classroom we find 15 students with the following ages: 19, 21, 21, 18, 23, 22, 21, 21, 20, 19, 20, 21, 22, 19, 23. The sample has a mean=20.67, median=21, mode=21 and SD=1.5. A professor aged 68 enters the room. What happens to the age measures?"
+    question_nl: "In een klas vinden we 15 studenten met de volgende leeftijden: 19, 21, 21, 18, 23, 22, 21, 21, 20, 19, 20, 21, 22, 19, 23. Gemiddelde=20,67, mediaan=21, modus=21 en SD=1,5. Een professor van 68 jaar betreedt de ruimte. Wat gebeurt er met de leeftijdsmaten?"
+    answers:
+      - text_en: "Mean, median, and SD increase"
+        text_nl: "Gemiddelde, mediaan en SD nemen toe"
+        correct: false
+        feedback_en: "Incorrect. The median and mode are not strongly affected by outliers. The extreme value (68) pulls up the mean and widens the SD, but the median stays the same."
+        feedback_nl: "Onjuist. De mediaan en modus worden niet sterk beïnvloed door uitbijters. De extreme waarde (68) trekt het gemiddelde omhoog en vergroot de SD, maar de mediaan blijft gelijk."
+      - text_en: "Mean and SD increase, median and mode remain the same"
+        text_nl: "Gemiddelde en SD nemen toe, mediaan en modus blijven gelijk"
+        correct: true
+        feedback_en: "Correct! The professor (68) is an extreme outlier. This pulls the mean up significantly and inflates the SD. The median (middle value) and mode (most frequent) are resistant to outliers and stay the same."
+        feedback_nl: "Correct! De professor (68) is een extreme uitbijter. Dit trekt het gemiddelde flink omhoog en vergroot de SD. De mediaan (middelste waarde) en modus (meest voorkomende) zijn robuust voor uitbijters en blijven gelijk."
+      - text_en: "Mean increases, median and mode remain the same, SD decreases"
+        text_nl: "Gemiddelde neemt toe, mediaan en modus blijven gelijk, SD neemt af"
+        correct: false
+        feedback_en: "Incorrect. Adding an extreme outlier (68) makes the data more spread out, so SD increases, not decreases."
+        feedback_nl: "Onjuist. Het toevoegen van een extreme uitbijter (68) maakt de data meer verspreid, dus SD neemt toe, niet af."
+      - text_en: "Mean, median and mode increase, SD decreases"
+        text_nl: "Gemiddelde, mediaan en modus nemen toe, SD neemt af"
+        correct: false
+        feedback_en: "Incorrect. The median and mode are robust to outliers — they do not change. And SD increases, not decreases, when an extreme value is added."
+        feedback_nl: "Onjuist. Mediaan en modus zijn robuust voor uitbijters — ze veranderen niet. En SD neemt toe, niet af, als een extreme waarde wordt toegevoegd."
+
+  # bron: Research Skills oefenvragen, slide 8
+  - id: 39
+    topic_en: "Descriptive Statistics"
+    topic_nl: "Beschrijvende Statistiek"
+    topic_link: "/HRa/week-03/hra1/"
+    question_en: "The ages of seven tour guides are: 24, 26, 26, 28, 30, 31, 45. What are the mean, median and mode?"
+    question_nl: "De leeftijden van zeven reisleiders zijn: 24, 26, 26, 28, 30, 31, 45. Wat zijn het gemiddelde, de mediaan en de modus?"
+    answers:
+      - text_en: "mean 30, median 28, mode 26"
+        text_nl: "gemiddelde 30, mediaan 28, modus 26"
+        correct: true
+        feedback_en: "Correct! Mean: (24 + 26 + 26 + 28 + 30 + 31 + 45) / 7 = 210 / 7 = 30. Median: the middle (4th) value of the sorted list = 28. Mode: the most frequent value = 26."
+        feedback_nl: "Correct! Gemiddelde: (24 + 26 + 26 + 28 + 30 + 31 + 45) / 7 = 210 / 7 = 30. Mediaan: de middelste (4e) waarde van de gesorteerde reeks = 28. Modus: de waarde die het vaakst voorkomt = 26."
+      - text_en: "mean 28, median 30, mode 26"
+        text_nl: "gemiddelde 28, mediaan 30, modus 26"
+        correct: false
+        feedback_en: "Incorrect. Mean and median are swapped: the mean is 210 / 7 = 30 and the median (4th value) is 28."
+        feedback_nl: "Onjuist. Gemiddelde en mediaan zijn omgewisseld: het gemiddelde is 210 / 7 = 30 en de mediaan (4e waarde) is 28."
+      - text_en: "mean 30, median 26, mode 28"
+        text_nl: "gemiddelde 30, mediaan 26, modus 28"
+        correct: false
+        feedback_en: "Incorrect. Median and mode are swapped: 28 is the middle value, 26 is the value that occurs twice."
+        feedback_nl: "Onjuist. Mediaan en modus zijn omgewisseld: 28 is de middelste waarde, 26 komt twee keer voor."
+      - text_en: "mean 29, median 28, mode 45"
+        text_nl: "gemiddelde 29, mediaan 28, modus 45"
+        correct: false
+        feedback_en: "Incorrect. The mean is 210 / 7 = 30, and 45 occurs only once; it is the largest value (an outlier), not the mode."
+        feedback_nl: "Onjuist. Het gemiddelde is 210 / 7 = 30, en 45 komt maar één keer voor; het is de grootste waarde (een uitschieter), niet de modus."
+
+  # bron: Research Skills oefenvragen, slide 9
+  - id: 40
+    topic_en: "Descriptive Statistics"
+    topic_nl: "Beschrijvende Statistiek"
+    topic_link: "/HRa/week-03/hra1/"
+    question_en: "In the data of the previous question (24, 26, 26, 28, 30, 31, 45), the 45-year-old guide is replaced by a guide aged 31. What happens to the mean, the median and the standard deviation?"
+    question_nl: "In de data van de vorige vraag (24, 26, 26, 28, 30, 31, 45) wordt de reisleider van 45 vervangen door een reisleider van 31. Wat gebeurt er met het gemiddelde, de mediaan en de standaarddeviatie?"
+    answers:
+      - text_en: "The mean and the median both decrease"
+        text_nl: "Het gemiddelde en de mediaan dalen allebei"
+        correct: false
+        feedback_en: "Incorrect. The mean does decrease (to 28), but the median stays the 4th value = 28. The median is not sensitive to outliers."
+        feedback_nl: "Onjuist. Het gemiddelde daalt wel (naar 28), maar de mediaan blijft de 4e waarde = 28. De mediaan is niet gevoelig voor uitschieters."
+      - text_en: "The mean stays the same, the standard deviation increases"
+        text_nl: "Het gemiddelde blijft gelijk, de standaarddeviatie stijgt"
+        correct: false
+        feedback_en: "Incorrect. The sum drops from 210 to 196, so the mean decreases. Removing the outlier reduces the spread, so the standard deviation decreases."
+        feedback_nl: "Onjuist. De som daalt van 210 naar 196, dus het gemiddelde daalt. Door de uitschieter weg te halen neemt de spreiding af, dus de standaarddeviatie daalt."
+      - text_en: "The mean decreases, the median stays the same, the standard deviation decreases"
+        text_nl: "Het gemiddelde daalt, de mediaan blijft gelijk, de standaarddeviatie daalt"
+        correct: true
+        feedback_en: "Correct! New list: 24, 26, 26, 28, 30, 31, 31. Mean = 196 / 7 = 28 (down from 30). The median stays the 4th value = 28. The outlier of 45 disappears, so the spread and the standard deviation decrease. Lesson: the mean and SD are sensitive to outliers, the median is not."
+        feedback_nl: "Correct! Nieuwe reeks: 24, 26, 26, 28, 30, 31, 31. Gemiddelde = 196 / 7 = 28 (daalt van 30). De mediaan blijft de 4e waarde = 28. De uitschieter van 45 verdwijnt, dus de spreiding en de standaarddeviatie nemen af. Les: het gemiddelde en de standaarddeviatie zijn gevoelig voor uitschieters, de mediaan niet."
+      - text_en: "The mean decreases, the median increases, the standard deviation stays the same"
+        text_nl: "Het gemiddelde daalt, de mediaan stijgt, de standaarddeviatie blijft gelijk"
+        correct: false
+        feedback_en: "Incorrect. The median stays 28 (the 4th value does not change), and the standard deviation decreases because the extreme value is gone."
+        feedback_nl: "Onjuist. De mediaan blijft 28 (de 4e waarde verandert niet), en de standaarddeviatie daalt omdat de extreme waarde verdwenen is."
+
+  # bron: Research Skills oefenvragen, slide 11
+  - id: 41
+    topic_en: "Descriptive Statistics"
+    topic_nl: "Beschrijvende Statistiek"
+    topic_link: "/HRa/week-03/hra1/"
+    question_en: "You want to show how many guests come from each of five countries. Which graph is most suitable?"
+    question_nl: "Je wilt laten zien hoeveel gasten uit elk van vijf landen komen. Welke grafiek is het meest geschikt?"
+    answers:
+      - text_en: "A histogram"
+        text_nl: "Een histogram"
+        correct: false
+        feedback_en: "Incorrect. A histogram shows the distribution of one interval or ratio variable in classes. Country is nominal."
+        feedback_nl: "Onjuist. Een histogram toont de verdeling van één interval- of ratiovariabele in klassen. Land is nominaal."
+      - text_en: "A scatterplot"
+        text_nl: "Een spreidingsdiagram"
+        correct: false
+        feedback_en: "Incorrect. A scatterplot shows the relationship between two interval/ratio variables. Here there is only one nominal variable."
+        feedback_nl: "Onjuist. Een spreidingsdiagram toont het verband tussen twee interval-/ratiovariabelen. Hier is er maar één nominale variabele."
+      - text_en: "A line graph"
+        text_nl: "Een lijngrafiek"
+        correct: false
+        feedback_en: "Incorrect. A line graph shows a development, for example over time. The countries have no order that a line could connect."
+        feedback_nl: "Onjuist. Een lijngrafiek toont een verloop, bijvoorbeeld in de tijd. De landen hebben geen volgorde die je met een lijn kunt verbinden."
+      - text_en: "A bar chart"
+        text_nl: "Een staafdiagram"
+        correct: true
+        feedback_en: "Correct! Country is a nominal variable; a bar chart shows the count per category, with one bar per country."
+        feedback_nl: "Correct! Land is een nominale variabele; een staafdiagram toont het aantal per categorie, met één staaf per land."
+
+  # bron: Research Skills oefenvragen, slide 12
+  - id: 42
+    topic_en: "Descriptive Statistics"
+    topic_nl: "Beschrijvende Statistiek"
+    topic_link: "/HRa/week-03/hra1/"
+    image: "images/q_boxplot_hotels.png"
+    question_en: "The boxplots above show review scores (1–10) for two hotels. Which statement is correct?"
+    question_nl: "De boxplots hierboven tonen reviewscores (1–10) van twee hotels. Welke uitspraak is juist?"
+    answers:
+      - text_en: "Hotel B has a higher median than Hotel A"
+        text_nl: "Hotel B heeft een hogere mediaan dan hotel A"
+        correct: false
+        feedback_en: "Incorrect. The thick line in the box is the median: 8 for Hotel A and 7 for Hotel B. Hotel A's median is higher."
+        feedback_nl: "Onjuist. De dikke lijn in de box is de mediaan: 8 bij hotel A en 7 bij hotel B. De mediaan van hotel A is hoger."
+      - text_en: "Hotel A has a larger interquartile range than Hotel B"
+        text_nl: "Hotel A heeft een grotere interkwartielafstand dan hotel B"
+        correct: false
+        feedback_en: "Incorrect. The interquartile range is the height of the box: Hotel A 7 to 9 (= 2), Hotel B 5 to 8.5 (= 3.5). Hotel B's is larger."
+        feedback_nl: "Onjuist. De interkwartielafstand is de hoogte van de box: hotel A 7 tot 9 (= 2), hotel B 5 tot 8,5 (= 3,5). Die van hotel B is groter."
+      - text_en: "Hotel A has the higher median and the smaller interquartile range"
+        text_nl: "Hotel A heeft de hogere mediaan en de kleinere interkwartielafstand"
+        correct: true
+        feedback_en: "Correct! Hotel A: median 8, box from 7 to 9 (IQR 2). Hotel B: median 7, box from 5 to 8.5 (IQR 3.5). Hotel A scores higher and more consistently."
+        feedback_nl: "Correct! Hotel A: mediaan 8, box van 7 tot 9 (interkwartielafstand 2). Hotel B: mediaan 7, box van 5 tot 8,5 (interkwartielafstand 3,5). Hotel A scoort dus hoger en consistenter."
+      - text_en: "Hotel B has an outlier"
+        text_nl: "Hotel B heeft een uitschieter"
+        correct: false
+        feedback_en: "Incorrect. The separate circle at score 1 is below Hotel A: it is an outlier of Hotel A, not of Hotel B."
+        feedback_nl: "Onjuist. De losse cirkel bij score 1 staat onder hotel A: het is een uitschieter van hotel A, niet van hotel B."
+
+  # bron: Research Skills oefenvragen, slide 13
+  - id: 43
+    topic_en: "Descriptive Statistics"
+    topic_nl: "Beschrijvende Statistiek"
+    topic_link: "/HRa/week-03/hra1/"
+    question_en: "Which set of numbers has the smallest standard deviation?"
+    question_nl: "Welke reeks getallen heeft de kleinste standaarddeviatie?"
+    answers:
+      - text_en: "10, 20, 30"
+        text_nl: "10, 20, 30"
+        correct: false
+        feedback_en: "Incorrect. The mean is 20 and the values are 10 away from it. That is more spread than in 18, 20, 22."
+        feedback_nl: "Onjuist. Het gemiddelde is 20 en de waarden liggen er 10 vanaf. Dat is meer spreiding dan bij 18, 20, 22."
+      - text_en: "18, 20, 22"
+        text_nl: "18, 20, 22"
+        correct: true
+        feedback_en: "Correct! All sets have mean 20; the SD depends on how far the values lie from that mean. In this set they deviate only 2 (versus 10, 15 and 20 in the others), so it has the smallest spread."
+        feedback_nl: "Correct! Alle reeksen hebben gemiddelde 20; de standaarddeviatie hangt af van hoe ver de waarden van dat gemiddelde liggen. In deze reeks wijken ze maar 2 af (tegenover 10, 15 en 20 in de andere), dus deze heeft de kleinste spreiding."
+      - text_en: "5, 20, 35"
+        text_nl: "5, 20, 35"
+        correct: false
+        feedback_en: "Incorrect. The values deviate 15 from the mean of 20: a large spread."
+        feedback_nl: "Onjuist. De waarden wijken 15 af van het gemiddelde van 20: een grote spreiding."
+      - text_en: "0, 20, 40"
+        text_nl: "0, 20, 40"
+        correct: false
+        feedback_en: "Incorrect. The values deviate 20 from the mean of 20: this set actually has the largest standard deviation."
+        feedback_nl: "Onjuist. De waarden wijken 20 af van het gemiddelde van 20: deze reeks heeft juist de grootste standaarddeviatie."
+
+  # ── BETROUWBAARHEIDSINTERVAL ──────────────────────────────────────────────
+
+  - id: 44
+    topic_en: "Confidence Intervals"
+    topic_nl: "Betrouwbaarheidsinterval"
+    topic_link: "/HRa/week-03/hra2/"
+    question_en: "Which of the options below results in a smaller confidence interval?"
+    question_nl: "Welke van de onderstaande opties resulteert in een kleiner betrouwbaarheidsinterval?"
+    answers:
+      - text_en: "Decreasing the reliability"
+        text_nl: "Het betrouwbaarheidsniveau verlagen"
+        correct: false
+        feedback_en: "Incorrect. Decreasing the confidence level (e.g. from 95% to 90%) does narrow the interval, but this option says 'decreasing the reliability' which is not the same as reducing the confidence level."
+        feedback_nl: "Onjuist. Het betrouwbaarheidsniveau verlagen (bijv. van 95% naar 90%) versmalt wel het interval, maar dit is niet het beste antwoord hier."
+      - text_en: "Decreasing the reliability and the sample size"
+        text_nl: "Het betrouwbaarheidsniveau en de steekproefgrootte verlagen"
+        correct: false
+        feedback_en: "Incorrect. Decreasing sample size WIDENS the interval. These two effects work against each other."
+        feedback_nl: "Onjuist. Het verkleinen van de steekproef VERBREEDT het interval. Deze twee effecten werken tegen elkaar in."
+      - text_en: "Increasing the sample size"
+        text_nl: "De steekproefgrootte vergroten"
+        correct: true
+        feedback_en: "Correct! A larger sample reduces the standard error, which narrows the confidence interval. More data = more precision."
+        feedback_nl: "Correct! Een grotere steekproef vermindert de standaardfout, waardoor het betrouwbaarheidsinterval smaller wordt. Meer data = meer precisie."
+      - text_en: "Decreasing the sample size"
+        text_nl: "De steekproefgrootte verkleinen"
+        correct: false
+        feedback_en: "Incorrect. Smaller samples increase uncertainty, which WIDENS the confidence interval."
+        feedback_nl: "Onjuist. Kleinere steekproeven vergroten de onzekerheid, waardoor het betrouwbaarheidsinterval BREDER wordt."
+
+  - id: 45
+    topic_en: "Confidence Intervals"
+    topic_nl: "Betrouwbaarheidsinterval"
+    topic_link: "/HRa/week-03/hra2/"
+    question_en: "Which are the symbols for: population mean, population standard deviation, significance level?"
+    question_nl: "Wat zijn de symbolen voor: populatiegemiddelde, populatiestandaarddeviatie, significantieniveau?"
+    answers:
+      - text_en: "σ, x and $"
+        text_nl: "σ, x en $"
+        correct: false
+        feedback_en: "Incorrect. σ is standard deviation, but x̄ is the sample mean (not population mean μ), and $ is not a statistics symbol."
+        feedback_nl: "Onjuist. σ is standaarddeviatie, maar x̄ is het steekproefgemiddelde (niet populatiegemiddelde μ), en $ is geen statistieksymbool."
+      - text_en: "μ, σ and α"
+        text_nl: "μ, σ en α"
+        correct: true
+        feedback_en: "Correct! μ (mu) = population mean, σ (sigma) = population standard deviation, α (alpha) = significance level."
+        feedback_nl: "Correct! μ (mu) = populatiegemiddelde, σ (sigma) = populatiestandaarddeviatie, α (alpha) = significantieniveau."
+      - text_en: "μ, n and σ"
+        text_nl: "μ, n en σ"
+        correct: false
+        feedback_en: "Incorrect. n is the sample size, not the significance level. The significance level is α (alpha)."
+        feedback_nl: "Onjuist. n is de steekproefgrootte, niet het significantieniveau. Het significantieniveau is α (alpha)."
+      - text_en: "x̄, α and n"
+        text_nl: "x̄, α en n"
+        correct: false
+        feedback_en: "Incorrect. x̄ is the sample mean (not population mean μ), and n is sample size (not standard deviation σ)."
+        feedback_nl: "Onjuist. x̄ is het steekproefgemiddelde (niet populatiegemiddelde μ), en n is de steekproefgrootte (niet standaarddeviatie σ)."
+
+  - id: 46
+    topic_en: "Confidence Intervals"
+    topic_nl: "Betrouwbaarheidsinterval"
+    topic_link: "/HRa/week-03/hra2/"
+    question_en: "A point estimate with a 95% confidence interval is given as 15 ± 12. What is the upper value for the interval?"
+    question_nl: "Een puntschatting met een 95% betrouwbaarheidsinterval is gegeven als 15 ± 12. Wat is de bovengrens van het interval?"
+    answers:
+      - text_en: "27"
+        text_nl: "27"
+        correct: true
+        feedback_en: "Correct! Upper bound = point estimate + margin of error = 15 + 12 = 27."
+        feedback_nl: "Correct! Bovengrens = puntschatting + foutmarge = 15 + 12 = 27."
+      - text_en: "3"
+        text_nl: "3"
+        correct: false
+        feedback_en: "Incorrect. 3 is the lower bound (15 − 12 = 3). The question asks for the upper bound."
+        feedback_nl: "Onjuist. 3 is de ondergrens (15 − 12 = 3). De vraag vraagt naar de bovengrens."
+      - text_en: "21"
+        text_nl: "21"
+        correct: false
+        feedback_en: "Incorrect. 21 does not follow from 15 ± 12. Upper = 15 + 12 = 27."
+        feedback_nl: "Onjuist. 21 volgt niet uit 15 ± 12. Bovengrens = 15 + 12 = 27."
+      - text_en: "12"
+        text_nl: "12"
+        correct: false
+        feedback_en: "Incorrect. 12 is the margin of error, not the upper bound of the interval."
+        feedback_nl: "Onjuist. 12 is de foutmarge, niet de bovengrens van het interval."
+
+  - id: 47
+    topic_en: "Confidence Intervals"
+    topic_nl: "Betrouwbaarheidsinterval"
+    topic_link: "/HRa/week-03/hra2/"
+    question_en: "A point estimate with a 95% confidence interval is given as 72 ± 7. What is the lower value for the interval?"
+    question_nl: "Een puntschatting met een 95% betrouwbaarheidsinterval is gegeven als 72 ± 7. Wat is de ondergrens van het interval?"
+    answers:
+      - text_en: "72"
+        text_nl: "72"
+        correct: false
+        feedback_en: "Incorrect. 72 is the point estimate itself, not the lower bound. Lower = 72 − 7 = 65."
+        feedback_nl: "Onjuist. 72 is de puntschatting zelf, niet de ondergrens. Ondergrens = 72 − 7 = 65."
+      - text_en: "79"
+        text_nl: "79"
+        correct: false
+        feedback_en: "Incorrect. 79 is the upper bound (72 + 7). The question asks for the lower bound."
+        feedback_nl: "Onjuist. 79 is de bovengrens (72 + 7). De vraag vraagt naar de ondergrens."
+      - text_en: "7"
+        text_nl: "7"
+        correct: false
+        feedback_en: "Incorrect. 7 is the margin of error. Lower bound = point estimate − margin = 72 − 7 = 65."
+        feedback_nl: "Onjuist. 7 is de foutmarge. Ondergrens = puntschatting − marge = 72 − 7 = 65."
+      - text_en: "65"
+        text_nl: "65"
+        correct: true
+        feedback_en: "Correct! Lower bound = 72 − 7 = 65."
+        feedback_nl: "Correct! Ondergrens = 72 − 7 = 65."
+
+  - id: 48
+    topic_en: "Confidence Intervals"
+    topic_nl: "Betrouwbaarheidsinterval"
+    topic_link: "/HRa/week-03/hra2/"
+    question_en: "We asked 120 people whether they drink cola. 90 people indicated they drink cola. What percentage drinks cola?"
+    question_nl: "We vroegen 120 mensen of ze cola drinken. 90 mensen gaven aan cola te drinken. Welk percentage drinkt cola?"
+    answers:
+      - text_en: "25%"
+        text_nl: "25%"
+        correct: false
+        feedback_en: "Incorrect. 25% would be 30 out of 120. We have 90 out of 120."
+        feedback_nl: "Onjuist. 25% zou 30 van de 120 zijn. We hebben 90 van de 120."
+      - text_en: "75%"
+        text_nl: "75%"
+        correct: true
+        feedback_en: "Correct! 90 / 120 × 100% = 75%."
+        feedback_nl: "Correct! 90 / 120 × 100% = 75%."
+      - text_en: "100%"
+        text_nl: "100%"
+        correct: false
+        feedback_en: "Incorrect. 100% would mean all 120 people drink cola. Only 90 do."
+        feedback_nl: "Onjuist. 100% zou betekenen dat alle 120 mensen cola drinken. Slechts 90 doen dat."
+      - text_en: "90%"
+        text_nl: "90%"
+        correct: false
+        feedback_en: "Incorrect. 90 is the count, not the percentage. Percentage = (90 / 120) × 100 = 75%."
+        feedback_nl: "Onjuist. 90 is het aantal, niet het percentage. Percentage = (90 / 120) × 100 = 75%."
+
+  # bron: Research Skills oefenvragen, slide 28
+  - id: 49
+    topic_en: "Confidence Intervals"
+    topic_nl: "Betrouwbaarheidsinterval"
+    topic_link: "/HRa/week-03/hra2/"
+    question_en: "The 95% confidence interval for the mean amount guests spend in the hotel restaurant is €42 to €58. Which interpretation is correct?"
+    question_nl: "Het 95%-betrouwbaarheidsinterval voor het gemiddelde bedrag dat gasten in het hotelrestaurant besteden, loopt van €42 tot €58. Welke interpretatie is juist?"
+    answers:
+      - text_en: "We are 95% confident that the population mean lies between €42 and €58"
+        text_nl: "We zijn er 95% zeker van dat het populatiegemiddelde tussen €42 en €58 ligt"
+        correct: true
+        feedback_en: "Correct! A confidence interval is an estimate of the population mean: we are 95% confident that the true mean spending of all guests lies between €42 and €58."
+        feedback_nl: "Correct! Een betrouwbaarheidsinterval is een schatting van het populatiegemiddelde: we zijn er 95% zeker van dat de echte gemiddelde besteding van alle gasten tussen €42 en €58 ligt."
+      - text_en: "95% of all guests spend between €42 and €58"
+        text_nl: "95% van alle gasten besteedt tussen €42 en €58"
+        correct: false
+        feedback_en: "Incorrect. The interval is about the population mean, not about individual guests. Individual amounts vary much more."
+        feedback_nl: "Onjuist. Het interval zegt iets over het populatiegemiddelde, niet over individuele gasten. Individuele bedragen variëren veel meer."
+      - text_en: "The sample mean lies between €42 and €58 with 95% probability"
+        text_nl: "Het steekproefgemiddelde ligt met 95% kans tussen €42 en €58"
+        correct: false
+        feedback_en: "Incorrect. The sample mean (€50) always lies exactly in the middle of the interval; there is no probability attached to it."
+        feedback_nl: "Onjuist. Het steekproefgemiddelde (€50) ligt altijd precies in het midden van het interval; daar is geen kans aan verbonden."
+      - text_en: "5% of all guests spend more than €58"
+        text_nl: "5% van alle gasten besteedt meer dan €58"
+        correct: false
+        feedback_en: "Incorrect. The interval says nothing about individual guests' spending, and the 5% would in any case be split over both sides."
+        feedback_nl: "Onjuist. Het interval zegt niets over de besteding van individuele gasten, en de 5% zou bovendien over beide kanten verdeeld zijn."
+
+  # bron: Research Skills oefenvragen, slide 30
+  - id: 50
+    topic_en: "Confidence Intervals"
+    topic_nl: "Betrouwbaarheidsinterval"
+    topic_link: "/HRa/week-03/hra2/"
+    question_en: "Which change makes a confidence interval narrower, all else being equal?"
+    question_nl: "Welke verandering maakt een betrouwbaarheidsinterval smaller, als al het andere gelijk blijft?"
+    answers:
+      - text_en: "Raising the confidence level from 95% to 99%"
+        text_nl: "Het betrouwbaarheidsniveau verhogen van 95% naar 99%"
+        correct: false
+        feedback_en: "Incorrect. More confidence requires a wider interval: a 99% interval is wider than a 95% interval."
+        feedback_nl: "Onjuist. Meer zekerheid vraagt een breder interval: een 99%-interval is breder dan een 95%-interval."
+      - text_en: "Increasing the sample size"
+        text_nl: "De steekproef vergroten"
+        correct: true
+        feedback_en: "Correct! A larger sample gives a smaller standard error and therefore a narrower interval."
+        feedback_nl: "Correct! Een grotere steekproef geeft een kleinere standaardfout en dus een smaller interval."
+      - text_en: "Decreasing the sample size"
+        text_nl: "De steekproef verkleinen"
+        correct: false
+        feedback_en: "Incorrect. A smaller sample gives a larger standard error, so the interval becomes wider."
+        feedback_nl: "Onjuist. Een kleinere steekproef geeft een grotere standaardfout, dus het interval wordt breder."
+      - text_en: "A larger standard deviation in the sample"
+        text_nl: "Een grotere standaarddeviatie in de steekproef"
+        correct: false
+        feedback_en: "Incorrect. More spread increases the standard error and makes the interval wider."
+        feedback_nl: "Onjuist. Meer spreiding vergroot de standaardfout en maakt het interval breder."
+
+  # ── HYPOTHESETOETSING ─────────────────────────────────────────────────────
+
+  # bron: Research Skills oefenvragen, slide 25
+  - id: 51
+    topic_en: "Hypothesis Testing"
+    topic_nl: "Hypothesetoetsing"
+    topic_link: "/HRa/week-03/hra2/"
+    question_en: "A statistical test gives p = 0.003 (α = 0.05). Which statement is correct?"
+    question_nl: "Een statistische toets geeft p = 0,003 (α = 0,05). Welke uitspraak is juist?"
+    answers:
+      - text_en: "We retain H0, because p is smaller than α"
+        text_nl: "We behouden H0, omdat p kleiner is dan α"
+        correct: false
+        feedback_en: "Incorrect. It is the other way around: if p is smaller than α, you reject H0."
+        feedback_nl: "Onjuist. Het is precies andersom: als p kleiner is dan α, verwerp je H0."
+      - text_en: "There is a 0.3% probability that H1 is true"
+        text_nl: "Er is 0,3% kans dat H1 waar is"
+        correct: false
+        feedback_en: "Incorrect. The p-value is the probability of these (or more extreme) results if H0 is true, not the probability that H1 (or H0) is true."
+        feedback_nl: "Onjuist. De p-waarde is de kans op deze (of extremere) resultaten als H0 waar is, niet de kans dat H1 (of H0) waar is."
+      - text_en: "The effect is large, because p is very small"
+        text_nl: "Het effect is groot, omdat p heel klein is"
+        correct: false
+        feedback_en: "Incorrect. A small p says nothing about the size of the effect: with a large sample even a small effect is significant. Use an effect size for that."
+        feedback_nl: "Onjuist. Een kleine p zegt niets over de grootte van het effect: bij een grote steekproef is ook een klein effect significant. Daarvoor gebruik je een effectgrootte."
+      - text_en: "We reject H0; the result is statistically significant"
+        text_nl: "We verwerpen H0; het resultaat is statistisch significant"
+        correct: true
+        feedback_en: "Correct! p = 0.003 is smaller than α = 0.05, so H0 is rejected and the result is statistically significant."
+        feedback_nl: "Correct! p = 0,003 is kleiner dan α = 0,05, dus H0 wordt verworpen en het resultaat is statistisch significant."
+
+  # bron: Research Skills oefenvragen, slide 31
+  - id: 52
+    topic_en: "Hypothesis Testing"
+    topic_nl: "Hypothesetoetsing"
+    topic_link: "/HRa/week-03/hra2/"
+    question_en: "H1: 'The average length of stay of business guests differs from that of leisure guests.' Which kind of test fits this hypothesis?"
+    question_nl: "H1: 'De gemiddelde verblijfsduur van zakelijke gasten verschilt van die van toeristische gasten.' Welk type toets past bij deze hypothese?"
+    answers:
+      - text_en: "A one-tailed test (left)"
+        text_nl: "Een eenzijdige toets (links)"
+        correct: false
+        feedback_en: "Incorrect. A left-tailed test fits a directed hypothesis such as 'shorter than'. 'Differs from' gives no direction."
+        feedback_nl: "Onjuist. Een linkszijdige toets past bij een gerichte hypothese zoals 'korter dan'. 'Verschilt van' noemt geen richting."
+      - text_en: "A one-tailed test (right)"
+        text_nl: "Een eenzijdige toets (rechts)"
+        correct: false
+        feedback_en: "Incorrect. A right-tailed test fits a directed hypothesis such as 'longer than'. 'Differs from' gives no direction."
+        feedback_nl: "Onjuist. Een rechtszijdige toets past bij een gerichte hypothese zoals 'langer dan'. 'Verschilt van' noemt geen richting."
+      - text_en: "A two-tailed test"
+        text_nl: "Een tweezijdige toets"
+        correct: true
+        feedback_en: "Correct! 'Differs from' names no direction: business guests could stay longer or shorter. With an undirected hypothesis you test two-tailed."
+        feedback_nl: "Correct! 'Verschilt van' noemt geen richting: zakelijke gasten kunnen zowel langer als korter blijven. Bij een ongerichte hypothese toets je tweezijdig."
+      - text_en: "No test is needed"
+        text_nl: "Er is geen toets nodig"
+        correct: false
+        feedback_en: "Incorrect. To conclude from a sample whether the population means differ, you always need a statistical test."
+        feedback_nl: "Onjuist. Om op basis van een steekproef te concluderen of de populatiegemiddelden verschillen, heb je altijd een statistische toets nodig."
+
+  # ── CHI-KWADRAATTOETS ─────────────────────────────────────────────────────
+
+  - id: 53
+    topic_en: "Chi-square Test"
+    topic_nl: "Chi-kwadraattoets"
+    topic_link: "/HRa/week-04/hra2/"
+    image: "images/q026_region_happiness.png"
+    question_en: "The figure above shows a cross-tabulation of the observed numbers between 'General happiness' and 'region of the United States'."
+    question_nl: "De figuur hierboven toont een kruistabel van de waargenomen aantallen tussen 'Algemeen geluk' en 'regio van de Verenigde Staten'."
+    answers:
+      - text_en: "467,0"
+        text_nl: "467,0"
+        correct: false
+        feedback_en: "Incorrect. Check the formula for expected frequency: (row total × column total) / grand total."
+        feedback_nl: "Onjuist. Controleer de formule voor verwachte frequentie: (rijtotaal × kolomtotaal) / totaal aantal."
+      - text_en: "133"
+        text_nl: "133"
+        correct: false
+        feedback_en: "Incorrect. 133 is likely an observed frequency, not the expected value you need to calculate."
+        feedback_nl: "Onjuist. 133 is waarschijnlijk een waargenomen frequentie, niet de verwachte waarde die je moet berekenen."
+      - text_en: "420,0"
+        text_nl: "420,0"
+        correct: false
+        feedback_en: "Incorrect. Apply (row total × column total) / grand total to the correct cell."
+        feedback_nl: "Onjuist. Pas (rijtotaal × kolomtotaal) / totaal aantal toe op de juiste cel."
+      - text_en: "130,4"
+        text_nl: "130,4"
+        correct: true
+        feedback_en: "Correct! Expected frequency = (row total × column total) / grand total. This gives 130.4 for the specified cell."
+        feedback_nl: "Correct! Verwachte frequentie = (rijtotaal × kolomtotaal) / totaal aantal. Dit geeft 130,4 voor de opgegeven cel."
+
+  - id: 54
+    topic_en: "Chi-square Test"
+    topic_nl: "Chi-kwadraattoets"
+    topic_link: "/HRa/week-04/hra2/"
+    image: "images/q027_qualification_gender.png"
+    question_en: "Take a look at the cross-tabulation including the chi-square test above. This output comes from the Myriad Hotel data set."
+    question_nl: "Bekijk de kruistabel inclusief de chi-kwadraattoets hierboven. Deze uitvoer komt uit de Myriad Hotel dataset."
+    answers:
+      - text_en: "This test is valid because all cells have an expected cell count of five or less"
+        text_nl: "Deze toets is geldig omdat alle cellen een verwacht celgetal van vijf of minder hebben"
+        correct: false
+        feedback_en: "Incorrect. The assumption is that cells should have an expected count of FIVE OR MORE. Counts below 5 violate the chi-square assumption."
+        feedback_nl: "Onjuist. De aanname is dat cellen een verwacht aantal van VIJF OF MEER moeten hebben. Aantallen onder 5 schenden de chi-kwadraataanname."
+      - text_en: "This test is reliable because multiple cells have an expected cell count more than five"
+        text_nl: "Deze toets is betrouwbaar omdat meerdere cellen een verwacht celgetal van meer dan vijf hebben"
+        correct: false
+        feedback_en: "Incorrect. The chi-square test requires ALL cells to have expected counts ≥ 5. If some cells violate this, the test is not valid."
+        feedback_nl: "Onjuist. De chi-kwadraattoets vereist dat ALLE cellen verwachte aantallen ≥ 5 hebben. Als sommige cellen dit schenden, is de toets niet geldig."
+      - text_en: "This test is not reliable because multiple cells have an expected cell count less than five"
+        text_nl: "Deze toets is niet betrouwbaar omdat meerdere cellen een verwacht celgetal van minder dan vijf hebben"
+        correct: true
+        feedback_en: "Correct! The chi-square assumption requires expected cell counts ≥ 5 in all cells. Violations make the test unreliable."
+        feedback_nl: "Correct! De chi-kwadraataanname vereist verwachte celfrequenties ≥ 5 in alle cellen. Schendingen maken de toets onbetrouwbaar."
+
+  - id: 55
+    topic_en: "Chi-square Test"
+    topic_nl: "Chi-kwadraattoets"
+    topic_link: "/HRa/week-04/hra2/"
+    image: "images/q028_gender_transport.png"
+    question_en: "Maud and Billy want to know if there is a difference between which types of transport are used by males and females. They asked 110 random females and 110 random males. See the result table above."
+    question_nl: "Maud en Billy willen weten of er een verschil is in het gebruikte vervoermiddel door mannen en vrouwen. Ze vroegen 110 willekeurige vrouwen en 110 willekeurige mannen. Zie de resultaattabel hierboven."
+    answers:
+      - text_en: "The expected count of women who bike is 15"
+        text_nl: "Het verwachte aantal vrouwen dat fietst is 15"
+        correct: false
+        feedback_en: "Incorrect. Expected count = (row total × column total) / grand total. Recalculate using the correct row and column totals from the table."
+        feedback_nl: "Onjuist. Verwacht aantal = (rijtotaal × kolomtotaal) / totaal. Herbereken met de juiste rij- en kolomtotalen uit de tabel."
+      - text_en: "The expected count of men who bike is 14"
+        text_nl: "Het verwachte aantal mannen dat fietst is 14"
+        correct: true
+        feedback_en: "Correct! Expected = (men total × bike total) / grand total = (110 × 28) / 220 = 14."
+        feedback_nl: "Correct! Verwacht = (totaal mannen × totaal fiets) / totaal = (110 × 28) / 220 = 14."
+      - text_en: "The expected count of men who bike is 10"
+        text_nl: "Het verwachte aantal mannen dat fietst is 10"
+        correct: false
+        feedback_en: "Incorrect. Apply the expected frequency formula: (row total × column total) / grand total. You get 14, not 10."
+        feedback_nl: "Onjuist. Pas de formule voor verwachte frequentie toe: (rijtotaal × kolomtotaal) / totaal. Je krijgt 14, niet 10."
+      - text_en: "The expected count of women who bike is 16"
+        text_nl: "Het verwachte aantal vrouwen dat fietst is 16"
+        correct: false
+        feedback_en: "Incorrect. Since both groups are equal (110 each), the expected counts for men and women who bike should be equal — both are 14."
+        feedback_nl: "Onjuist. Omdat beide groepen even groot zijn (110 elk), moeten de verwachte aantallen voor mannen en vrouwen die fietsen gelijk zijn — beide zijn 14."
+
+  - id: 56
+    topic_en: "Chi-square Test"
+    topic_nl: "Chi-kwadraattoets"
+    topic_link: "/HRa/week-04/hra2/"
+    image: "images/q029_region_happiness_expected.png"
+    question_en: "See the figure above. What is the expected frequency for 'not too happy' people in 'the North East of the US'?"
+    question_nl: "Zie de figuur hierboven. Wat is de verwachte frequentie voor 'niet erg gelukkige' mensen in 'het Noordoosten van de VS'?"
+    answers:
+      - text_en: "76"
+        text_nl: "76"
+        correct: false
+        feedback_en: "Incorrect. This may be an observed frequency. Calculate: (row total × column total) / grand total."
+        feedback_nl: "Onjuist. Dit is mogelijk een waargenomen frequentie. Bereken: (rijtotaal × kolomtotaal) / totaal."
+      - text_en: "73,8"
+        text_nl: "73,8"
+        correct: true
+        feedback_en: "Correct! Expected frequency = (row total 'not too happy' × column total 'North East') / grand total = 73.8."
+        feedback_nl: "Correct! Verwachte frequentie = (rijtotaal 'niet erg gelukkig' × kolomtotaal 'Noordoosten') / totaal = 73,8."
+      - text_en: "673"
+        text_nl: "673"
+        correct: false
+        feedback_en: "Incorrect. 673 is a row or column total, not an expected cell frequency."
+        feedback_nl: "Onjuist. 673 is een rij- of kolomtotaal, niet een verwachte celfrequentie."
+      - text_en: "165,0"
+        text_nl: "165,0"
+        correct: false
+        feedback_en: "Incorrect. 165 is a column total. The expected frequency for a single cell is always smaller than the column or row total."
+        feedback_nl: "Onjuist. 165 is een kolomtotaal. De verwachte frequentie voor één cel is altijd kleiner dan het kolom- of rijtotaal."
+
+  # bron: Research Skills oefenvragen, slide 32
+  - id: 57
+    topic_en: "Chi-square Test"
+    topic_nl: "Chi-kwadraattoets"
+    topic_link: "/HRa/week-04/hra2/"
+    image: "images/q_holiday_contingency.png"
+    question_en: "The table above shows the preferred type of holiday of 100 men and 100 women. What is the expected count for women who prefer a city trip?"
+    question_nl: "De tabel hierboven toont het favoriete type vakantie van 100 mannen en 100 vrouwen. Wat is de verwachte waarde voor vrouwen die de voorkeur geven aan een stedentrip?"
+    answers:
+      - text_en: "40"
+        text_nl: "40"
+        correct: true
+        feedback_en: "Correct! Expected count = row total × column total / grand total = 100 × 80 / 200 = 40."
+        feedback_nl: "Correct! Verwachte waarde = rijtotaal × kolomtotaal / totaal = 100 × 80 / 200 = 40."
+      - text_en: "50"
+        text_nl: "50"
+        correct: false
+        feedback_en: "Incorrect. 50 is the observed count. It is 10 higher than you would expect if gender and type of holiday were independent."
+        feedback_nl: "Onjuist. 50 is de geobserveerde waarde. Die is 10 hoger dan je zou verwachten als geslacht en vakantietype onafhankelijk waren."
+      - text_en: "35"
+        text_nl: "35"
+        correct: false
+        feedback_en: "Incorrect. 35 is the expected count for women who prefer a beach holiday (100 × 70 / 200), not a city trip."
+        feedback_nl: "Onjuist. 35 is de verwachte waarde voor vrouwen met voorkeur voor een strandvakantie (100 × 70 / 200), niet voor een stedentrip."
+      - text_en: "25"
+        text_nl: "25"
+        correct: false
+        feedback_en: "Incorrect. 25 is the expected count for the 'Nature' column (100 × 50 / 200), not for 'City'."
+        feedback_nl: "Onjuist. 25 is de verwachte waarde voor de kolom 'Nature' (100 × 50 / 200), niet voor 'City'."
+
+  # bron: Research Skills oefenvragen, slide 33
+  - id: 58
+    topic_en: "Chi-square Test"
+    topic_nl: "Chi-kwadraattoets"
+    topic_link: "/HRa/week-04/hra2/"
+    image: "images/q_holiday_chisquare.png"
+    question_en: "Based on the output above (α = 0.05), which conclusion is correct?"
+    question_nl: "Welke conclusie is juist op basis van de output hierboven (α = 0,05)?"
+    answers:
+      - text_en: "There is no association, because χ² is larger than p"
+        text_nl: "Er is geen verband, omdat χ² groter is dan p"
+        correct: false
+        feedback_en: "Incorrect. You do not compare χ² with p. You compare p with α: p = 0.015 < 0.05."
+        feedback_nl: "Onjuist. Je vergelijkt χ² niet met p. Je vergelijkt p met α: p = 0,015 < 0,05."
+      - text_en: "The test is not valid, because some expected counts are below 5"
+        text_nl: "De toets is niet valide, omdat sommige verwachte waarden onder de 5 liggen"
+        correct: false
+        feedback_en: "Incorrect. The smallest expected count is 25 (Nature: 100 × 50 / 200), so the assumption is met."
+        feedback_nl: "Onjuist. De kleinste verwachte waarde is 25 (Nature: 100 × 50 / 200), dus aan de voorwaarde is voldaan."
+      - text_en: "Gender causes a different holiday preference"
+        text_nl: "Geslacht veroorzaakt een andere vakantievoorkeur"
+        correct: false
+        feedback_en: "Incorrect. A chi-square test shows an association, not cause and effect."
+        feedback_nl: "Onjuist. Een chi-kwadraattoets toont samenhang aan, geen oorzaak-gevolg."
+      - text_en: "There is a significant association between gender and type of holiday"
+        text_nl: "Er is een significant verband tussen geslacht en type vakantie"
+        correct: true
+        feedback_en: "Correct! χ²(2) = 8.43, p = 0.015. Because p is smaller than 0.05 we reject H0 (independence): there is a significant association."
+        feedback_nl: "Correct! χ²(2) = 8,43, p = 0,015. Omdat p kleiner is dan 0,05, verwerpen we H0 (onafhankelijkheid): er is een significant verband."
+
+  # bron: Research Skills oefenvragen, slide 35
+  - id: 59
+    topic_en: "Chi-square Test"
+    topic_nl: "Chi-kwadraattoets"
+    topic_link: "/HRa/week-04/hra2/"
+    image: "images/q_smoker_purpose.png"
+    question_en: "40 hotel guests were asked whether they smoke and what the purpose of their stay is (see the output above). May a chi-square test be performed on these data?"
+    question_nl: "Aan 40 hotelgasten is gevraagd of ze roken en wat het doel van hun verblijf is (zie de output hierboven). Mag je op deze gegevens een chi-kwadraattoets uitvoeren?"
+    answers:
+      - text_en: "Yes, all observed counts are at least 2"
+        text_nl: "Ja, alle geobserveerde aantallen zijn minstens 2"
+        correct: false
+        feedback_en: "Incorrect. The rule is about the expected counts, not the observed counts."
+        feedback_nl: "Onjuist. De vuistregel gaat over de verwachte waarden, niet over de geobserveerde aantallen."
+      - text_en: "Yes, the total sample is larger than 30"
+        text_nl: "Ja, de totale steekproef is groter dan 30"
+        correct: false
+        feedback_en: "Incorrect. There is no 'n > 30' rule for chi-square; what matters is the expected count per cell."
+        feedback_nl: "Onjuist. Voor de chi-kwadraattoets bestaat geen regel 'n > 30'; het gaat om de verwachte waarde per cel."
+      - text_en: "No, two of the four cells have an expected count below 5"
+        text_nl: "Nee, twee van de vier cellen hebben een verwachte waarde onder de 5"
+        correct: true
+        feedback_en: "Correct! Rule of thumb: at most 20% of the cells may have an expected count below 5 (and none below 1). Here 2 of the 4 cells (3.20 and 4.80) are below 5: 50%."
+        feedback_nl: "Correct! Vuistregel: hoogstens 20% van de cellen mag een verwachte waarde onder de 5 hebben (en geen enkele onder de 1). Hier hebben 2 van de 4 cellen (3,20 en 4,80) een verwachte waarde onder de 5: 50%."
+      - text_en: "No, because both variables are nominal"
+        text_nl: "Nee, omdat beide variabelen nominaal zijn"
+        correct: false
+        feedback_en: "Incorrect. Two nominal variables are exactly what a chi-square test is meant for."
+        feedback_nl: "Onjuist. Twee nominale variabelen zijn juist geschikt voor een chi-kwadraattoets."
+
+  # bron: Research Skills oefenvragen, slide 36
+  - id: 60
+    topic_en: "Chi-square Test"
+    topic_nl: "Chi-kwadraattoets"
+    topic_link: "/HRa/week-04/hra2/"
+    question_en: "A researcher wants to know whether there is an association between type of accommodation (hotel, B&B, camping) and whether guests would recommend it (yes/no). Which test fits?"
+    question_nl: "Een onderzoeker wil weten of er een verband is tussen het type accommodatie (hotel, B&B, camping) en of gasten de accommodatie zouden aanraden (ja/nee). Welke toets past hierbij?"
+    answers:
+      - text_en: "An independent-samples t-test"
+        text_nl: "Een onafhankelijke t-toets"
+        correct: false
+        feedback_en: "Incorrect. A t-test compares the means of an interval/ratio variable between two groups. Both variables here are categories."
+        feedback_nl: "Onjuist. Een t-toets vergelijkt gemiddelden van een interval-/ratiovariabele tussen twee groepen. Beide variabelen zijn hier categorieën."
+      - text_en: "A one-way ANOVA"
+        text_nl: "Een eenweg-ANOVA"
+        correct: false
+        feedback_en: "Incorrect. An ANOVA compares means of an interval/ratio variable between three or more groups. 'Would recommend (yes/no)' has no mean."
+        feedback_nl: "Onjuist. Een ANOVA vergelijkt gemiddelden van een interval-/ratiovariabele tussen drie of meer groepen. 'Zou aanraden (ja/nee)' heeft geen gemiddelde."
+      - text_en: "A Pearson correlation"
+        text_nl: "Een Pearson-correlatie"
+        correct: false
+        feedback_en: "Incorrect. Pearson's r requires two interval/ratio variables. Both variables here are nominal."
+        feedback_nl: "Onjuist. Pearsons r vraagt twee interval-/ratiovariabelen. Beide variabelen zijn hier nominaal."
+      - text_en: "A chi-square test"
+        text_nl: "Een chi-kwadraattoets"
+        correct: true
+        feedback_en: "Correct! Both variables are nominal (categories). For the association between two categorical variables you use a crosstab with a chi-square test."
+        feedback_nl: "Correct! Beide variabelen zijn nominaal (categorieën). Voor het verband tussen twee categorische variabelen gebruik je een kruistabel met een chi-kwadraattoets."
+
+  # bron: Research Skills oefenvragen, slide 38
+  - id: 61
+    topic_en: "Chi-square Test"
+    topic_nl: "Chi-kwadraattoets"
+    topic_link: "/HRa/week-04/hra2/"
+    question_en: "What is the null hypothesis of a chi-square test of independence?"
+    question_nl: "Wat is de nulhypothese van een chi-kwadraattoets op onafhankelijkheid?"
+    answers:
+      - text_en: "The two variables are independent (there is no association)"
+        text_nl: "De twee variabelen zijn onafhankelijk (er is geen verband)"
+        correct: true
+        feedback_en: "Correct! H0 states that there is no association: the distribution over one variable is the same in every group of the other variable."
+        feedback_nl: "Correct! H0 stelt dat er geen verband is: de verdeling over de ene variabele is in elke groep van de andere variabele gelijk."
+      - text_en: "The group means are equal"
+        text_nl: "De groepsgemiddelden zijn gelijk"
+        correct: false
+        feedback_en: "Incorrect. Equal group means is the H0 of a t-test or ANOVA, not of a chi-square test."
+        feedback_nl: "Onjuist. Gelijke groepsgemiddelden is de H0 van een t-toets of ANOVA, niet van een chi-kwadraattoets."
+      - text_en: "The two variables are dependent"
+        text_nl: "De twee variabelen zijn afhankelijk"
+        correct: false
+        feedback_en: "Incorrect. That is the alternative hypothesis (H1): there is an association."
+        feedback_nl: "Onjuist. Dat is de alternatieve hypothese (H1): er is wel een verband."
+      - text_en: "All observed counts are equal"
+        text_nl: "Alle geobserveerde aantallen zijn gelijk"
+        correct: false
+        feedback_en: "Incorrect. H0 does not say the cells are equal, but that the observed counts match the counts expected under independence."
+        feedback_nl: "Onjuist. H0 zegt niet dat alle cellen gelijk zijn, maar dat de geobserveerde aantallen overeenkomen met de verwachte aantallen bij onafhankelijkheid."
+
+  # ── CORRELATIEANALYSE ─────────────────────────────────────────────────────
+
+  - id: 62
+    topic_en: "Correlation Analysis"
+    topic_nl: "Correlatieanalyse"
+    topic_link: "/HRa/week-05/hra1/"
+    image: "images/q030_scatterplot_education.png"
+    question_en: "The scatterplot above shows the relation between how many years the father and mother of several respondents have spent in school."
+    question_nl: "Het spreidingsdiagram hierboven toont de relatie tussen het aantal jaren dat de vader en moeder van meerdere respondenten op school hebben doorgebracht."
+    answers:
+      - text_en: "Children with a higher-educated father have a lower educated mother"
+        text_nl: "Kinderen met een hoger opgeleide vader hebben een lager opgeleide moeder"
+        correct: false
+        feedback_en: "Incorrect. A negative correlation would show this pattern. The scatterplot shows a positive trend — higher father education goes with higher mother education."
+        feedback_nl: "Onjuist. Een negatieve correlatie zou dit patroon tonen. Het spreidingsdiagram toont een positieve trend — hogere opleiding vader gaat samen met hogere opleiding moeder."
+      - text_en: "Children with a lower-educated father have a lower educated mother"
+        text_nl: "Kinderen met een lager opgeleide vader hebben een lager opgeleide moeder"
+        correct: true
+        feedback_en: "Correct! The scatterplot shows a positive correlation: as father's education goes up, mother's education also tends to go up — and vice versa."
+        feedback_nl: "Correct! Het spreidingsdiagram toont een positieve correlatie: naarmate de opleiding van de vader stijgt, stijgt ook die van de moeder — en omgekeerd."
+      - text_en: "Children with a lower-educated father have a higher educated mother"
+        text_nl: "Kinderen met een lager opgeleide vader hebben een hoger opgeleide moeder"
+        correct: false
+        feedback_en: "Incorrect. This describes a negative correlation. The scatterplot shows a positive trend, not an inverse one."
+        feedback_nl: "Onjuist. Dit beschrijft een negatieve correlatie. Het spreidingsdiagram toont een positieve trend, geen omgekeerde."
+
+  - id: 63
+    topic_en: "Correlation Analysis"
+    topic_nl: "Correlatieanalyse"
+    topic_link: "/HRa/week-05/hra1/"
+    question_en: "Being more physically active is associated with weight loss. I correlate the variables 'amount of physical activity' and 'body weight'. What type of correlation is described here?"
+    question_nl: "Meer lichamelijk actief zijn wordt geassocieerd met gewichtsverlies. Ik correleer de variabelen 'hoeveelheid lichaamsbeweging' en 'lichaamsgewicht'. Welk type correlatie wordt hier beschreven?"
+    answers:
+      - text_en: "Positive correlation"
+        text_nl: "Positieve correlatie"
+        correct: false
+        feedback_en: "Incorrect. A positive correlation means both variables increase together. Here, more activity → less weight, which is an inverse relationship."
+        feedback_nl: "Onjuist. Een positieve correlatie betekent dat beide variabelen samen toenemen. Hier geldt: meer beweging → minder gewicht, dus een omgekeerde relatie."
+      - text_en: "Negative correlation"
+        text_nl: "Negatieve correlatie"
+        correct: true
+        feedback_en: "Correct! As physical activity increases, body weight decreases. When one variable goes up and the other goes down, the correlation is negative."
+        feedback_nl: "Correct! Naarmate lichaamsbeweging toeneemt, neemt lichaamsgewicht af. Als de ene variabele stijgt en de andere daalt, is de correlatie negatief."
+      - text_en: "Neutral correlation"
+        text_nl: "Neutrale correlatie"
+        correct: false
+        feedback_en: "Incorrect. A neutral (zero) correlation means no relationship. Here there is clearly a relationship between activity and weight."
+        feedback_nl: "Onjuist. Een neutrale (nul) correlatie betekent geen verband. Hier is er duidelijk een verband tussen beweging en gewicht."
+      - text_en: "Alternative correlation"
+        text_nl: "Alternatieve correlatie"
+        correct: false
+        feedback_en: "Incorrect. 'Alternative correlation' is not a statistical term. The three types are positive, negative, and zero correlation."
+        feedback_nl: "Onjuist. 'Alternatieve correlatie' is geen statistisch begrip. De drie typen zijn positieve, negatieve en nulcorrelatie."
+
+  - id: 64
+    topic_en: "Correlation Analysis"
+    topic_nl: "Correlatieanalyse"
+    topic_link: "/HRa/week-05/hra1/"
+    question_en: "A negative value for a correlation indicates:"
+    question_nl: "Een negatieve waarde voor een correlatie geeft aan:"
+    answers:
+      - text_en: "That decreases in X tend to be accompanied by increases in Y"
+        text_nl: "Dat afnames in X samengaan met toenames in Y"
+        correct: true
+        feedback_en: "Correct! Negative correlation: as X decreases, Y increases (and as X increases, Y decreases). The variables move in opposite directions."
+        feedback_nl: "Correct! Negatieve correlatie: als X afneemt, neemt Y toe (en als X toeneemt, neemt Y af). De variabelen bewegen in tegengestelde richting."
+      - text_en: "That decreases in X tend to be accompanied by decreases in Y"
+        text_nl: "Dat afnames in X samengaan met afnames in Y"
+        correct: false
+        feedback_en: "Incorrect. This describes a positive correlation — both variables move in the same direction."
+        feedback_nl: "Onjuist. Dit beschrijft een positieve correlatie — beide variabelen bewegen in dezelfde richting."
+      - text_en: "A much stronger relationship than if the correlation were positive"
+        text_nl: "Een veel sterkere relatie dan als de correlatie positief zou zijn"
+        correct: false
+        feedback_en: "Incorrect. The sign (+ or −) indicates direction only, not strength. Strength is shown by the absolute value. r = −0.8 is equally strong as r = +0.8."
+        feedback_nl: "Onjuist. Het teken (+ of −) geeft alleen richting aan, niet sterkte. Sterkte wordt aangegeven door de absolute waarde. r = −0,8 is even sterk als r = +0,8."
+      - text_en: "A much weaker relationship than if the correlation were positive"
+        text_nl: "Een veel zwakkere relatie dan als de correlatie positief zou zijn"
+        correct: false
+        feedback_en: "Incorrect. The sign does not indicate strength. A negative correlation can be just as strong as a positive one."
+        feedback_nl: "Onjuist. Het teken geeft geen sterkte aan. Een negatieve correlatie kan even sterk zijn als een positieve."
+
+  - id: 65
+    topic_en: "Correlation Analysis"
+    topic_nl: "Correlatieanalyse"
+    topic_link: "/HRa/week-05/hra1/"
+    image: "images/q043_four_scatterplots.png"
+    question_en: "See the four scatterplots above. Which scatterplot shows a strong positive linear correlation?"
+    question_nl: "Zie de vier spreidingsdiagrammen hierboven. Welk spreidingsdiagram toont een sterke positieve lineaire correlatie?"
+    answers:
+      - text_en: "B and C"
+        text_nl: "B en C"
+        correct: false
+        feedback_en: "Incorrect. Only one scatterplot shows a clear strong positive linear correlation."
+        feedback_nl: "Onjuist. Slechts één spreidingsdiagram toont een duidelijke sterke positieve lineaire correlatie."
+      - text_en: "D"
+        text_nl: "D"
+        correct: false
+        feedback_en: "Incorrect. Check the direction and tightness of the pattern. A strong positive correlation shows a clear upward-sloping, tight cluster of points."
+        feedback_nl: "Onjuist. Controleer de richting en strakheid van het patroon. Een sterke positieve correlatie toont een duidelijk opwaartse, strakke cluster van punten."
+      - text_en: "A"
+        text_nl: "A"
+        correct: true
+        feedback_en: "Correct! Scatterplot A shows a tight, upward-sloping pattern — a strong positive linear correlation."
+        feedback_nl: "Correct! Spreidingsdiagram A toont een strak, opwaarts patroon — een sterke positieve lineaire correlatie."
+      - text_en: "A and D"
+        text_nl: "A en D"
+        correct: false
+        feedback_en: "Incorrect. Only A shows a strong positive linear correlation. D shows a different pattern."
+        feedback_nl: "Onjuist. Alleen A toont een sterke positieve lineaire correlatie. D toont een ander patroon."
+
+  - id: 66
+    topic_en: "Correlation Analysis"
+    topic_nl: "Correlatieanalyse"
+    topic_link: "/HRa/week-05/hra1/"
+    image: "images/q044_spurious_correlation.png"
+    question_en: "The graph above indicates the association between sunny days in Alaska and the number of films in which Nicolas Cage appeared (1999–2009)."
+    question_nl: "De grafiek hierboven toont de samenhang tussen zonnige dagen in Alaska en het aantal films waarin Nicolas Cage verscheen (1999–2009)."
+    answers:
+      - text_en: "There is no correlation"
+        text_nl: "Er is geen correlatie"
+        correct: false
+        feedback_en: "Incorrect. There does appear to be a statistical correlation, but it is spurious — caused by coincidence, not a real causal link."
+        feedback_nl: "Onjuist. Er is statistisch gezien wel een correlatie, maar het is een schijncorrelatie — veroorzaakt door toeval, niet door een echte causale relatie."
+      - text_en: "There is a positive correlation"
+        text_nl: "Er is een positieve correlatie"
+        correct: false
+        feedback_en: "Incorrect. While visually there may be a positive trend, the key issue is that the correlation assumption of linearity is violated, and the correlation is spurious."
+        feedback_nl: "Onjuist. Hoewel er visueel een positieve trend kan zijn, is het kernprobleem dat de aanname van lineariteit is geschonden en de correlatie een schijncorrelatie is."
+      - text_en: "There is a negative correlation"
+        text_nl: "Er is een negatieve correlatie"
+        correct: false
+        feedback_en: "Incorrect. The direction is not the issue. The problem is that the assumptions for correlation analysis are violated (spurious correlation)."
+        feedback_nl: "Onjuist. De richting is niet het probleem. Het probleem is dat de aannames voor correlatieanalyse zijn geschonden (schijncorrelatie)."
+      - text_en: "Correlation analysis cannot be used here as the assumptions for this test are violated"
+        text_nl: "Correlatieanalyse kan hier niet worden gebruikt omdat de aannames voor deze toets zijn geschonden"
+        correct: true
+        feedback_en: "Correct! This is a classic spurious correlation. Two unrelated variables can appear correlated by chance. The assumption that both variables measure something meaningfully related is violated."
+        feedback_nl: "Correct! Dit is een klassieke schijncorrelatie. Twee niet-gerelateerde variabelen kunnen door toeval gecorreleerd lijken. De aanname dat beide variabelen iets zinvol gerelateerds meten, is geschonden."
+
+  - id: 67
+    topic_en: "Correlation Analysis"
+    topic_nl: "Correlatieanalyse"
+    topic_link: "/HRa/week-05/hra1/"
+    image: "images/q045_variable_scatterplot.png"
+    question_en: "See the scatterplot above showing the relation between variable 1 and variable 2. Can I calculate a correlation value between variable 1 and variable 2?"
+    question_nl: "Zie het spreidingsdiagram hierboven dat de relatie tussen variabele 1 en variabele 2 toont. Kan ik een correlatiewaarde berekenen tussen variabele 1 en variabele 2?"
+    answers:
+      - text_en: "No, because the data doesn't show a linear relationship"
+        text_nl: "Nee, omdat de data geen lineaire relatie toont"
+        correct: true
+        feedback_en: "Correct! Pearson correlation measures linear relationships only. If the scatterplot shows a curve (non-linear pattern), correlation is not appropriate."
+        feedback_nl: "Correct! Pearson-correlatie meet alleen lineaire verbanden. Als het spreidingsdiagram een curve toont (niet-lineair patroon), is correlatie niet geschikt."
+      - text_en: "No, because the data is negatively correlated"
+        text_nl: "Nee, omdat de data negatief gecorreleerd is"
+        correct: false
+        feedback_en: "Incorrect. A negative correlation is perfectly fine for correlation analysis. The problem here is non-linearity, not the direction."
+        feedback_nl: "Onjuist. Een negatieve correlatie is prima voor correlatieanalyse. Het probleem hier is niet-lineariteit, niet de richting."
+      - text_en: "Yes, because the data is correlated"
+        text_nl: "Ja, omdat de data gecorreleerd is"
+        correct: false
+        feedback_en: "Incorrect. Just because two variables appear related does not mean Pearson correlation is valid. The relationship must be linear."
+        feedback_nl: "Onjuist. Het feit dat twee variabelen gerelateerd lijken, betekent niet dat Pearson-correlatie geldig is. De relatie moet lineair zijn."
+      - text_en: "Yes, because the data shows a linear relationship"
+        text_nl: "Ja, omdat de data een lineaire relatie toont"
+        correct: false
+        feedback_en: "Incorrect. The scatterplot shows a non-linear (curved) pattern, so Pearson correlation is not appropriate."
+        feedback_nl: "Onjuist. Het spreidingsdiagram toont een niet-lineair (gebogen) patroon, dus Pearson-correlatie is niet geschikt."
+
+  # bron: Research Skills oefenvragen, slide 50
+  - id: 68
+    topic_en: "Correlation Analysis"
+    topic_nl: "Correlatieanalyse"
+    topic_link: "/HRa/week-05/hra1/"
+    image: "images/q_scatter_study_hours.png"
+    question_en: "The scatterplot above shows study hours and exam scores of 25 students. How would you describe the correlation?"
+    question_nl: "Het spreidingsdiagram hierboven toont studie-uren en tentamencijfers van 25 studenten. Hoe beschrijf je de correlatie?"
+    answers:
+      - text_en: "Strong negative"
+        text_nl: "Sterk negatief"
+        correct: false
+        feedback_en: "Incorrect. The points go up from left to right: more study hours go with higher scores. That is positive, not negative."
+        feedback_nl: "Onjuist. De punten lopen van links naar rechts omhoog: meer studie-uren gaan samen met hogere cijfers. Dat is positief, niet negatief."
+      - text_en: "Strong positive"
+        text_nl: "Sterk positief"
+        correct: true
+        feedback_en: "Correct! More study hours go with higher scores (positive) and the points lie close to a straight line (strong). A correlation says nothing about cause and effect."
+        feedback_nl: "Correct! Meer studie-uren gaan samen met hogere cijfers (positief) en de punten liggen dicht bij een rechte lijn (sterk). Een correlatie zegt niets over oorzaak en gevolg."
+      - text_en: "No correlation"
+        text_nl: "Geen correlatie"
+        correct: false
+        feedback_en: "Incorrect. There is a clear upward pattern; with no correlation the points would form a shapeless cloud."
+        feedback_nl: "Onjuist. Er is een duidelijk stijgend patroon; zonder correlatie zouden de punten een vormeloze wolk vormen."
+      - text_en: "Weak negative"
+        text_nl: "Zwak negatief"
+        correct: false
+        feedback_en: "Incorrect. The direction is positive (rising) and the points are close to a line, so the relationship is strong, not weak."
+        feedback_nl: "Onjuist. De richting is positief (stijgend) en de punten liggen dicht bij een lijn, dus het verband is sterk, niet zwak."
+
+  # bron: Research Skills oefenvragen, slide 51
+  - id: 69
+    topic_en: "Correlation Analysis"
+    topic_nl: "Correlatieanalyse"
+    topic_link: "/HRa/week-05/hra1/"
+    image: "images/q_correlation_price_bookings.png"
+    question_en: "The output above shows the correlation between price per night and number of bookings for 120 hotels. Which conclusion is correct?"
+    question_nl: "De output hierboven toont de correlatie tussen de prijs per nacht en het aantal boekingen van 120 hotels. Welke conclusie is juist?"
+    answers:
+      - text_en: "There is a significant positive correlation"
+        text_nl: "Er is een significante positieve correlatie"
+        correct: false
+        feedback_en: "Incorrect. r = −0.620 is negative: higher prices go with fewer bookings."
+        feedback_nl: "Onjuist. r = −0,620 is negatief: hogere prijzen gaan samen met minder boekingen."
+      - text_en: "A higher price causes fewer bookings"
+        text_nl: "Een hogere prijs veroorzaakt minder boekingen"
+        correct: false
+        feedback_en: "Incorrect. Too strong: a correlation shows that variables go together, not that one causes the other."
+        feedback_nl: "Onjuist. Te sterk geformuleerd: een correlatie toont samenhang, geen oorzaak."
+      - text_en: "A significant, fairly strong negative correlation: higher prices go with fewer bookings"
+        text_nl: "Een significante, vrij sterke negatieve correlatie: hogere prijzen gaan samen met minder boekingen"
+        correct: true
+        feedback_en: "Correct! r = −0.62: negative (higher price, fewer bookings) and fairly strong. p < 0.001: significant."
+        feedback_nl: "Correct! r = −0,62: negatief (hogere prijs, minder boekingen) en vrij sterk. p < 0,001: significant."
+      - text_en: "There is no correlation, because r is negative"
+        text_nl: "Er is geen correlatie, omdat r negatief is"
+        correct: false
+        feedback_en: "Incorrect. A negative r means a negative relationship, not 'no relationship'. No correlation would be r close to 0."
+        feedback_nl: "Onjuist. Een negatieve r betekent een negatief verband, niet 'geen verband'. Geen correlatie zou r dicht bij 0 zijn."
+
+  # bron: Research Skills oefenvragen, slide 52
+  - id: 70
+    topic_en: "Correlation Analysis"
+    topic_nl: "Correlatieanalyse"
+    topic_link: "/HRa/week-05/hra1/"
+    image: "images/q_scatter_workload.png"
+    question_en: "You want to compute Pearson's r for the two variables in the scatterplot above. Is that appropriate?"
+    question_nl: "Je wilt voor de twee variabelen in het spreidingsdiagram hierboven Pearsons r berekenen. Is dat terecht?"
+    answers:
+      - text_en: "Yes, there is a strong positive correlation"
+        text_nl: "Ja, er is een sterke positieve correlatie"
+        correct: false
+        feedback_en: "Incorrect. Performance first rises and then falls; the relationship is not positive over the whole range."
+        feedback_nl: "Onjuist. De prestatie stijgt eerst en daalt daarna; het verband is niet over het hele bereik positief."
+      - text_en: "Yes, both variables are measured at ratio level"
+        text_nl: "Ja, beide variabelen zijn op rationiveau gemeten"
+        correct: false
+        feedback_en: "Incorrect. The measurement level is fine, but that is not enough: the assumption of linearity must also hold."
+        feedback_nl: "Onjuist. Het meetniveau klopt wel, maar dat is niet genoeg: ook de aanname van lineariteit moet kloppen."
+      - text_en: "No, both variables are nominal"
+        text_nl: "Nee, beide variabelen zijn nominaal"
+        correct: false
+        feedback_en: "Incorrect. Hours per week and a performance score are numerical variables, not nominal."
+        feedback_nl: "Onjuist. Uren per week en een prestatiescore zijn numerieke variabelen, niet nominaal."
+      - text_en: "No, the relationship is not linear"
+        text_nl: "Nee, het verband is niet lineair"
+        correct: true
+        feedback_en: "Correct! Pearson's r only measures linear relationships. Here the relationship is an inverted U: performance rises up to about 40 hours, then falls. Pearson's r would be close to 0 and wrongly suggest 'no relationship'."
+        feedback_nl: "Correct! Pearsons r meet alleen lineaire verbanden. Hier is het verband een omgekeerde U: tot ongeveer 40 uur stijgt de prestatie, daarna daalt ze. Pearsons r zou dicht bij 0 uitkomen en ten onrechte 'geen verband' suggereren."
+
+  # ── T-TOETS ───────────────────────────────────────────────────────────────
+
+  # bron: Research Skills oefenvragen, slide 39
+  - id: 71
+    topic_en: "T-test"
+    topic_nl: "T-toets"
+    topic_link: "/HRa/week-05/hra2/"
+    image: "images/q_ttest_time_on_site.png"
+    question_en: "A website compared the time visitors spent on the site (minutes) for a new design (n = 40, M = 12.4) and the old design (n = 40, M = 10.8). Based on the output above, which conclusion is correct (α = 0.05)?"
+    question_nl: "Een website vergeleek de tijd die bezoekers op de site doorbrachten (minuten) bij een nieuw ontwerp (n = 40, M = 12,4) en het oude ontwerp (n = 40, M = 10,8). Welke conclusie is juist op basis van de output hierboven (α = 0,05)?"
+    answers:
+      - text_en: "The variances differ, so the t-test cannot be used"
+        text_nl: "De varianties verschillen, dus de t-toets mag niet worden gebruikt"
+        correct: false
+        feedback_en: "Incorrect. Levene's test gives p = 0.519 > 0.05, so the variances may be considered equal. Even if they differed, you would use Welch's t, not drop the t-test."
+        feedback_nl: "Onjuist. De toets van Levene geeft p = 0,519 > 0,05, dus de varianties mogen als gelijk worden beschouwd. En ook als ze verschilden, gebruik je de Welch-toets in plaats van de t-toets te laten vallen."
+      - text_en: "Levene's test is not significant, and the mean time differs significantly"
+        text_nl: "De toets van Levene is niet significant, en de gemiddelde tijd verschilt significant"
+        correct: true
+        feedback_en: "Correct! Levene: p = 0.519 > 0.05, so equal variances are assumed and you read Student's t. t(78) = 2.20, p = 0.031 < 0.05: the difference in mean time is significant."
+        feedback_nl: "Correct! Levene: p = 0,519 > 0,05, dus de varianties mogen als gelijk worden beschouwd en je leest de Student's t af. t(78) = 2,20, p = 0,031 < 0,05: het verschil in gemiddelde tijd is significant."
+      - text_en: "There is no significant difference, because p < 0.05"
+        text_nl: "Er is geen significant verschil, omdat p < 0,05"
+        correct: false
+        feedback_en: "Incorrect. p < 0.05 means the difference is significant, not that it is absent."
+        feedback_nl: "Onjuist. p < 0,05 betekent juist dat het verschil significant is, niet dat het er niet is."
+      - text_en: "Every visitor stays exactly 1.6 minutes longer with the new design"
+        text_nl: "Elke bezoeker blijft met het nieuwe ontwerp precies 1,6 minuut langer"
+        correct: false
+        feedback_en: "Incorrect. 1.6 minutes is the difference between the group means, not the difference for every individual visitor."
+        feedback_nl: "Onjuist. 1,6 minuut is het verschil tussen de groepsgemiddelden, niet het verschil voor elke individuele bezoeker."
+
+  # bron: Research Skills oefenvragen, slide 40
+  - id: 72
+    topic_en: "T-test"
+    topic_nl: "T-toets"
+    topic_link: "/HRa/week-05/hra2/"
+    question_en: "What does Levene's test check in an independent-samples t-test?"
+    question_nl: "Wat controleert de toets van Levene bij een onafhankelijke t-toets?"
+    answers:
+      - text_en: "Whether the groups are normally distributed"
+        text_nl: "Of de groepen normaal verdeeld zijn"
+        correct: false
+        feedback_en: "Incorrect. Normality is checked with, for example, the Shapiro-Wilk test, not with Levene's test."
+        feedback_nl: "Onjuist. Normaliteit controleer je bijvoorbeeld met de Shapiro-Wilk-toets, niet met de toets van Levene."
+      - text_en: "Whether the group means are equal"
+        text_nl: "Of de groepsgemiddelden gelijk zijn"
+        correct: false
+        feedback_en: "Incorrect. Whether the means differ is tested by the t-test itself."
+        feedback_nl: "Onjuist. Of de gemiddelden verschillen, toetst de t-toets zelf."
+      - text_en: "Whether the samples are large enough"
+        text_nl: "Of de steekproeven groot genoeg zijn"
+        correct: false
+        feedback_en: "Incorrect. Levene's test says nothing about sample size."
+        feedback_nl: "Onjuist. De toets van Levene zegt niets over de steekproefgrootte."
+      - text_en: "Whether the variances of the groups are equal"
+        text_nl: "Of de varianties van de groepen gelijk zijn"
+        correct: true
+        feedback_en: "Correct! Levene's test checks the assumption of equal variances (homogeneity of variances). It determines whether you read Student's t or Welch's t."
+        feedback_nl: "Correct! De toets van Levene toetst de aanname van gelijke varianties (homogeniteit van varianties). Die bepaalt of je de Student's t of de Welch-toets afleest."
+
+  # bron: Research Skills oefenvragen, slide 41
+  - id: 73
+    topic_en: "T-test"
+    topic_nl: "T-toets"
+    topic_link: "/HRa/week-05/hra2/"
+    question_en: "The reaction time of 30 cabin crew members is measured before and after a night flight. Which test should you use to compare the two measurements?"
+    question_nl: "De reactietijd van 30 cabinemedewerkers wordt gemeten voor en na een nachtvlucht. Welke toets gebruik je om de twee metingen te vergelijken?"
+    answers:
+      - text_en: "An independent-samples t-test"
+        text_nl: "Een onafhankelijke t-toets"
+        correct: false
+        feedback_en: "Incorrect. An independent t-test compares two different groups of people. Here the same people are measured twice."
+        feedback_nl: "Onjuist. Een onafhankelijke t-toets vergelijkt twee verschillende groepen mensen. Hier worden dezelfde mensen twee keer gemeten."
+      - text_en: "A paired-samples t-test"
+        text_nl: "Een gepaarde t-toets"
+        correct: true
+        feedback_en: "Correct! The same people are measured twice, so the measurements are linked. You compare the before–after difference per person."
+        feedback_nl: "Correct! Dezelfde personen worden twee keer gemeten; de metingen zijn dus aan elkaar gekoppeld. Je vergelijkt per persoon het verschil tussen voor en na."
+      - text_en: "A chi-square test"
+        text_nl: "Een chi-kwadraattoets"
+        correct: false
+        feedback_en: "Incorrect. A chi-square test is for two categorical variables. Reaction time is a ratio variable."
+        feedback_nl: "Onjuist. Een chi-kwadraattoets is voor twee categorische variabelen. Reactietijd is een ratiovariabele."
+      - text_en: "A one-way ANOVA"
+        text_nl: "Een eenweg-ANOVA"
+        correct: false
+        feedback_en: "Incorrect. A one-way ANOVA compares three or more independent groups. Here there are two linked measurements."
+        feedback_nl: "Onjuist. Een eenweg-ANOVA vergelijkt drie of meer onafhankelijke groepen. Hier zijn er twee gekoppelde metingen."
+
+  # bron: Research Skills oefenvragen, slide 42
+  - id: 74
+    topic_en: "T-test"
+    topic_nl: "T-toets"
+    topic_link: "/HRa/week-05/hra2/"
+    question_en: "You compare the average tip of waiters who introduce themselves by name with the average tip of other waiters. Which test fits?"
+    question_nl: "Je vergelijkt de gemiddelde fooi van obers die zich met hun naam voorstellen met de gemiddelde fooi van andere obers. Welke toets past hierbij?"
+    answers:
+      - text_en: "An independent-samples t-test"
+        text_nl: "Een onafhankelijke t-toets"
+        correct: true
+        feedback_en: "Correct! You compare the mean of a ratio variable (tip in euros) between two different groups of people. The groups are independent: each waiter is in only one group."
+        feedback_nl: "Correct! Je vergelijkt het gemiddelde van een ratiovariabele (fooi in euro's) tussen twee verschillende groepen mensen. De groepen zijn onafhankelijk: elke ober zit in maar één groep."
+      - text_en: "A paired-samples t-test"
+        text_nl: "Een gepaarde t-toets"
+        correct: false
+        feedback_en: "Incorrect. A paired t-test is for linked measurements (e.g. the same people twice). These are two separate groups of waiters."
+        feedback_nl: "Onjuist. Een gepaarde t-toets is voor gekoppelde metingen (bijv. dezelfde mensen twee keer). Dit zijn twee aparte groepen obers."
+      - text_en: "A chi-square test"
+        text_nl: "Een chi-kwadraattoets"
+        correct: false
+        feedback_en: "Incorrect. A chi-square test is for two categorical variables. The tip is an amount in euros, so you compare means."
+        feedback_nl: "Onjuist. Een chi-kwadraattoets is voor twee categorische variabelen. De fooi is een bedrag in euro's, dus je vergelijkt gemiddelden."
+      - text_en: "A Pearson correlation"
+        text_nl: "Een Pearson-correlatie"
+        correct: false
+        feedback_en: "Incorrect. Pearson's r requires two interval/ratio variables. 'Introduces himself by name (yes/no)' is a grouping variable."
+        feedback_nl: "Onjuist. Pearsons r vraagt twee interval-/ratiovariabelen. 'Stelt zich voor met naam (ja/nee)' is een groepsvariabele."
+
+  # bron: Research Skills oefenvragen, slide 43
+  - id: 75
+    topic_en: "T-test"
+    topic_nl: "T-toets"
+    topic_link: "/HRa/week-05/hra2/"
+    image: "images/q_paired_ttest_training.png"
+    question_en: "25 employees rated their job satisfaction (1–10) before and after a training course. Based on the output above, which statement is correct (α = 0.05)?"
+    question_nl: "25 medewerkers beoordeelden hun werktevredenheid (1–10) voor en na een training. Welke uitspraak is juist op basis van de output hierboven (α = 0,05)?"
+    answers:
+      - text_en: "Satisfaction is significantly higher after the training"
+        text_nl: "De tevredenheid is na de training significant hoger"
+        correct: true
+        feedback_en: "Correct! t(24) = −2.80, p = 0.010 < 0.05: significant. The difference is computed as 'before − after' = 6.20 − 6.90 = −0.70, so a negative difference means the score after the training is higher."
+        feedback_nl: "Correct! t(24) = −2,80, p = 0,010 < 0,05: significant. Het verschil is berekend als 'voor − na' = 6,20 − 6,90 = −0,70. Een negatief verschil betekent dus dat de score ná de training hoger is."
+      - text_en: "Satisfaction is significantly lower after the training"
+        text_nl: "De tevredenheid is na de training significant lager"
+        correct: false
+        feedback_en: "Incorrect. The negative t comes from 'before − after'. The means show 6.90 after versus 6.20 before: satisfaction went up."
+        feedback_nl: "Onjuist. De negatieve t komt van 'voor − na'. De gemiddelden tonen 6,90 na tegenover 6,20 voor: de tevredenheid is gestegen."
+      - text_en: "There is no significant difference, because t is negative"
+        text_nl: "Er is geen significant verschil, omdat t negatief is"
+        correct: false
+        feedback_en: "Incorrect. The sign of t tells you the direction, not the significance. p = 0.010 < 0.05, so the difference is significant."
+        feedback_nl: "Onjuist. Het teken van t zegt iets over de richting, niet over de significantie. p = 0,010 < 0,05, dus het verschil is significant."
+      - text_en: "An independent-samples t-test should have been used"
+        text_nl: "Er had een onafhankelijke t-toets gebruikt moeten worden"
+        correct: false
+        feedback_en: "Incorrect. The same people were measured twice, so a paired-samples t-test is correct."
+        feedback_nl: "Onjuist. Dezelfde personen zijn twee keer gemeten, dus een gepaarde t-toets is juist."
+
+  # bron: Research Skills oefenvragen, slide 44
+  - id: 76
+    topic_en: "T-test"
+    topic_nl: "T-toets"
+    topic_link: "/HRa/week-05/hra2/"
+    question_en: "In an independent-samples t-test, Levene's test gives p = 0.002. What should you do?"
+    question_nl: "Bij een onafhankelijke t-toets geeft de toets van Levene p = 0,002. Wat doe je?"
+    answers:
+      - text_en: "Stop: no t-test can be performed"
+        text_nl: "Stoppen: er kan geen t-toets worden uitgevoerd"
+        correct: false
+        feedback_en: "Incorrect. Unequal variances do not make the t-test unusable; there is a version that does not assume equal variances."
+        feedback_nl: "Onjuist. Ongelijke varianties maken de t-toets niet onbruikbaar; er is een versie die geen gelijke varianties aanneemt."
+      - text_en: "Use a paired-samples t-test instead"
+        text_nl: "In plaats daarvan een gepaarde t-toets gebruiken"
+        correct: false
+        feedback_en: "Incorrect. Whether a test is paired depends on the design (same people measured twice), not on Levene's test."
+        feedback_nl: "Onjuist. Of een toets gepaard is, hangt af van het design (dezelfde mensen twee keer gemeten), niet van de toets van Levene."
+      - text_en: "Report Welch's t-test (equal variances not assumed)"
+        text_nl: "De Welch-toets rapporteren (gelijke varianties niet aangenomen)"
+        correct: true
+        feedback_en: "Correct! p = 0.002 < 0.05: the variances differ significantly. You then report the version that does not assume equal variances: Welch's t-test (in SPSS the row 'Equal variances not assumed')."
+        feedback_nl: "Correct! p = 0,002 < 0,05: de varianties verschillen significant. Je rapporteert dan de versie die geen gelijke varianties aanneemt: de Welch-toets (in SPSS de regel 'Equal variances not assumed')."
+      - text_en: "Use a chi-square test instead"
+        text_nl: "In plaats daarvan een chi-kwadraattoets gebruiken"
+        correct: false
+        feedback_en: "Incorrect. A chi-square test is for two categorical variables; the dependent variable here is still an interval/ratio variable."
+        feedback_nl: "Onjuist. Een chi-kwadraattoets is voor twee categorische variabelen; de afhankelijke variabele is hier nog steeds een interval-/ratiovariabele."
+
   # ── ANOVA ─────────────────────────────────────────────────────────────────
 
-  - id: 36
+  - id: 77
     topic_en: "ANOVA"
     topic_nl: "ANOVA"
     topic_link: "/HRa/week-06/hra1/"
@@ -957,144 +2166,120 @@ questions:
         feedback_en: "This statement is TRUE. When Levene's test shows unequal variances, the Welch ANOVA is the robust alternative."
         feedback_nl: "Deze uitspraak is WAAR. Als Levene's toets ongelijke varianties aantoont, is de Welch ANOVA het robuuste alternatief."
 
-  # ── ONDERZOEKSMETHODEN ────────────────────────────────────────────────────
-
-  - id: 46
-    topic_en: "Research Methods"
-    topic_nl: "Onderzoeksmethoden"
-    topic_link: "/HRa/week-01/hra2/"
-    question_en: "What does operationalization mean?"
-    question_nl: "Wat betekent operationalisering?"
+  # bron: Research Skills oefenvragen, slide 46
+  - id: 78
+    topic_en: "ANOVA"
+    topic_nl: "ANOVA"
+    topic_link: "/HRa/week-06/hra1/"
+    image: "images/q_anova_locations.png"
+    question_en: "Guest satisfaction (1–10) was compared between three hotel locations. Based on the output above, which conclusion is correct (α = 0.05)?"
+    question_nl: "De gasttevredenheid (1–10) is vergeleken tussen drie hotellocaties. Welke conclusie is juist op basis van de output hierboven (α = 0,05)?"
     answers:
-      - text_en: "Using multiple methods to increase reliability"
-        text_nl: "Meerdere methoden gebruiken om de betrouwbaarheid te verhogen"
+      - text_en: "All three locations differ significantly from each other"
+        text_nl: "Alle drie de locaties verschillen significant van elkaar"
         correct: false
-        feedback_en: "Incorrect. Using multiple methods is called triangulation. Operationalization is about making abstract concepts measurable."
-        feedback_nl: "Onjuist. Het gebruik van meerdere methoden heet triangulatie. Operationalisering gaat over het meetbaar maken van abstracte concepten."
-      - text_en: "Generalizing findings from the sample to the population"
-        text_nl: "Bevindingen vanuit de steekproef generaliseren naar de populatie"
-        correct: false
-        feedback_en: "Incorrect. Generalizing findings is called external validity or generalizability. Operationalization is defining how you will measure a concept."
-        feedback_nl: "Onjuist. Het generaliseren van bevindingen heet externe validiteit of generaliseerbaarheid. Operationalisering is het definiëren van hoe je een concept gaat meten."
-      - text_en: "Developing standard instruments"
-        text_nl: "Standaardinstrumenten ontwikkelen"
-        correct: false
-        feedback_en: "Incorrect. While developing instruments is part of the process, operationalization specifically means translating abstract concepts into measurable variables."
-        feedback_nl: "Onjuist. Hoewel het ontwikkelen van instrumenten deel uitmaakt van het proces, betekent operationalisering specifiek het vertalen van abstracte concepten naar meetbare variabelen."
-      - text_en: "Developing concepts into measurable instruments"
-        text_nl: "Concepten omzetten in meetbare instrumenten"
+        feedback_en: "Incorrect. An ANOVA only tells you that at least one group mean differs, not which groups differ from each other. For that you need a post-hoc test."
+        feedback_nl: "Onjuist. Een ANOVA zegt alleen dat minstens één groepsgemiddelde afwijkt, niet welke groepen precies van elkaar verschillen. Daarvoor heb je een post-hoctoets nodig."
+      - text_en: "The mean satisfaction differs significantly for at least one location"
+        text_nl: "De gemiddelde tevredenheid verschilt significant voor minstens één locatie"
         correct: true
-        feedback_en: "Correct! Operationalization is the process of defining how an abstract concept (e.g. 'job satisfaction') will be measured in practice."
-        feedback_nl: "Correct! Operationalisering is het proces waarbij een abstract concept (bijv. 'werktevredenheid') wordt omgezet in een meetbare variabele."
+        feedback_en: "Correct! F(2, 87) = 10.72, p < 0.001: H0 (all means equal) is rejected. So at least one location's mean differs from the others."
+        feedback_nl: "Correct! F(2, 87) = 10,72, p < 0,001: H0 (alle gemiddelden gelijk) wordt verworpen. Minstens één locatie heeft dus een afwijkend gemiddelde."
+      - text_en: "There is no significant difference between the locations"
+        text_nl: "Er is geen significant verschil tussen de locaties"
+        correct: false
+        feedback_en: "Incorrect. p < 0.001 is smaller than 0.05, so there is a significant difference."
+        feedback_nl: "Onjuist. p < 0,001 is kleiner dan 0,05, dus er is wel een significant verschil."
+      - text_en: "The airport hotel has the highest satisfaction"
+        text_nl: "Het luchthavenhotel heeft de hoogste tevredenheid"
+        correct: false
+        feedback_en: "Incorrect. The airport hotel has the lowest mean (6.50); the beach hotel has the highest (8.10)."
+        feedback_nl: "Onjuist. Het luchthavenhotel heeft juist het laagste gemiddelde (6,50); het strandhotel het hoogste (8,10)."
 
-  - id: 47
-    topic_en: "Hypotheses"
-    topic_nl: "Hypothesen"
-    topic_link: "/HRa/week-01/hra2/"
-    question_en: "You expect that male HMSM students spend more hours on their side job compared to female HMSM students. How do you formulate the null hypothesis and the alternative hypothesis?"
-    question_nl: "Je verwacht dat mannelijke HMSM-studenten meer uren aan hun bijbaan besteden dan vrouwelijke HMSM-studenten. Hoe formuleer je de nulhypothese en de alternatieve hypothese?"
+  # bron: Research Skills oefenvragen, slide 47
+  - id: 79
+    topic_en: "ANOVA"
+    topic_nl: "ANOVA"
+    topic_link: "/HRa/week-06/hra1/"
+    image: "images/q_anova_posthoc.png"
+    question_en: "After the ANOVA of the previous question, a Tukey post-hoc test was run (see the output above). Which pairs of locations differ significantly (α = 0.05)?"
+    question_nl: "Na de ANOVA van de vorige vraag is een post-hoctoets van Tukey uitgevoerd (zie de output hierboven). Welke paren locaties verschillen significant (α = 0,05)?"
     answers:
-      - text_en: "H₀: πmale ≤ πfemale and H₁: πmale > πfemale"
-        text_nl: "H₀: πmale ≤ πfemale en H₁: πmale > πfemale"
+      - text_en: "Only Beach – Airport"
+        text_nl: "Alleen Beach – Airport"
         correct: false
-        feedback_en: "Incorrect. π (pi) is the symbol for a proportion. Hours worked is a continuous variable, so use μ (mean), not π."
-        feedback_nl: "Onjuist. π (pi) is het symbool voor een proportie. Gewerkte uren is een continue variabele, dus gebruik μ (gemiddelde), niet π."
-      - text_en: "H₀: μmale ≤ μfemale and H₁: μmale > μfemale"
-        text_nl: "H₀: μmale ≤ μfemale en H₁: μmale > μfemale"
+        feedback_en: "Incorrect. City – Beach is also significant: p tukey = 0.029 < 0.05."
+        feedback_nl: "Onjuist. City – Beach is ook significant: p tukey = 0,029 < 0,05."
+      - text_en: "All three pairs"
+        text_nl: "Alle drie de paren"
+        correct: false
+        feedback_en: "Incorrect. City – Airport has p tukey = 0.112 > 0.05, so that pair does not differ significantly."
+        feedback_nl: "Onjuist. City – Airport heeft p tukey = 0,112 > 0,05, dus dat paar verschilt niet significant."
+      - text_en: "City – Beach and Beach – Airport"
+        text_nl: "City – Beach en Beach – Airport"
         correct: true
-        feedback_en: "Correct! Hours worked is continuous → use μ. The expectation is that males work more (H₁: μmale > μfemale), so H₀ is the opposite: μmale ≤ μfemale."
-        feedback_nl: "Correct! Gewerkte uren is continu → gebruik μ. De verwachting is dat mannen meer werken (H₁: μmale > μfemale), dus H₀ is het tegendeel: μmale ≤ μfemale."
-      - text_en: "H₀: μmale > μfemale and H₁: μmale ≤ μfemale"
-        text_nl: "H₀: μmale > μfemale en H₁: μmale ≤ μfemale"
+        feedback_en: "Correct! Look at the 'p tukey' column: City – Beach (p = 0.029) and Beach – Airport (p < 0.001) are below 0.05; City – Airport (p = 0.112) is not. The sign of the mean difference only gives the direction."
+        feedback_nl: "Correct! Kijk naar de kolom 'p tukey': City – Beach (p = 0,029) en Beach – Airport (p < 0,001) zijn kleiner dan 0,05; City – Airport (p = 0,112) niet. Het teken van het gemiddelde verschil geeft alleen de richting."
+      - text_en: "Only City – Airport"
+        text_nl: "Alleen City – Airport"
         correct: false
-        feedback_en: "Incorrect. H₀ and H₁ are swapped. H₀ always represents 'no effect' or the opposite of your expectation."
-        feedback_nl: "Onjuist. H₀ en H₁ zijn omgedraaid. H₀ vertegenwoordigt altijd 'geen effect' of het tegendeel van je verwachting."
-      - text_en: "H₀: πmale > πfemale and H₁: πmale ≤ πfemale"
-        text_nl: "H₀: πmale > πfemale en H₁: πmale ≤ πfemale"
-        correct: false
-        feedback_en: "Incorrect. π is for proportions (e.g. yes/no questions). Use μ for continuous variables like hours worked. Also H₀ and H₁ are reversed."
-        feedback_nl: "Onjuist. π is voor proporties (bijv. ja/nee-vragen). Gebruik μ voor continue variabelen zoals gewerkte uren. Ook zijn H₀ en H₁ omgedraaid."
+        feedback_en: "Incorrect. City – Airport is precisely the only pair that is not significant (p = 0.112)."
+        feedback_nl: "Onjuist. City – Airport is juist het enige paar dat níét significant is (p = 0,112)."
 
-  - id: 48
-    topic_en: "Measurement Levels"
-    topic_nl: "Meetniveaus"
-    topic_link: "/HRa/week-03/hra2/"
-    question_en: "In a survey investigating the political tendency of the Dutch people the following questions are being asked: (1) Are you a member of a political party? (2) How many hours per week do you spend on political activities? (3) How interested are you in politics on a scale of 1-5?"
-    question_nl: "In een enquête over de politieke gezindheid van Nederlanders worden de volgende vragen gesteld: (1) Bent u lid van een politieke partij? (2) Hoeveel uur per week besteedt u aan politieke activiteiten? (3) Hoe geïnteresseerd bent u in politiek op een schaal van 1-5?"
+  # bron: Research Skills oefenvragen, slide 48
+  - id: 80
+    topic_en: "ANOVA"
+    topic_nl: "ANOVA"
+    topic_link: "/HRa/week-06/hra1/"
+    question_en: "Why do you perform a post-hoc test after a significant ANOVA?"
+    question_nl: "Waarom voer je na een significante ANOVA een post-hoctoets uit?"
     answers:
-      - text_en: "(1) ordinal, (2) interval-ratio, (3) ordinal"
-        text_nl: "(1) ordinaal, (2) interval-ratio, (3) ordinaal"
+      - text_en: "To check whether the variances are equal"
+        text_nl: "Om te controleren of de varianties gelijk zijn"
         correct: false
-        feedback_en: "Incorrect. Party membership (yes/no) is nominal, not ordinal."
-        feedback_nl: "Onjuist. Partijlidmaatschap (ja/nee) is nominaal, niet ordinaal."
-      - text_en: "(1) nominal, (2) interval-ratio, (3) nominal"
-        text_nl: "(1) nominaal, (2) interval-ratio, (3) nominaal"
+        feedback_en: "Incorrect. Equal variances are checked with Levene's test, before interpreting the ANOVA."
+        feedback_nl: "Onjuist. Gelijke varianties controleer je met de toets van Levene, vóór je de ANOVA interpreteert."
+      - text_en: "To increase the sample size"
+        text_nl: "Om de steekproef te vergroten"
         correct: false
-        feedback_en: "Incorrect. Interest on a 1–5 scale is ordinal (ordered categories), not nominal."
-        feedback_nl: "Onjuist. Interesse op een 1–5 schaal is ordinaal (geordende categorieën), niet nominaal."
-      - text_en: "(1) nominal, (2) ordinal, (3) ordinal"
-        text_nl: "(1) nominaal, (2) ordinaal, (3) ordinaal"
+        feedback_en: "Incorrect. A post-hoc test uses the same data; it does not add observations."
+        feedback_nl: "Onjuist. Een post-hoctoets gebruikt dezelfde data; er komen geen waarnemingen bij."
+      - text_en: "To check whether the data are normally distributed"
+        text_nl: "Om te controleren of de data normaal verdeeld zijn"
         correct: false
-        feedback_en: "Incorrect. Hours per week is a continuous numeric variable with a true zero — that is interval-ratio, not ordinal."
-        feedback_nl: "Onjuist. Uren per week is een continue numerieke variabele met een absoluut nulpunt — dat is interval-ratio, niet ordinaal."
-      - text_en: "(1) nominal, (2) interval-ratio, (3) ordinal"
-        text_nl: "(1) nominaal, (2) interval-ratio, (3) ordinaal"
+        feedback_en: "Incorrect. Normality is checked with, for example, the Shapiro-Wilk test."
+        feedback_nl: "Onjuist. Normaliteit controleer je bijvoorbeeld met de Shapiro-Wilk-toets."
+      - text_en: "To find out which groups differ from each other"
+        text_nl: "Om te achterhalen welke groepen van elkaar verschillen"
         correct: true
-        feedback_en: "Correct! Party membership (yes/no) = nominal. Hours per week = interval-ratio (continuous, equal intervals, true zero). Interest 1–5 = ordinal."
-        feedback_nl: "Correct! Partijlidmaatschap (ja/nee) = nominaal. Uren per week = interval-ratio (continu, gelijke intervallen, absoluut nulpunt). Interesse 1–5 = ordinaal."
+        feedback_en: "Correct! A significant ANOVA only says that at least one group differs. A post-hoc test (e.g. Tukey, Bonferroni or Games-Howell) compares the groups pairwise and corrects for the number of comparisons."
+        feedback_nl: "Correct! Een significante ANOVA vertelt alleen dat minstens één groep afwijkt. Een post-hoctoets (bijvoorbeeld Tukey, Bonferroni of Games-Howell) vergelijkt de groepen paarsgewijs en corrigeert daarbij voor het aantal vergelijkingen."
 
-  - id: 49
-    topic_en: "Hypotheses"
-    topic_nl: "Hypothesen"
-    topic_link: "/HRa/week-01/hra2/"
-    question_en: "You assume that of all HMSM students more males than females smoke. How do you formulate the null hypothesis and alternative hypothesis?"
-    question_nl: "Je neemt aan dat van alle HMSM-studenten meer mannen dan vrouwen roken. Hoe formuleer je de nulhypothese en de alternatieve hypothese?"
+  # bron: Research Skills oefenvragen, slide 49
+  - id: 81
+    topic_en: "ANOVA"
+    topic_nl: "ANOVA"
+    topic_link: "/HRa/week-06/hra1/"
+    question_en: "Why do you use an ANOVA instead of three separate t-tests to compare three groups?"
+    question_nl: "Waarom gebruik je een ANOVA in plaats van drie losse t-toetsen om drie groepen te vergelijken?"
     answers:
-      - text_en: "H₀: πmale > πfemale and H₁: πmale ≤ πfemale"
-        text_nl: "H₀: πmale > πfemale en H₁: πmale ≤ πfemale"
-        correct: false
-        feedback_en: "Incorrect. H₀ and H₁ are swapped. H₀ is the null (no effect / opposite of expectation). Your expectation (more males smoke) becomes H₁."
-        feedback_nl: "Onjuist. H₀ en H₁ zijn omgedraaid. H₀ is de nul (geen effect / tegendeel van verwachting). Je verwachting (meer mannen roken) wordt H₁."
-      - text_en: "H₀: μmale > μfemale and H₁: μmale ≤ μfemale"
-        text_nl: "H₀: μmale > μfemale en H₁: μmale ≤ μfemale"
-        correct: false
-        feedback_en: "Incorrect. Smoking (yes/no) is a proportion, so use π (not μ). Also H₀ and H₁ are reversed."
-        feedback_nl: "Onjuist. Roken (ja/nee) is een proportie, dus gebruik π (niet μ). Ook zijn H₀ en H₁ omgedraaid."
-      - text_en: "H₀: πmale ≤ πfemale and H₁: πmale > πfemale"
-        text_nl: "H₀: πmale ≤ πfemale en H₁: πmale > πfemale"
+      - text_en: "Multiple tests increase the risk of a type I error"
+        text_nl: "Meerdere toetsen vergroten de kans op een type I-fout"
         correct: true
-        feedback_en: "Correct! Smoking is categorical (yes/no) → use π (proportion). The expectation (more males smoke) = H₁: πmale > πfemale. H₀ is the opposite."
-        feedback_nl: "Correct! Roken is categorisch (ja/nee) → gebruik π (proportie). De verwachting (meer mannen roken) = H₁: πmale > πfemale. H₀ is het tegendeel."
-      - text_en: "H₀: μmale ≤ μfemale and H₁: μmale > μfemale"
-        text_nl: "H₀: μmale ≤ μfemale en H₁: μmale > μfemale"
+        feedback_en: "Correct! Each test has an α (5%) chance of a type I error. With three separate tests the chance of at least one false positive is about 1 − 0.95³ ≈ 14%. The ANOVA tests all groups at once with α = 0.05."
+        feedback_nl: "Correct! Elke toets heeft een kans van α (5%) op een type I-fout. Bij drie losse toetsen is de kans dat er minstens één keer onterecht een verschil gevonden wordt ongeveer 1 − 0,95³ ≈ 14%. De ANOVA toetst alle groepen in één keer met α = 0,05."
+      - text_en: "A t-test cannot handle more than 20 respondents"
+        text_nl: "Een t-toets kan niet meer dan 20 respondenten aan"
         correct: false
-        feedback_en: "Incorrect. Use π for proportions (binary variables like yes/no smoking), not μ which is for continuous variables."
-        feedback_nl: "Onjuist. Gebruik π voor proporties (binaire variabelen zoals ja/nee roken), niet μ dat voor continue variabelen is."
-
-  - id: 50
-    topic_en: "Descriptive Statistics"
-    topic_nl: "Beschrijvende Statistiek"
-    topic_link: "/HRa/week-03/hra1/"
-    question_en: "In a classroom we find 15 students with the following ages: 19, 21, 21, 18, 23, 22, 21, 21, 20, 19, 20, 21, 22, 19, 23. The sample has a mean=20.67, median=21, mode=21 and SD=1.5. A professor aged 68 enters the room. What happens to the age measures?"
-    question_nl: "In een klas vinden we 15 studenten met de volgende leeftijden: 19, 21, 21, 18, 23, 22, 21, 21, 20, 19, 20, 21, 22, 19, 23. Gemiddelde=20,67, mediaan=21, modus=21 en SD=1,5. Een professor van 68 jaar betreedt de ruimte. Wat gebeurt er met de leeftijdsmaten?"
-    answers:
-      - text_en: "Mean, median, and SD increase"
-        text_nl: "Gemiddelde, mediaan en SD nemen toe"
+        feedback_en: "Incorrect. A t-test has no maximum number of respondents."
+        feedback_nl: "Onjuist. Een t-toets heeft geen maximum aantal respondenten."
+      - text_en: "A t-test requires nominal data"
+        text_nl: "Een t-toets vereist nominale data"
         correct: false
-        feedback_en: "Incorrect. The median and mode are not strongly affected by outliers. The extreme value (68) pulls up the mean and widens the SD, but the median stays the same."
-        feedback_nl: "Onjuist. De mediaan en modus worden niet sterk beïnvloed door uitbijters. De extreme waarde (68) trekt het gemiddelde omhoog en vergroot de SD, maar de mediaan blijft gelijk."
-      - text_en: "Mean and SD increase, median and mode remain the same"
-        text_nl: "Gemiddelde en SD nemen toe, mediaan en modus blijven gelijk"
-        correct: true
-        feedback_en: "Correct! The professor (68) is an extreme outlier. This pulls the mean up significantly and inflates the SD. The median (middle value) and mode (most frequent) are resistant to outliers and stay the same."
-        feedback_nl: "Correct! De professor (68) is een extreme uitbijter. Dit trekt het gemiddelde flink omhoog en vergroot de SD. De mediaan (middelste waarde) en modus (meest voorkomende) zijn robuust voor uitbijters en blijven gelijk."
-      - text_en: "Mean increases, median and mode remain the same, SD decreases"
-        text_nl: "Gemiddelde neemt toe, mediaan en modus blijven gelijk, SD neemt af"
+        feedback_en: "Incorrect. A t-test compares means of an interval/ratio variable; only the grouping variable is nominal."
+        feedback_nl: "Onjuist. Een t-toets vergelijkt gemiddelden van een interval-/ratiovariabele; alleen de groepsvariabele is nominaal."
+      - text_en: "An ANOVA always gives a smaller p-value"
+        text_nl: "Een ANOVA geeft altijd een kleinere p-waarde"
         correct: false
-        feedback_en: "Incorrect. Adding an extreme outlier (68) makes the data more spread out, so SD increases, not decreases."
-        feedback_nl: "Onjuist. Het toevoegen van een extreme uitbijter (68) maakt de data meer verspreid, dus SD neemt toe, niet af."
-      - text_en: "Mean, median and mode increase, SD decreases"
-        text_nl: "Gemiddelde, mediaan en modus nemen toe, SD neemt af"
-        correct: false
-        feedback_en: "Incorrect. The median and mode are robust to outliers — they do not change. And SD increases, not decreases, when an extreme value is added."
-        feedback_nl: "Onjuist. Mediaan en modus zijn robuust voor uitbijters — ze veranderen niet. En SD neemt toe, niet af, als een extreme waarde wordt toegevoegd."
+        feedback_en: "Incorrect. There is no such rule. The reason is controlling the overall type I error, not getting a smaller p-value."
+        feedback_nl: "Onjuist. Zo'n regel bestaat niet. De reden is het beheersen van de totale type I-fout, niet een kleinere p-waarde."
