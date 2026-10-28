@@ -1,3 +1,5 @@
-mkdocs>=1.6
-mkdocs-material>=9.5
-pymdown-extensions>=10.0
+# Tested with mkdocs 1.6.1, mkdocs-material 9.8.0, pymdown-extensions 12.3.
+# Upper bounds keep the build working: Material does not support MkDocs 2.
+mkdocs>=1.6.1,<2
+mkdocs-material>=9.8,<10
+pymdown-extensions>=10.0,<13
