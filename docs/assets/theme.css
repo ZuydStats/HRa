@@ -1,0 +1,47 @@
+/* ── HRa theme: Zuyd / Hotel Management School Maastricht purple ─────────── */
+
+:root,
+[data-md-color-scheme="default"] {
+  --md-primary-fg-color:        #913173;
+  --md-primary-fg-color--light: #b4589a;
+  --md-primary-fg-color--dark:  #6e2257;
+  --md-primary-bg-color:        #ffffff;
+  --md-primary-bg-color--light: #ffffffb3;
+  --md-accent-fg-color:         #c7801a;
+  --md-accent-fg-color--transparent: #c7801a1a;
+  --md-typeset-a-color:         #913173;
+}
+
+[data-md-color-scheme="slate"] {
+  --md-hue: 315;
+  --md-primary-fg-color:        #7a2a62;
+  --md-primary-fg-color--light: #9c4a85;
+  --md-primary-fg-color--dark:  #5a1d48;
+  --md-accent-fg-color:         #f0b042;
+  --md-accent-fg-color--transparent: #f0b0421a;
+  --md-typeset-a-color:         #e39acb;
+}
+
+/* Tabs bar a touch darker than the header for depth */
+.md-tabs { background-color: var(--md-primary-fg-color--dark); }
+
+/* Headings in brand colour */
+.md-typeset h1 { color: var(--md-primary-fg-color); font-weight: 700; }
+[data-md-color-scheme="slate"] .md-typeset h1 { color: var(--md-typeset-a-color); }
+.md-typeset h2 {
+  border-bottom: 2px solid var(--md-accent-fg-color--transparent);
+  padding-bottom: .2em;
+}
+
+/* Rounded images and iframes (videos) */
+.md-typeset img, .md-typeset iframe { border-radius: 8px; }
+.md-typeset iframe { max-width: 100%; }
+
+/* "Quick recap" image floats right on wide screens, stacks on phones */
+@media (max-width: 600px) {
+  .md-typeset div[style*="float:right"] {
+    float: none !important;
+    max-width: 260px !important;
+    margin: 0 auto 1.2rem !important;
+  }
+}

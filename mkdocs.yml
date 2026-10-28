@@ -1,4 +1,4 @@
-﻿site_name: HR analytics
+site_name: HR analytics
 site_description: HR analytics
 site_url: https://zuydstats.github.io/HRa/
 
@@ -6,14 +6,48 @@ repo_name: ZuydStats/HRa
 repo_url: https://github.com/ZuydStats/HRa
 
 theme:
-  name: windmill
+  name: material
+  language: en
+  icon:
+    logo: material/chart-box-outline
+  palette:
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/brightness-auto
+        name: Follow system setting
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.footer
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+
+extra_css:
+  - assets/theme.css
 
 plugins:
   - search
-  - mermaid2
 
 markdown_extensions:
   - admonition
+  - attr_list
+  - md_in_html
   - pymdownx.details
   - pymdownx.superfences
 

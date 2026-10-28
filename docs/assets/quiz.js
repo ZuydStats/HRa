@@ -6,6 +6,8 @@
 
   const STORAGE_KEY = 'hra_quiz_v3';  // bump when question ids change
   const YAML_PATH   = './questions.yaml';
+  const WIDE        = window.matchMedia('(min-width: 1000px)');
+  const NARROW      = window.matchMedia('(max-width: 600px)');
 
   // ── State ────────────────────────────────────────────────────────────────
   let questions  = [];
@@ -13,6 +15,7 @@
   let answered   = false;
   let scores     = {};
   let answeredQs = {};
+  let overviewOpen = WIDE.matches;   // question overview (dots) expanded?
 
   // ── Boot ─────────────────────────────────────────────────────────────────
   document.addEventListener('DOMContentLoaded', () => {
@@ -38,17 +41,31 @@
           <div class="quiz-layout">
             <div id="quiz-main"></div>
             <aside class="quiz-sidebar">
-              <div class="quiz-chart-section">
-                <h3 class="quiz-chart-title">
-                  <em>Your performance by topic</em><br>Jouw prestaties per onderwerp
-                </h3>
-                <div class="quiz-chart-wrap">
+              <details class="quiz-chart-section" id="quiz-chart-details" ${WIDE.matches ? 'open' : ''}>
+                <summary class="quiz-chart-title">
+                  <span><em>Your performance by topic</em><br>Jouw prestaties per onderwerp</span>
+                </summary>
+                <div class="quiz-chart-wrap" id="quiz-chart-wrap">
                   <canvas id="quiz-chart"></canvas>
                 </div>
                 <p class="quiz-chart-hint">Click a bar → study material</p>
-              </div>
+              </details>
             </aside>
+          </div>
+          <div class="quiz-lightbox" id="quiz-lightbox" hidden onclick="quizCloseImage()">
+            <img alt="">
+            <span class="quiz-lightbox-hint">Tap / click to close · Tik om te sluiten</span>
           </div>`;
+
+        document.getElementById('quiz-chart-details')
+          .addEventListener('toggle', e => { if (e.target.open) renderChart(); });
+
+        // Re-colour the chart when the light/dark toggle changes
+        new MutationObserver(renderChart)
+          .observe(document.body, { attributes: true, attributeFilter: ['data-md-color-scheme'] });
+        NARROW.addEventListener('change', renderChart);
+
+        document.addEventListener('keydown', e => { if (e.key === 'Escape') quizCloseImage(); });
 
         renderQuestion();
         renderChart();
@@ -74,18 +91,17 @@
     const pct  = Math.round((num - 1) / tot * 100);
     const letters = ['A','B','C','D','E'];
     const doneSoFar = Object.keys(answeredQs).length;
+    const nCorrect  = questions.filter(q2 => answeredQs[q2.id] !== undefined && q2.answers[answeredQs[q2.id]]?.correct).length;
 
-    // Nav dots — green = correct, red = wrong, blue = current, grey = unanswered
-    const dotsHtml = questions.map((_, i) => {
-      const q2      = questions[i];
+    // Overview — green = correct, red = wrong, outlined = current, grey = unanswered
+    const dotsHtml = questions.map((q2, i) => {
       const chosen  = answeredQs[q2.id];
-      const isNow   = i === current;
       const isDone  = chosen !== undefined;
       const isRight = isDone && q2.answers[chosen]?.correct;
       let cls = 'quiz-dot';
-      if (isNow)        cls += ' quiz-dot--active';
-      if (isDone)       cls += isRight ? ' quiz-dot--correct' : ' quiz-dot--wrong';
-      return `<span class="${cls}" onclick="quizGoTo(${i})" title="Question ${i+1}"></span>`;
+      if (i === current) cls += ' quiz-dot--active';
+      if (isDone)        cls += isRight ? ' quiz-dot--correct' : ' quiz-dot--wrong';
+      return `<button class="${cls}" onclick="quizGoTo(${i})" title="${i+1} · ${escHtml(q2.topic_en)}">${i+1}</button>`;
     }).join('');
 
     // Answers
@@ -108,16 +124,7 @@
     }).join('');
 
     // Feedback (shown immediately if already answered)
-    const feedbackHtml = prevAns !== undefined
-      ? q.answers.map((a, i) => `
-          <div class="quiz-fb-item ${a.correct ? 'quiz-fb--correct' : 'quiz-fb--wrong'}">
-            <span class="quiz-fb-letter">${letters[i]}</span>
-            <span class="quiz-fb-text">
-              <em>${escHtml(a.feedback_en)}</em><br>
-              ${escHtml(a.feedback_nl)}
-            </span>
-          </div>`).join('')
-      : '';
+    const feedbackHtml = prevAns !== undefined ? feedbackItems(q) : '';
 
     const nextVisible = prevAns !== undefined ? '' : 'style="visibility:hidden"';
 
@@ -126,23 +133,27 @@
 
         <div class="quiz-header">
           <span class="quiz-topic-badge">
-            <em>${escHtml(q.topic_en)}</em><br>
+            <em>${escHtml(q.topic_en)}</em>
             <span class="quiz-topic-nl">${escHtml(q.topic_nl)}</span>
           </span>
           <div class="quiz-header-right">
             <span class="quiz-counter">${num} / ${tot}</span>
-            <button class="quiz-btn-fresh" onclick="quizFresh()" title="Start a new quiz and reset results">↺ New Quiz / Reset Results</button>
+            <button class="quiz-btn-fresh" onclick="quizFresh()" title="Start a new quiz and reset results">↺<span class="quiz-btn-fresh-label"> New Quiz / Reset</span></button>
           </div>
         </div>
 
         ${doneSoFar > 0 && doneSoFar < tot ? `
-          <div class="quiz-resume-banner">✓ Voortgang hersteld · ${doneSoFar} / ${tot} beantwoord</div>` : ''}
+          <div class="quiz-resume-banner">✓ Voortgang hersteld · ${doneSoFar} / ${tot} beantwoord · ${nCorrect} correct</div>` : ''}
 
         <div class="quiz-progress-bar">
           <div class="quiz-progress-fill" style="width:${pct}%"></div>
         </div>
 
-        ${q.image ? `<div class="quiz-image-wrap"><img src="${q.image}" alt="" class="quiz-img" loading="lazy"></div>` : ''}
+        ${q.image ? `
+          <button class="quiz-image-wrap" onclick="quizOpenImage('${q.image}')" title="Click to enlarge / Klik om te vergroten">
+            <img src="${q.image}" alt="" class="quiz-img" loading="lazy">
+            <span class="quiz-zoom-hint">🔍</span>
+          </button>` : ''}
 
         <div class="quiz-question">
           <p class="quiz-q-en"><em>${escHtml(q.question_en)}</em></p>
@@ -154,18 +165,36 @@
         <div id="quiz-feedback" class="quiz-feedback-area">${feedbackHtml}</div>
 
         <div class="quiz-footer">
+          <a class="quiz-study-link" href="${q.topic_link}" target="_blank">
+            📖 <em>${escHtml(q.topic_en)}</em> / ${escHtml(q.topic_nl)}
+          </a>
           <div class="quiz-nav">
             <button class="quiz-btn-prev" onclick="quizPrev()" ${current === 0 ? 'style="visibility:hidden"' : ''}>← Vorige</button>
-            <div class="quiz-nav-dots">${dotsHtml}</div>
+            <span class="quiz-nav-count">${num} / ${tot}</span>
             <button class="quiz-btn-next" id="btn-next" onclick="quizNext()" ${nextVisible}>
               ${current === tot - 1 ? 'Resultaten →' : 'Volgende →'}
             </button>
           </div>
-          <a class="quiz-study-link" href="${q.topic_link}" target="_blank">
-            📖 <em>${escHtml(q.topic_en)}</em> / ${escHtml(q.topic_nl)}
-          </a>
         </div>
+
+        <details class="quiz-overview" ${overviewOpen ? 'open' : ''} ontoggle="quizOverviewToggle(this.open)">
+          <summary><em>Overview</em> / Overzicht · ${doneSoFar} / ${tot}</summary>
+          <div class="quiz-nav-dots">${dotsHtml}</div>
+        </details>
       </div>`;
+  }
+
+  function feedbackItems(q) {
+    const letters = ['A','B','C','D','E'];
+    return q.answers.map((a, i) => `
+      <div class="quiz-fb-item ${a.correct ? 'quiz-fb--correct' : 'quiz-fb--wrong'}"
+           style="animation-delay:${i * 70}ms">
+        <span class="quiz-fb-letter">${letters[i]}</span>
+        <span class="quiz-fb-text">
+          <em>${escHtml(a.feedback_en)}</em>
+          ${escHtml(a.feedback_nl)}
+        </span>
+      </div>`).join('');
   }
 
   // ── Answer handler ────────────────────────────────────────────────────────
@@ -176,7 +205,6 @@
     const q      = questions[current];
     const topic  = q.topic_nl;
     const isCorr = q.answers[chosenIdx].correct;
-    const letters = ['A','B','C','D','E'];
 
     if (!scores[topic]) scores[topic] = { correct: 0, total: 0 };
     scores[topic].total += 1;
@@ -198,16 +226,9 @@
 
     // Show feedback directly under the answers
     const feedDiv = document.getElementById('quiz-feedback');
-    feedDiv.innerHTML = q.answers.map((a, i) => `
-      <div class="quiz-fb-item ${a.correct ? 'quiz-fb--correct' : 'quiz-fb--wrong'}"
-           style="animation-delay:${i * 70}ms">
-        <span class="quiz-fb-letter">${letters[i]}</span>
-        <span class="quiz-fb-text">
-          <em>${escHtml(a.feedback_en)}</em><br>
-          ${escHtml(a.feedback_nl)}
-        </span>
-      </div>`).join('');
+    feedDiv.innerHTML = feedbackItems(q);
     feedDiv.style.animation = 'fadeIn .4s ease';
+    if (NARROW.matches) feedDiv.scrollIntoView({ behavior: 'smooth', block: 'start' });
 
     // Show next button
     const btn = document.getElementById('btn-next');
@@ -221,9 +242,10 @@
   };
 
   // ── Navigation ────────────────────────────────────────────────────────────
-  window.quizNext  = function() { current += 1; if (current >= questions.length) { renderFinished(); return; } renderQuestion(); scrollToQuiz(); };
+  window.quizNext  = function() { current += 1; if (current >= questions.length) { renderFinished(); scrollToQuiz(); return; } renderQuestion(); scrollToQuiz(); };
   window.quizPrev  = function() { if (current > 0) { current -= 1; renderQuestion(); scrollToQuiz(); } };
   window.quizGoTo  = function(i) { current = i; renderQuestion(); scrollToQuiz(); };
+  window.quizOverviewToggle = function(open) { overviewOpen = open; };
 
   window.quizFresh = function() {
     if (!confirm('Start a new quiz and reset all results?')) return;
@@ -234,9 +256,21 @@
     scrollToQuiz();
   };
 
+  // ── Image lightbox ────────────────────────────────────────────────────────
+  window.quizOpenImage = function(src) {
+    const box = document.getElementById('quiz-lightbox');
+    if (!box) return;
+    box.querySelector('img').src = src;
+    box.hidden = false;
+  };
+  window.quizCloseImage = function() {
+    const box = document.getElementById('quiz-lightbox');
+    if (box) box.hidden = true;
+  };
+
   function scrollToQuiz() {
     const root = document.getElementById('quiz-root');
-    if (root) window.scrollTo({ top: root.offsetTop - 60, behavior: 'smooth' });
+    if (root) window.scrollTo({ top: root.getBoundingClientRect().top + window.scrollY - 70, behavior: 'smooth' });
   }
 
   // ── Finished screen ───────────────────────────────────────────────────────
@@ -263,6 +297,9 @@
         </div>
       </div>`;
 
+    // The results chart is the point of this screen: make sure it is visible
+    const det = document.getElementById('quiz-chart-details');
+    if (det && !det.open) det.open = true;
     renderChart();
   }
 
@@ -295,22 +332,38 @@
     return { bg: 'rgba(21,128,61,0.82)', border: 'rgb(21,128,61)' };
   }
 
+  // Theme colours come from quiz.css custom properties (light/dark aware)
+  function cssVar(name) {
+    const root = document.getElementById('quiz-root') || document.body;
+    return getComputedStyle(root).getPropertyValue(name).trim();
+  }
+
   function renderChart() {
     const canvas = document.getElementById('quiz-chart');
-    if (!canvas) return;
+    const det    = document.getElementById('quiz-chart-details');
+    if (!canvas || (det && !det.open)) return;
 
     const allTopics  = [...new Set(questions.map(q => q.topic_nl))];
     const topicLinks = {}, topicEn = {};
     questions.forEach(q => { topicLinks[q.topic_nl] = q.topic_link; topicEn[q.topic_nl] = q.topic_en; });
 
-    const labels = allTopics.map(nl => [topicEn[nl], nl]);
+    // One line per bar on phones, EN + NL on wider screens
+    const labels = allTopics.map(nl => NARROW.matches ? nl : [topicEn[nl], nl]);
+    const wrap = document.getElementById('quiz-chart-wrap');
+    if (wrap) wrap.style.height = (allTopics.length * (NARROW.matches ? 26 : 34) + 40) + 'px';
+
     const rawData = allTopics.map(nl => {
       const s = scores[nl];
       return (!s || s.total === 0) ? null : Math.round(s.correct / s.total * 100);
     });
 
-    const bgColors     = rawData.map(v => v === null ? 'rgba(209,213,219,0.35)' : scoreColor(v).bg);
-    const borderColors = rawData.map(v => v === null ? 'rgba(156,163,175,0.5)'  : scoreColor(v).border);
+    const empty        = cssVar('--quiz-chart-empty');
+    const emptyBorder  = cssVar('--quiz-chart-empty-border');
+    const bgColors     = rawData.map(v => v === null ? empty       : scoreColor(v).bg);
+    const borderColors = rawData.map(v => v === null ? emptyBorder : scoreColor(v).border);
+    const tickColor    = cssVar('--quiz-text');
+    const mutedColor   = cssVar('--quiz-muted');
+    const gridColor    = cssVar('--quiz-grid');
 
     if (chartInstance) chartInstance.destroy();
 
@@ -325,6 +378,7 @@
           borderWidth: 2,
           borderRadius: 5,
           borderSkipped: false,
+          minBarLength: 4,
         }]
       },
       options: {
@@ -348,11 +402,11 @@
         scales: {
           x: {
             min: 0, max: 100,
-            ticks: { callback: v => v + '%', color: '#6b7280', font: { size: 10 } },
-            grid:  { color: 'rgba(0,0,0,0.05)' }
+            ticks: { callback: v => v + '%', color: mutedColor, font: { size: 10 } },
+            grid:  { color: gridColor }
           },
           y: {
-            ticks: { color: '#374151', font: { size: 10 } },
+            ticks: { color: tickColor, font: { size: 11 } },
             grid:  { display: false }
           }
         },
