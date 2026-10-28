@@ -570,3 +570,8 @@ details:not([open]) > .quiz-chart-title::after { transform: rotate(-90deg); }
   #quiz-root .quiz-chart-section { padding: 0.8rem 0.9rem; }
   #quiz-root .quiz-overview { margin-top: 1.4rem; }
 }
+
+/* Material's floating "Back to top" button covers the quiz header on phones */
+@media (max-width: 600px) {
+  body:has(#quiz-root) .md-top { display: none; }
+}

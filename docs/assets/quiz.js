@@ -5,6 +5,7 @@
   'use strict';
 
   const STORAGE_KEY = 'hra_quiz_v3';  // bump when question ids change
+  // When changing quiz.js/quiz.css, also bump ?v= in docs/quiz/index.md (browser cache)
   const YAML_PATH   = './questions.yaml';
   const WIDE        = window.matchMedia('(min-width: 1000px)');
   const NARROW      = window.matchMedia('(max-width: 600px)');
@@ -23,7 +24,7 @@
     if (!root) return;
     root.innerHTML = '<div class="quiz-loading"><div class="quiz-spinner"></div><p>Vragen laden…</p></div>';
 
-    fetch(YAML_PATH)
+    fetch(YAML_PATH, { cache: 'no-cache' })  // always pick up edited questions
       .then(r => { if (!r.ok) throw new Error(r.status); return r.text(); })
       .then(text => {
         // Sort by id so YAML order = quiz order; gaps in id are fine
