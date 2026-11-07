@@ -22,17 +22,3 @@ Sampling and Validity [en](./sampval_en.pdf) | [nl](./sampval_nl.pdf)
 Chi Squared [en](./chi_en.pdf) | [nl](./chi_nl.pdf)  
 Correlation [en](./corr_en.pdf) | [nl](./corr_nl.pdf)  
 ANOVA [en](./anova_en.pdf) | [nl](./anova_nl.pdf)
-
-# Quick Review Test
-
-Use these short modules to refresh key concepts before class, assignments, or exam preparation.
-
-- Review: Null and Alternate Hypotheses - [click here](https://trainingpreview.edapp.com/p/JgRRra5IPjcZ18yYxJwUJLgn)
-- Review: Type 1 and Type 2 errors - [click here](https://trainingpreview.edapp.com/p/6NXpFh15Ev1mUERhz54ZdxXX)
-- Review: Sampling, Reliability and Validity - [click here](https://trainingpreview.edapp.com/p/HXBnjipzLPzvUMj3rVebNfPo)
-- Review: Graphs - [click here](https://trainingpreview.edapp.com/p/Jdfybysyptm0UVLuJY5rR1lu)
-- Review: Confidence intervals - [click here](https://trainingpreview.edapp.com/p/gTDj9VCzCYOBHpTywarEn6Ye)
-- Review: Chi-squared - [click here](https://trainingpreview.edapp.com/p/GsM25iiS26hRv0U3H8e72pgt)
-- Review: Correlation - [click here](https://trainingpreview.edapp.com/p/nX1Hny8xPKiUylbr7YlC1Dec)
-- Review: T-test - [click here](https://trainingpreview.edapp.com/p/EKHj1B4dAkh5TwJGqWHmXuO0)
-- Review: ANOVA - [click here](https://trainingpreview.edapp.com/p/yOmfEckto60pWVB8mNiOpqzc)

@@ -1,10 +1,5 @@
 ﻿# Week 1 - HRa2 - Research questions and hypotheses
 
-<div style="float:right; max-width:180px; margin:0 0 1rem 1.5rem; text-align:center;">
-  <img src="../Research_Hypothesis__Null_and_Alternate.png" alt="Quick recap" title="Quick recap" style="max-width:100%;">
-  <br><small><em>Quick recap</em></small>
-</div>
-
 ## What you will learn
 
 - To formulate a solid research question based on a management problem.

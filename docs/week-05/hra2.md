@@ -1,10 +1,5 @@
 # Week 5 - HRa2 - T-test & Workshop: Satisfaction
 
-<div style="float:right; max-width:180px; margin:0 0 1rem 1.5rem; text-align:center;">
-  <img src="../Pearson_s_Correlation.png" alt="Quick recap" title="Quick recap" style="max-width:100%;">
-  <br><small><em>Quick recap</em></small>
-</div>
-
 ## What you will learn
 
 - You know how to apply the t-test in Jamovi.

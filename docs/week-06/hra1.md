@@ -1,10 +1,5 @@
 ﻿# Week 6 - HRa1 -  ANOVA and Effect Sizes
 
-<div style="float:right; max-width:180px; margin:0 0 1rem 1.5rem; text-align:center;">
-  <img src="../anova_qr.png" alt="Quick recap" title="Quick recap" style="max-width:100%;">
-  <br><small><em>Quick recap</em></small>
-</div>
-
 ## What you will learn
 
 - You know how to perform an ANOVA in Jamovi.
