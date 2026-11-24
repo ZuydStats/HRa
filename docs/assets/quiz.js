@@ -348,10 +348,10 @@
     const topicLinks = {}, topicEn = {};
     questions.forEach(q => { topicLinks[q.topic_nl] = q.topic_link; topicEn[q.topic_nl] = q.topic_en; });
 
-    // One line per bar on phones, EN + NL on wider screens
-    const labels = allTopics.map(nl => NARROW.matches ? nl : [topicEn[nl], nl]);
+    // EN + NL on every screen (two lines per bar)
+    const labels = allTopics.map(nl => topicEn[nl] === nl ? nl : [topicEn[nl], nl]);
     const wrap = document.getElementById('quiz-chart-wrap');
-    if (wrap) wrap.style.height = (allTopics.length * (NARROW.matches ? 26 : 34) + 40) + 'px';
+    if (wrap) wrap.style.height = (allTopics.length * (NARROW.matches ? 32 : 34) + 40) + 'px';
 
     const rawData = allTopics.map(nl => {
       const s = scores[nl];
@@ -407,7 +407,7 @@
             grid:  { color: gridColor }
           },
           y: {
-            ticks: { color: tickColor, font: { size: 11 } },
+            ticks: { color: tickColor, font: { size: NARROW.matches ? 10 : 11 } },
             grid:  { display: false }
           }
         },
